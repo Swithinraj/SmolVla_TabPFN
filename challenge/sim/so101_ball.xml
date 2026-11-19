@@ -1,0 +1,74 @@
+<!--
+  SO-101 red-ball interception scene. The arm (Menagerie robotstudio_so101) is attached at `so101_mount`
+  by ball_env.py, which also adds the paddle to the gripper.
+  Table surface is z=0. The ball is launched from the far end (+x) rolling toward the arm (-x);
+  the arm must stop it before it crosses the blocking line at x = LINE_X (0.15 m).
+-->
+<mujoco model="so101_ball">
+  <statistic center="0.2 0 0.1" extent="0.6"/>
+  <visual>
+    <headlight diffuse="0.35 0.35 0.35" ambient="0.2 0.2 0.2" specular="0 0 0"/>
+    <global azimuth="160" elevation="-20"/>
+  </visual>
+  <custom>
+    <text name="instruction" data="Block the red ball at the marked point."/>
+  </custom>
+  <asset>
+    <texture type="skybox" builtin="gradient" rgb1="0.75 0.75 0.75" rgb2="0.45 0.45 0.45" width="512" height="3072"/>
+    <material name="table" rgba="0.80 0.72 0.60 1" specular="0.05" shininess="0.1"/>
+    <material name="ball" rgba="0.95 0.08 0.06 1" specular="0.3" shininess="0.4"/>
+    <material name="line" rgba="0.10 0.10 0.10 1"/>
+    <material name="goal" rgba="0.1 0.4 0.9 1"/>
+    <material name="paddle" rgba="0.95 0.85 0.15 1"/>
+    <material name="table_leg" rgba="0.30 0.25 0.20 1"/>
+    <material name="floor" rgba="0.38 0.37 0.36 1"/>
+    <material name="wall" rgba="0.85 0.84 0.80 1" emission="0.5"/>
+  </asset>
+  <default>
+    <default class="decor">
+      <geom type="box" contype="0" conaffinity="0"/>
+    </default>
+  </default>
+  <worldbody>
+    <light pos="0 0 3.5" dir="0 0 -1" directional="true"/>
+    <light pos="0.3 -0.4 0.8" dir="-0.3 0.5 -1" diffuse="0.25 0.25 0.25" castshadow="true"/>
+    <geom name="table" type="box" size="0.40 0.40 0.015" pos="0.20 0 -0.015" material="table"
+          friction="1 0.005 0.0001" condim="3"/>
+    <geom class="decor" size="0.02 0.02 0.36" pos="0.56 0.36 -0.39" material="table_leg"/>
+    <geom class="decor" size="0.02 0.02 0.36" pos="0.56 -0.36 -0.39" material="table_leg"/>
+    <geom class="decor" size="0.02 0.02 0.36" pos="-0.16 0.36 -0.39" material="table_leg"/>
+    <geom class="decor" size="0.02 0.02 0.36" pos="-0.16 -0.36 -0.39" material="table_leg"/>
+    <geom name="floor" type="plane" size="1.0 1.5 0.05" pos="0 0 -0.75" material="floor"/>
+    <geom class="decor" size="0.02 1.5 1.0" pos="-1.0 0 0.25" material="wall"/>
+    <geom class="decor" size="1.0 0.02 1.0" pos="0 1.5 0.25" material="wall"/>
+    <geom class="decor" size="1.0 0.02 1.0" pos="0 -1.5 0.25" material="wall"/>
+
+    <!-- Hidden dynamics (same colour as the table, so they are not visual cues):
+         a rough patch (friction set per episode in ball_env.reset) and two side rails that bounce the ball. -->
+    <geom name="patch" type="box" size="0.04 0.20 0.0005" pos="0.31 0 -0.0003" material="table"
+          friction="1 0.005 0.0001" condim="3"/>
+    <geom name="rail_l" type="box" size="0.09 0.004 0.02" pos="0.33 0.155 0.02" material="table"
+          friction="0.3 0.005 0.0001" solref="0.002 0.3" solimp="0.95 0.99 0.001"/>
+    <geom name="rail_r" type="box" size="0.09 0.004 0.02" pos="0.33 -0.155 0.02" material="table"
+          friction="0.3 0.005 0.0001" solref="0.002 0.3" solimp="0.95 0.99 0.001"/>
+
+    <!-- Blocking line (visual only): the ball must not cross x = 0.15 -->
+    <geom class="decor" name="block_line" size="0.003 0.20 0.0005" pos="0.15 0 0.0005" material="line"/>
+
+    <site name="so101_mount" pos="0 0 0"/>
+
+    <body name="ball" pos="0.42 0 0.02">
+      <freejoint name="ball_free"/>
+      <geom name="ball_geom" type="sphere" size="0.02" mass="0.02" material="ball"
+            condim="6" friction="1 0.005 0.002" solref="0.01 1"/>
+    </body>
+
+    <!-- Goal marker: a mocap disc moved to the predicted crossing point (rendered, no collision) -->
+    <body name="goal_marker" mocap="true" pos="0.15 0 0.001">
+      <geom type="cylinder" size="0.018 0.0005" material="goal" contype="0" conaffinity="0"/>
+    </body>
+
+    <camera name="front" pos="0.5 0 0.2" xyaxes="0 1 0 -0.493 0 0.87" fovy="60"/>
+    <camera name="top" pos="0.25 0 0.50" xyaxes="0 -1 0 1 0 0" fovy="60"/>
+  </worldbody>
+</mujoco>

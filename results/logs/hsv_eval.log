@@ -1,0 +1,12 @@
+HSV tracker calibrated with 35 points
+W1119 17:52:41.134000 29292 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+tabpfn ready: forecast latency 179 ms
+Loading  HuggingFaceTB/SmolVLM2-500M-Video-Instruct weights ...
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/489 [00:00<?, ?it/s]Loading weights:   6%|5         | 27/489 [00:00<00:01, 245.32it/s]Loading weights:  11%|#         | 52/489 [00:00<00:02, 202.23it/s]Loading weights:  15%|#4        | 73/489 [00:00<00:02, 180.15it/s]Loading weights:  19%|#9        | 93/489 [00:00<00:02, 183.45it/s]Loading weights:  23%|##2       | 112/489 [00:00<00:02, 184.38it/s]Loading weights:  27%|##6       | 131/489 [00:00<00:01, 183.58it/s]Loading weights:  31%|###1      | 153/489 [00:00<00:01, 176.18it/s]Loading weights:  35%|###5      | 173/489 [00:00<00:01, 182.05it/s]Loading weights:  39%|###9      | 192/489 [00:01<00:01, 182.66it/s]Loading weights:  43%|####3     | 211/489 [00:01<00:01, 181.71it/s]Loading weights:  47%|####7     | 230/489 [00:01<00:01, 180.09it/s]Loading weights:  51%|#####1    | 250/489 [00:01<00:01, 178.19it/s]Loading weights:  55%|#####4    | 268/489 [00:01<00:01, 165.64it/s]Loading weights:  61%|######1   | 300/489 [00:01<00:00, 207.18it/s]Loading weights:  70%|#######   | 344/489 [00:01<00:00, 260.51it/s]Loading weights:  80%|#######9  | 389/489 [00:01<00:00, 302.35it/s]Loading weights:  90%|########9 | 439/489 [00:01<00:00, 346.01it/s]Loading weights:  99%|#########8| 482/489 [00:02<00:00, 367.74it/s]Loading weights: 100%|##########| 489/489 [00:02<00:00, 240.05it/s]
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+big smoother clean hard tabpfn: held 2/24 (nudged 1/9) touched 19 jerk 16404 points 0.6
+big smoother clean indist tabpfn: held 19/24 (nudged 0/0) touched 24 jerk 14312 points 5.4
+big smoother real1 hard tabpfn: held 3/24 (nudged 0/9) touched 18 jerk 21198 points 0.7
+big smoother real1 indist tabpfn: held 10/24 (nudged 0/0) touched 24 jerk 20419 points 2.2

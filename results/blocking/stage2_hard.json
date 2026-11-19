@@ -1,0 +1,2279 @@
+{
+  "n_per_split": 40,
+  "n_action_steps": 5,
+  "wrong_shift_m": 0.1,
+  "results": {
+    "noop|hard": {
+      "n": 40,
+      "blocked": 0,
+      "block_rate": 0.0,
+      "touched": 0,
+      "crossed": 39
+    },
+    "expert_oracle|hard": {
+      "n": 40,
+      "blocked": 40,
+      "block_rate": 1.0,
+      "touched": 40,
+      "crossed": 0
+    },
+    "final|hard|oracle": {
+      "n": 40,
+      "blocked": 30,
+      "block_rate": 0.75,
+      "touched": 40,
+      "crossed": 0,
+      "episodes": [
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 106,
+          "final_ball": [
+            0.2585232745783797,
+            0.013620216528077664
+          ],
+          "seed": 700000
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 120,
+          "final_ball": [
+            0.3356725982505152,
+            -0.04362587887322627
+          ],
+          "seed": 700001
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 120,
+          "final_ball": [
+            0.3230602926026443,
+            -0.27068726333155774
+          ],
+          "seed": 700002
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 52,
+          "final_ball": [
+            0.2524540553610102,
+            -0.07219248723356878
+          ],
+          "seed": 700003
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 114,
+          "final_ball": [
+            0.2668366004376792,
+            0.10662553590756811
+          ],
+          "seed": 700004
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 120,
+          "final_ball": [
+            0.2659043957154254,
+            -0.14418980393916883
+          ],
+          "seed": 700005
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 27,
+          "final_ball": [
+            0.2583745015766794,
+            -0.07914788820822002
+          ],
+          "seed": 700006
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 120,
+          "final_ball": [
+            0.4874565984432494,
+            -0.1942758385291156
+          ],
+          "seed": 700007
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 97,
+          "final_ball": [
+            0.334856694354694,
+            -0.44307423014913627
+          ],
+          "seed": 700008
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 41,
+          "final_ball": [
+            0.26628817308163355,
+            0.03533953933252497
+          ],
+          "seed": 700009
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 41,
+          "final_ball": [
+            0.26583695391161954,
+            -0.004859125163429873
+          ],
+          "seed": 700010
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 115,
+          "final_ball": [
+            0.25738807587906054,
+            -0.1899487817856141
+          ],
+          "seed": 700011
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 65,
+          "final_ball": [
+            0.2671893075626956,
+            0.07501479769293826
+          ],
+          "seed": 700012
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 77,
+          "final_ball": [
+            0.3412505809214859,
+            0.44147767708415037
+          ],
+          "seed": 700013
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 31,
+          "final_ball": [
+            0.24870249591891574,
+            0.13387866241812693
+          ],
+          "seed": 700014
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 49,
+          "final_ball": [
+            0.26612855979436156,
+            0.020609623115351878
+          ],
+          "seed": 700015
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 90,
+          "final_ball": [
+            0.2675072236494867,
+            0.0821845690403921
+          ],
+          "seed": 700016
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 25,
+          "final_ball": [
+            0.26321329015670875,
+            -0.031180075607054113
+          ],
+          "seed": 700017
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 23,
+          "final_ball": [
+            0.2543478247638151,
+            -0.021268122940856202
+          ],
+          "seed": 700018
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 27,
+          "final_ball": [
+            0.26771771689230456,
+            -0.052226004881031046
+          ],
+          "seed": 700019
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 26,
+          "final_ball": [
+            0.24450342811800221,
+            -0.013531896880349732
+          ],
+          "seed": 700020
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 120,
+          "final_ball": [
+            0.3261829068388322,
+            0.21391870775602684
+          ],
+          "seed": 700021
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 98,
+          "final_ball": [
+            0.4675976397051139,
+            -0.4465852386924004
+          ],
+          "seed": 700022
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 61,
+          "final_ball": [
+            0.24483872864297054,
+            -0.08235571065549434
+          ],
+          "seed": 700023
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 118,
+          "final_ball": [
+            0.34464155682042663,
+            0.4407174797710871
+          ],
+          "seed": 700024
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 57,
+          "final_ball": [
+            0.35356172653380036,
+            0.43852733283176026
+          ],
+          "seed": 700025
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 120,
+          "final_ball": [
+            0.2622688994258824,
+            0.12957941312268062
+          ],
+          "seed": 700026
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 120,
+          "final_ball": [
+            0.22791550172229486,
+            0.25886673549294925
+          ],
+          "seed": 700027
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 56,
+          "final_ball": [
+            0.2640302490721577,
+            -0.11876483456582719
+          ],
+          "seed": 700028
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 38,
+          "final_ball": [
+            0.24715866676989506,
+            -0.07932424037359737
+          ],
+          "seed": 700029
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 120,
+          "final_ball": [
+            0.2613168277210864,
+            -0.15699803740152574
+          ],
+          "seed": 700030
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 82,
+          "final_ball": [
+            0.6422380522350116,
+            0.3414728441573592
+          ],
+          "seed": 700031
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 99,
+          "final_ball": [
+            0.2937000351799305,
+            0.4367602416970327
+          ],
+          "seed": 700032
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 90,
+          "final_ball": [
+            0.32238645104850505,
+            0.4446104895353476
+          ],
+          "seed": 700033
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 63,
+          "final_ball": [
+            0.2661177661414435,
+            0.10493285427644719
+          ],
+          "seed": 700034
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 119,
+          "final_ball": [
+            0.37271363805106106,
+            -0.4381846515568998
+          ],
+          "seed": 700035
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 70,
+          "final_ball": [
+            0.2665061324783042,
+            -0.043029930896959535
+          ],
+          "seed": 700036
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 120,
+          "final_ball": [
+            0.35579212516635295,
+            0.08568550247372943
+          ],
+          "seed": 700037
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 96,
+          "final_ball": [
+            0.30967937835365517,
+            -0.4446690361134525
+          ],
+          "seed": 700038
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 120,
+          "final_ball": [
+            0.30806600299612613,
+            0.06563691578350253
+          ],
+          "seed": 700039
+        }
+      ],
+      "policy_latency_ms": 87.11225378890789
+    },
+    "final|hard|cv": {
+      "n": 40,
+      "blocked": 20,
+      "block_rate": 0.5,
+      "touched": 39,
+      "crossed": 0,
+      "episodes": [
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 120,
+          "final_ball": [
+            0.43830962039268667,
+            -0.370638776417968
+          ],
+          "seed": 700000
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 120,
+          "final_ball": [
+            0.3741080507257121,
+            -0.3695011541611523
+          ],
+          "seed": 700001
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 120,
+          "final_ball": [
+            0.3416914767187768,
+            -0.36721599541568317
+          ],
+          "seed": 700002
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 70,
+          "final_ball": [
+            0.3763947069358693,
+            -0.44316279155735644
+          ],
+          "seed": 700003
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 82,
+          "final_ball": [
+            0.6336899909178083,
+            0.36338516389861764
+          ],
+          "seed": 700004
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 120,
+          "final_ball": [
+            0.29948709169246185,
+            -0.13772092446990208
+          ],
+          "seed": 700005
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 55,
+          "final_ball": [
+            0.6530412187324205,
+            -0.11056348079075767
+          ],
+          "seed": 700006
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 70,
+          "final_ball": [
+            0.2800987276378685,
+            -0.43982910047276086
+          ],
+          "seed": 700007
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 25,
+          "final_ball": [
+            0.2582479119012625,
+            -0.05713382550335107
+          ],
+          "seed": 700008
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 120,
+          "final_ball": [
+            0.3354277703067242,
+            0.12394790011896294
+          ],
+          "seed": 700009
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 23,
+          "final_ball": [
+            0.2659268068333814,
+            -0.004206628120558033
+          ],
+          "seed": 700010
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 120,
+          "final_ball": [
+            0.6241428349095149,
+            -0.21307760899865966
+          ],
+          "seed": 700011
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 102,
+          "final_ball": [
+            0.5738555977445001,
+            -0.4437317162824213
+          ],
+          "seed": 700012
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 31,
+          "final_ball": [
+            0.2689270791433282,
+            0.050956493675109044
+          ],
+          "seed": 700013
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 82,
+          "final_ball": [
+            0.6353437889605781,
+            0.42590764415972243
+          ],
+          "seed": 700014
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 23,
+          "final_ball": [
+            0.26218442092830696,
+            0.008188543297004622
+          ],
+          "seed": 700015
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 91,
+          "final_ball": [
+            0.49256469209989123,
+            0.43870940337326547
+          ],
+          "seed": 700016
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 26,
+          "final_ball": [
+            0.2668726481289565,
+            -0.03280371052593082
+          ],
+          "seed": 700017
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 57,
+          "final_ball": [
+            0.6552063496158017,
+            0.08068523980608791
+          ],
+          "seed": 700018
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 89,
+          "final_ball": [
+            0.3478507461400982,
+            -0.4323323461160274
+          ],
+          "seed": 700019
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 24,
+          "final_ball": [
+            0.2630812601004482,
+            -0.0017859683309307374
+          ],
+          "seed": 700020
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": false,
+          "steps": 32,
+          "final_ball": [
+            0.21709524934374774,
+            0.47493867986936306
+          ],
+          "seed": 700021
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 61,
+          "final_ball": [
+            0.37708228985493963,
+            -0.4481786954998306
+          ],
+          "seed": 700022
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 120,
+          "final_ball": [
+            0.6263627460749539,
+            -0.06576932077084027
+          ],
+          "seed": 700023
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 23,
+          "final_ball": [
+            0.2576398321403801,
+            -0.04359177714885235
+          ],
+          "seed": 700024
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 79,
+          "final_ball": [
+            0.43933384159456074,
+            0.4394748414037604
+          ],
+          "seed": 700025
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 120,
+          "final_ball": [
+            0.36675443188877005,
+            0.16168656011133922
+          ],
+          "seed": 700026
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 91,
+          "final_ball": [
+            0.31885868655093896,
+            0.43766387138111107
+          ],
+          "seed": 700027
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 120,
+          "final_ball": [
+            0.3130386922281251,
+            -0.17833271882415358
+          ],
+          "seed": 700028
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 120,
+          "final_ball": [
+            0.34918580854453835,
+            -0.39074453269021475
+          ],
+          "seed": 700029
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 76,
+          "final_ball": [
+            0.5884094893791807,
+            -0.44626496552974326
+          ],
+          "seed": 700030
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 120,
+          "final_ball": [
+            0.47126811394947093,
+            0.1422558580497662
+          ],
+          "seed": 700031
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 51,
+          "final_ball": [
+            0.6429113579462168,
+            0.2721451504256297
+          ],
+          "seed": 700032
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 76,
+          "final_ball": [
+            0.6380543645805985,
+            0.4268438179690865
+          ],
+          "seed": 700033
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 75,
+          "final_ball": [
+            0.634330809643602,
+            -0.005621974888801757
+          ],
+          "seed": 700034
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 68,
+          "final_ball": [
+            0.6529104514294145,
+            -0.4272846560743446
+          ],
+          "seed": 700035
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 79,
+          "final_ball": [
+            0.6049819761982066,
+            -0.43403615555389596
+          ],
+          "seed": 700036
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 120,
+          "final_ball": [
+            0.4936190182175737,
+            0.22051290591628778
+          ],
+          "seed": 700037
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 29,
+          "final_ball": [
+            0.2634899625915666,
+            0.03686830479955983
+          ],
+          "seed": 700038
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 58,
+          "final_ball": [
+            0.6468054976093376,
+            0.2370794022314598
+          ],
+          "seed": 700039
+        }
+      ],
+      "policy_latency_ms": 87.90550207869899
+    },
+    "final|hard|quad": {
+      "n": 40,
+      "blocked": 18,
+      "block_rate": 0.45,
+      "touched": 38,
+      "crossed": 1,
+      "episodes": [
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 120,
+          "final_ball": [
+            0.5035881086524554,
+            -0.053424763018827315
+          ],
+          "seed": 700000
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 34,
+          "final_ball": [
+            0.2550154391830057,
+            -0.10504353289392576
+          ],
+          "seed": 700001
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 89,
+          "final_ball": [
+            0.22076504116709758,
+            -0.4633646166448966
+          ],
+          "seed": 700002
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 34,
+          "final_ball": [
+            0.26640570927678564,
+            -0.060210251030248206
+          ],
+          "seed": 700003
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 62,
+          "final_ball": [
+            0.6544963455029922,
+            0.20594261346053613
+          ],
+          "seed": 700004
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 32,
+          "final_ball": [
+            0.265673322896983,
+            -0.109159660195575
+          ],
+          "seed": 700005
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 89,
+          "final_ball": [
+            0.5727946337874605,
+            0.44402200881179543
+          ],
+          "seed": 700006
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 92,
+          "final_ball": [
+            0.6380808622338089,
+            -0.1978480616600004
+          ],
+          "seed": 700007
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 42,
+          "final_ball": [
+            0.2661890304830529,
+            -0.042850197072885905
+          ],
+          "seed": 700008
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 120,
+          "final_ball": [
+            0.40296957940997674,
+            -0.0630426930543188
+          ],
+          "seed": 700009
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 28,
+          "final_ball": [
+            0.25767616107518276,
+            -0.005372637402833361
+          ],
+          "seed": 700010
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 114,
+          "final_ball": [
+            0.6311927917136503,
+            -0.2251450925659651
+          ],
+          "seed": 700011
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 33,
+          "final_ball": [
+            0.2624438062811899,
+            0.07258350180260119
+          ],
+          "seed": 700012
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 92,
+          "final_ball": [
+            0.6384510870969694,
+            0.29014643071682616
+          ],
+          "seed": 700013
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 74,
+          "final_ball": [
+            0.4006885265639434,
+            0.4329802613240046
+          ],
+          "seed": 700014
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 120,
+          "final_ball": [
+            0.5767103910658667,
+            0.34520182391809856
+          ],
+          "seed": 700015
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 120,
+          "final_ball": [
+            0.28489731291042986,
+            0.3404459790902468
+          ],
+          "seed": 700016
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 19,
+          "final_ball": [
+            0.2610300659176156,
+            -0.03149748079731506
+          ],
+          "seed": 700017
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 25,
+          "final_ball": [
+            0.24843032703123372,
+            -0.02498098090406667
+          ],
+          "seed": 700018
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 70,
+          "final_ball": [
+            0.6431806371530091,
+            -0.3357407916213043
+          ],
+          "seed": 700019
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 114,
+          "final_ball": [
+            0.5586078609627726,
+            -0.4476726869890191
+          ],
+          "seed": 700020
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 113,
+          "final_ball": [
+            0.43109246106605026,
+            0.4330395835401491
+          ],
+          "seed": 700021
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 67,
+          "final_ball": [
+            0.28392910511366093,
+            -0.44013308679553376
+          ],
+          "seed": 700022
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 30,
+          "final_ball": [
+            0.25448443400384674,
+            -0.04406866470321681
+          ],
+          "seed": 700023
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 23,
+          "final_ball": [
+            0.25148307211452836,
+            -0.04001596255254032
+          ],
+          "seed": 700024
+        },
+        {
+          "blocked": false,
+          "crossed": true,
+          "touched": false,
+          "steps": 47,
+          "final_ball": [
+            0.12735733575315097,
+            0.37467261192089646
+          ],
+          "seed": 700025
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": false,
+          "steps": 58,
+          "final_ball": [
+            0.1987754895638077,
+            0.4485628373857284
+          ],
+          "seed": 700026
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 93,
+          "final_ball": [
+            0.6312779077807741,
+            0.41094174775076864
+          ],
+          "seed": 700027
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 120,
+          "final_ball": [
+            0.6319422711860705,
+            0.3573829708827923
+          ],
+          "seed": 700028
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 120,
+          "final_ball": [
+            0.3290492247646859,
+            -0.27658534178218885
+          ],
+          "seed": 700029
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 102,
+          "final_ball": [
+            0.36975258876920164,
+            -0.44556018102804146
+          ],
+          "seed": 700030
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 70,
+          "final_ball": [
+            0.29450006212011504,
+            0.44757374434032937
+          ],
+          "seed": 700031
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 56,
+          "final_ball": [
+            0.6417093948617215,
+            0.28056046621313313
+          ],
+          "seed": 700032
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 78,
+          "final_ball": [
+            0.5473091722534494,
+            0.43435346603926317
+          ],
+          "seed": 700033
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 91,
+          "final_ball": [
+            0.4911456289584382,
+            0.4426403888572485
+          ],
+          "seed": 700034
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 74,
+          "final_ball": [
+            0.6444821951809225,
+            -0.2885251067263886
+          ],
+          "seed": 700035
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 78,
+          "final_ball": [
+            0.5797920796196371,
+            -0.43388925830085356
+          ],
+          "seed": 700036
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 47,
+          "final_ball": [
+            0.26661904980793716,
+            -0.034887046258009015
+          ],
+          "seed": 700037
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 26,
+          "final_ball": [
+            0.2658756927772727,
+            0.03590664898382107
+          ],
+          "seed": 700038
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 120,
+          "final_ball": [
+            0.40871834124165135,
+            0.08539445514725652
+          ],
+          "seed": 700039
+        }
+      ],
+      "policy_latency_ms": 88.03921348770798
+    },
+    "final|hard|tabpfn": {
+      "n": 40,
+      "blocked": 16,
+      "block_rate": 0.4,
+      "touched": 38,
+      "crossed": 2,
+      "episodes": [
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 103,
+          "final_ball": [
+            0.6381334165432687,
+            -0.07822083859338144
+          ],
+          "seed": 700000
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 120,
+          "final_ball": [
+            0.5681345073880996,
+            0.24163885567119017
+          ],
+          "seed": 700001
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 112,
+          "final_ball": [
+            0.3848277969319421,
+            -0.436946022013886
+          ],
+          "seed": 700002
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 61,
+          "final_ball": [
+            0.26256497366495396,
+            -0.4387234515802456
+          ],
+          "seed": 700003
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 120,
+          "final_ball": [
+            0.33133313151115307,
+            0.3070552178387214
+          ],
+          "seed": 700004
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 73,
+          "final_ball": [
+            0.3651848679259452,
+            -0.43281300617844637
+          ],
+          "seed": 700005
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 40,
+          "final_ball": [
+            0.24901448756815717,
+            -0.08068492062108829
+          ],
+          "seed": 700006
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 116,
+          "final_ball": [
+            0.41342954969220885,
+            -0.43479194642902136
+          ],
+          "seed": 700007
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 82,
+          "final_ball": [
+            0.4762241182392251,
+            -0.44337343196519635
+          ],
+          "seed": 700008
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 120,
+          "final_ball": [
+            0.4175602471263284,
+            -0.2090191961701432
+          ],
+          "seed": 700009
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 29,
+          "final_ball": [
+            0.2664230129498788,
+            0.0003256224559735684
+          ],
+          "seed": 700010
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 104,
+          "final_ball": [
+            0.6298449039483606,
+            -0.36906035364180423
+          ],
+          "seed": 700011
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 120,
+          "final_ball": [
+            0.30990232516362776,
+            -0.11184321352566828
+          ],
+          "seed": 700012
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 61,
+          "final_ball": [
+            0.28951678012305937,
+            0.4477530867248693
+          ],
+          "seed": 700013
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 99,
+          "final_ball": [
+            0.5766299438492098,
+            0.4371914131270057
+          ],
+          "seed": 700014
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 64,
+          "final_ball": [
+            0.2666599012322719,
+            0.019336865786722893
+          ],
+          "seed": 700015
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 81,
+          "final_ball": [
+            0.3176895065177243,
+            0.44509573109451894
+          ],
+          "seed": 700016
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 28,
+          "final_ball": [
+            0.24418161880492645,
+            -0.02846636020626611
+          ],
+          "seed": 700017
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 120,
+          "final_ball": [
+            0.5403543601108522,
+            0.01105780706823466
+          ],
+          "seed": 700018
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 93,
+          "final_ball": [
+            0.5040400134482451,
+            -0.43638391779139896
+          ],
+          "seed": 700019
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 29,
+          "final_ball": [
+            0.26548010110429,
+            -0.0033535688108946647
+          ],
+          "seed": 700020
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 45,
+          "final_ball": [
+            0.24252417247754474,
+            0.4500221039365608
+          ],
+          "seed": 700021
+        },
+        {
+          "blocked": false,
+          "crossed": true,
+          "touched": false,
+          "steps": 41,
+          "final_ball": [
+            0.12911239923733903,
+            -0.2460628416201794
+          ],
+          "seed": 700022
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 118,
+          "final_ball": [
+            0.349947758975066,
+            -0.4414349689978287
+          ],
+          "seed": 700023
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 32,
+          "final_ball": [
+            0.24735484584404835,
+            -0.03708890591090897
+          ],
+          "seed": 700024
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 43,
+          "final_ball": [
+            0.2986702357222723,
+            0.46097466015925137
+          ],
+          "seed": 700025
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 120,
+          "final_ball": [
+            0.43989393478579114,
+            0.3766907753008586
+          ],
+          "seed": 700026
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 76,
+          "final_ball": [
+            0.29419134829892557,
+            0.43230026577003733
+          ],
+          "seed": 700027
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 120,
+          "final_ball": [
+            0.29840744884960313,
+            -0.16929096546571246
+          ],
+          "seed": 700028
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 50,
+          "final_ball": [
+            0.23834196282091702,
+            -0.45731915229926384
+          ],
+          "seed": 700029
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 84,
+          "final_ball": [
+            0.47836845061641414,
+            -0.4466348252348352
+          ],
+          "seed": 700030
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 98,
+          "final_ball": [
+            0.33334203684125946,
+            0.43833012472463184
+          ],
+          "seed": 700031
+        },
+        {
+          "blocked": false,
+          "crossed": true,
+          "touched": false,
+          "steps": 37,
+          "final_ball": [
+            0.12574746999759764,
+            0.2246975000003726
+          ],
+          "seed": 700032
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 93,
+          "final_ball": [
+            0.35122208839524904,
+            0.43624462472515396
+          ],
+          "seed": 700033
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 103,
+          "final_ball": [
+            0.3501039488045564,
+            0.43679313127191594
+          ],
+          "seed": 700034
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 89,
+          "final_ball": [
+            0.34303191905388974,
+            -0.4400763850373917
+          ],
+          "seed": 700035
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 75,
+          "final_ball": [
+            0.49194177074736695,
+            -0.44092457981845223
+          ],
+          "seed": 700036
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 31,
+          "final_ball": [
+            0.26280756441512176,
+            -0.04888456310425607
+          ],
+          "seed": 700037
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 53,
+          "final_ball": [
+            0.2662671753862295,
+            0.030406644314756967
+          ],
+          "seed": 700038
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 36,
+          "final_ball": [
+            0.26862956071093513,
+            0.056327212769914155
+          ],
+          "seed": 700039
+        }
+      ],
+      "policy_latency_ms": 87.81466439063412
+    },
+    "final|hard|none": {
+      "n": 40,
+      "blocked": 8,
+      "block_rate": 0.2,
+      "touched": 12,
+      "crossed": 28,
+      "episodes": [
+        {
+          "blocked": false,
+          "crossed": true,
+          "touched": false,
+          "steps": 72,
+          "final_ball": [
+            0.1274259432029816,
+            -0.3022988427825651
+          ],
+          "seed": 700000
+        },
+        {
+          "blocked": false,
+          "crossed": true,
+          "touched": false,
+          "steps": 47,
+          "final_ball": [
+            0.1279163722943607,
+            -0.07741172592741592
+          ],
+          "seed": 700001
+        },
+        {
+          "blocked": false,
+          "crossed": true,
+          "touched": false,
+          "steps": 72,
+          "final_ball": [
+            0.12677382557372066,
+            -0.22877623898662172
+          ],
+          "seed": 700002
+        },
+        {
+          "blocked": false,
+          "crossed": true,
+          "touched": false,
+          "steps": 41,
+          "final_ball": [
+            0.12440575208247194,
+            -0.20299746083948475
+          ],
+          "seed": 700003
+        },
+        {
+          "blocked": false,
+          "crossed": true,
+          "touched": false,
+          "steps": 81,
+          "final_ball": [
+            0.12750867576132882,
+            0.17535049047443557
+          ],
+          "seed": 700004
+        },
+        {
+          "blocked": false,
+          "crossed": true,
+          "touched": false,
+          "steps": 60,
+          "final_ball": [
+            0.1298459005022394,
+            -0.09915836096077205
+          ],
+          "seed": 700005
+        },
+        {
+          "blocked": false,
+          "crossed": true,
+          "touched": false,
+          "steps": 43,
+          "final_ball": [
+            0.12494577298770494,
+            -0.012043528933870878
+          ],
+          "seed": 700006
+        },
+        {
+          "blocked": false,
+          "crossed": true,
+          "touched": false,
+          "steps": 86,
+          "final_ball": [
+            0.1289539260437158,
+            -0.3614896472147099
+          ],
+          "seed": 700007
+        },
+        {
+          "blocked": false,
+          "crossed": true,
+          "touched": false,
+          "steps": 41,
+          "final_ball": [
+            0.1267686598729605,
+            -0.20517999201601198
+          ],
+          "seed": 700008
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 120,
+          "final_ball": [
+            0.33227169469803597,
+            -0.11476531751888093
+          ],
+          "seed": 700009
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 22,
+          "final_ball": [
+            0.2659992420392819,
+            -0.0031159533386383676
+          ],
+          "seed": 700010
+        },
+        {
+          "blocked": false,
+          "crossed": true,
+          "touched": false,
+          "steps": 40,
+          "final_ball": [
+            0.12753679844108676,
+            -0.1003452726436509
+          ],
+          "seed": 700011
+        },
+        {
+          "blocked": false,
+          "crossed": true,
+          "touched": true,
+          "steps": 97,
+          "final_ball": [
+            0.1293729358613245,
+            -0.054241827854352366
+          ],
+          "seed": 700012
+        },
+        {
+          "blocked": false,
+          "crossed": true,
+          "touched": false,
+          "steps": 47,
+          "final_ball": [
+            0.12742046259633852,
+            0.2763528880610232
+          ],
+          "seed": 700013
+        },
+        {
+          "blocked": false,
+          "crossed": true,
+          "touched": false,
+          "steps": 45,
+          "final_ball": [
+            0.12887255475472245,
+            0.25164392518048084
+          ],
+          "seed": 700014
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 18,
+          "final_ball": [
+            0.2667698648728301,
+            0.004248465489947396
+          ],
+          "seed": 700015
+        },
+        {
+          "blocked": false,
+          "crossed": true,
+          "touched": false,
+          "steps": 61,
+          "final_ball": [
+            0.12873292588356222,
+            0.24338395492187667
+          ],
+          "seed": 700016
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 46,
+          "final_ball": [
+            0.2591520746623952,
+            -0.01607763952525342
+          ],
+          "seed": 700017
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 120,
+          "final_ball": [
+            0.20554972296630816,
+            -0.2801515021204682
+          ],
+          "seed": 700018
+        },
+        {
+          "blocked": false,
+          "crossed": true,
+          "touched": false,
+          "steps": 46,
+          "final_ball": [
+            0.12687682064731534,
+            -0.1190690243365454
+          ],
+          "seed": 700019
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 84,
+          "final_ball": [
+            0.22091477926364347,
+            -0.4479662004011695
+          ],
+          "seed": 700020
+        },
+        {
+          "blocked": false,
+          "crossed": true,
+          "touched": false,
+          "steps": 37,
+          "final_ball": [
+            0.12863182468495937,
+            0.19117829223287272
+          ],
+          "seed": 700021
+        },
+        {
+          "blocked": false,
+          "crossed": true,
+          "touched": false,
+          "steps": 41,
+          "final_ball": [
+            0.12911239923763246,
+            -0.2460628416216813
+          ],
+          "seed": 700022
+        },
+        {
+          "blocked": false,
+          "crossed": true,
+          "touched": false,
+          "steps": 57,
+          "final_ball": [
+            0.12728592758178706,
+            -0.30044860716962957
+          ],
+          "seed": 700023
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 92,
+          "final_ball": [
+            0.355627571255288,
+            0.44263806382897136
+          ],
+          "seed": 700024
+        },
+        {
+          "blocked": false,
+          "crossed": true,
+          "touched": false,
+          "steps": 47,
+          "final_ball": [
+            0.12735733575466418,
+            0.37467261192790824
+          ],
+          "seed": 700025
+        },
+        {
+          "blocked": false,
+          "crossed": true,
+          "touched": false,
+          "steps": 75,
+          "final_ball": [
+            0.12818988077779558,
+            0.2615976581708336
+          ],
+          "seed": 700026
+        },
+        {
+          "blocked": false,
+          "crossed": true,
+          "touched": false,
+          "steps": 41,
+          "final_ball": [
+            0.12320481070868225,
+            0.21202395717870506
+          ],
+          "seed": 700027
+        },
+        {
+          "blocked": false,
+          "crossed": true,
+          "touched": false,
+          "steps": 76,
+          "final_ball": [
+            0.12909494734892554,
+            -0.09754654387361165
+          ],
+          "seed": 700028
+        },
+        {
+          "blocked": false,
+          "crossed": true,
+          "touched": false,
+          "steps": 45,
+          "final_ball": [
+            0.12447922723357338,
+            -0.22080970653676668
+          ],
+          "seed": 700029
+        },
+        {
+          "blocked": false,
+          "crossed": true,
+          "touched": false,
+          "steps": 76,
+          "final_ball": [
+            0.1288545024003865,
+            -0.4455718298715441
+          ],
+          "seed": 700030
+        },
+        {
+          "blocked": false,
+          "crossed": true,
+          "touched": false,
+          "steps": 69,
+          "final_ball": [
+            0.12944523761889384,
+            0.3488354647037485
+          ],
+          "seed": 700031
+        },
+        {
+          "blocked": false,
+          "crossed": true,
+          "touched": false,
+          "steps": 37,
+          "final_ball": [
+            0.125747470001243,
+            0.2246975000028452
+          ],
+          "seed": 700032
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": false,
+          "steps": 68,
+          "final_ball": [
+            0.17261926070822137,
+            0.43763774880862
+          ],
+          "seed": 700033
+        },
+        {
+          "blocked": false,
+          "crossed": true,
+          "touched": false,
+          "steps": 53,
+          "final_ball": [
+            0.12736361756209413,
+            0.26567632305751865
+          ],
+          "seed": 700034
+        },
+        {
+          "blocked": false,
+          "crossed": true,
+          "touched": false,
+          "steps": 73,
+          "final_ball": [
+            0.12788886548013426,
+            -0.3870524330496173
+          ],
+          "seed": 700035
+        },
+        {
+          "blocked": false,
+          "crossed": false,
+          "touched": true,
+          "steps": 108,
+          "final_ball": [
+            0.2591921341401811,
+            -0.435280130185151
+          ],
+          "seed": 700036
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 71,
+          "final_ball": [
+            0.24959664715111338,
+            -0.019696039521034468
+          ],
+          "seed": 700037
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 25,
+          "final_ball": [
+            0.25123689753705436,
+            0.02345457911417535
+          ],
+          "seed": 700038
+        },
+        {
+          "blocked": true,
+          "crossed": false,
+          "touched": true,
+          "steps": 120,
+          "final_ball": [
+            0.15887086498937567,
+            0.227065117808402
+          ],
+          "seed": 700039
+        }
+      ],
+      "policy_latency_ms": 88.12969342018174
+    }
+  },
+  "tabpfn_latency_ms": 171.06609344482422,
+  "tabpfn_context_rows": 1500,
+  "compute_delay_s": {
+    "cv": 0.0,
+    "quad": 0.0,
+    "tabpfn": 0.1710660934448242
+  },
+  "tracking_noise_m": 0.004
+}

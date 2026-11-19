@@ -1,0 +1,27 @@
+W1119 16:22:59.700000 26736 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+clean indist
+   tabpfn {'1.0': (0.7, 1.1, 94), '0.7': (0.6, 2.0, 84), '0.5': (0.4, 1.7, 42), '0.35': (0.2, 0.8, 29), '0.2': (0.2, 0.6, 18)}
+   cv {'1.0': (1.1, 2.6, 202), '0.7': (1.5, 3.5, 86), '0.5': (1.1, 3.6, 93), '0.35': (1.0, 2.2, 74), '0.2': (0.6, 1.6, 47)}
+clean hard
+   tabpfn {'1.0': (4.4, 10.1, 103), '0.7': (2.9, 8.1, 78), '0.5': (2.2, 4.5, 45), '0.35': (1.1, 2.4, 31), '0.2': (0.6, 1.8, 15)}
+   cv {'1.0': (4.6, 8.5, 265), '0.7': (3.3, 6.5, 103), '0.5': (1.7, 4.7, 112), '0.35': (1.3, 2.7, 58), '0.2': (0.7, 1.9, 32)}
+real1 indist
+   tabpfn {'1.0': (1.3, 4.7, 185), '0.7': (1.0, 2.5, 176), '0.5': (0.9, 2.3, 86), '0.35': (0.3, 1.7, 76), '0.2': (0.4, 1.2, 63)}
+   cv {'1.0': (2.0, 6.8, 338), '0.7': (2.6, 4.7, 235), '0.5': (1.9, 4.0, 116), '0.35': (1.4, 3.7, 105), '0.2': (1.4, 3.6, 95)}
+real1 hard
+   tabpfn {'1.0': (3.6, 8.1, 207), '0.7': (4.0, 7.9, 101), '0.5': (3.0, 6.2, 65), '0.35': (1.9, 4.9, 41), '0.2': (1.4, 2.5, 34)}
+   cv {'1.0': (4.7, 6.5, 310), '0.7': (3.0, 7.7, 100), '0.5': (3.4, 7.1, 110), '0.35': (2.3, 4.7, 50), '0.2': (1.7, 3.2, 37)}
+Traceback (most recent call last):
+  File "D:\smolVLA_Enhance\challenge\sim\forecast_check.py", line 58, in <module>
+    Path("../../outputs/catch_big/forecast_check.json").write_text(json.dumps(out, indent=2))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\pathlib\_local.py", line 555, in write_text
+    return PathBase.write_text(self, data, encoding, errors, newline)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\pathlib\_abc.py", line 651, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\pathlib\_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '..\\..\\outputs\\catch_big\\forecast_check.json'

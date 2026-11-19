@@ -1,0 +1,37 @@
+sequences ready 500 120
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+accuracy / mean confidence by time-to-arrival: {1.2: {'n': 42, 'acc': 0.7142857142857143, 'mean_conf': 0.8536294102668762}, 0.9: {'n': 71, 'acc': 0.7323943661971831, 'mean_conf': 0.8414967060089111}, 0.6: {'n': 115, 'acc': 0.7565217391304347, 'mean_conf': 0.847882091999054}, 0.4: {'n': 120, 'acc': 0.8, 'mean_conf': 0.8819727301597595}, 0.25: {'n': 120, 'acc': 0.8333333333333334, 'mean_conf': 0.8910102844238281}}
+gate: {
+ "fire_at_first_row": {
+  "fired": "120/120",
+  "correct_of_fired": 0.6333333333333333,
+  "wasted_chunks": 44,
+  "mean_lead_s": 1.1264468355018251
+ },
+ "conf>=0.6": {
+  "fired": "120/120",
+  "correct_of_fired": 0.6583333333333333,
+  "wasted_chunks": 41,
+  "mean_lead_s": 1.1097801688351585
+ },
+ "conf>=0.8": {
+  "fired": "116/120",
+  "correct_of_fired": 0.7155172413793104,
+  "wasted_chunks": 33,
+  "mean_lead_s": 0.9967853137352138
+ },
+ "conf>=0.9": {
+  "fired": "102/120",
+  "correct_of_fired": 0.803921568627451,
+  "wasted_chunks": 20,
+  "mean_lead_s": 0.8330527134977038
+ }
+}
+D:\smolVLA_Enhance\challenge\sim\spatial_brain.py:109: RuntimeWarning: Mean of empty slice
+  adapt[n] = dict(old_plus_new=float(np.mean(a_old)), old_plus_new_sd=float(np.std(a_old)), new_only=float(np.nanmean(a_new)))
+adapt n_new = 0 {'old_plus_new': 0.05, 'old_plus_new_sd': 0.0, 'new_only': nan}
+adapt n_new = 3 {'old_plus_new': 0.2783333333333333, 'old_plus_new_sd': 0.11886032886450287, 'new_only': 0.42000000000000004}
+adapt n_new = 5 {'old_plus_new': 0.43000000000000005, 'old_plus_new_sd': 0.12355835328567093, 'new_only': 0.5283333333333333}
+adapt n_new = 10 {'old_plus_new': 0.5900000000000001, 'old_plus_new_sd': 0.05759050847723665, 'new_only': 0.5416666666666666}
+adapt n_new = 20 {'old_plus_new': 0.6883333333333334, 'old_plus_new_sd': 0.06249444419750892, 'new_only': 0.7083333333333334}
+done

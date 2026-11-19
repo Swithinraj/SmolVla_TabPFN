@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LIBERO Studio | SmolVLA inference</title>
+  <link rel="stylesheet" href="/inference.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="top">
+      <div class="brand"><div class="logo">S</div><div><div class="eyebrow">SmolVLA Enhance</div><h1>LIBERO Studio</h1></div></div>
+      <div class="pill"><i class="live"></i>LOCAL INFERENCE VIEWER</div>
+    </header>
+    <section class="hero">
+      <div class="card intro"><div class="eyebrow">Recorded observations · model predictions</div><h2 id="task">Loading episode…</h2><p id="mode">Select a test episode to compare the trained model with its ground truth demonstration.</p><div class="meta"><span>EPISODE <strong id="episodeLabel">—</strong></span><span>FRAMES <strong id="frameCount">—</strong></span><span>RATE <strong>10 FPS</strong></span><span>MODEL <strong id="modelLabel">—</strong></span></div></div>
+      <div class="card picker"><label for="episode" class="label">Choose episode</label><select id="episode"></select><small id="episodeHint">Local dataset</small></div>
+    </section>
+    <section class="grid">
+      <div class="card camera"><div class="cam-head"><strong>Agent view</strong><span>Recorded camera 1</span></div><div class="video-wrap"><video id="agent" preload="metadata" muted playsinline></video><div class="corner">CAM 01</div></div></div>
+      <div class="card camera"><div class="cam-head"><strong>Wrist view</strong><span>Recorded camera 2</span></div><div class="video-wrap"><video id="wrist" preload="metadata" muted playsinline></video><div class="corner">CAM 02</div></div></div>
+    </section>
+    <section class="card controls"><div class="transport"><button class="play" id="play" aria-label="Play or pause">▶</button><button class="icon" id="back" title="Previous frame" aria-label="Previous frame">‹</button><button class="icon" id="forward" title="Next frame" aria-label="Next frame">›</button><span class="time" id="clock">00:00 / 00:00</span><input class="range" id="seek" type="range" min="0" max="100" value="0" aria-label="Episode timeline"><select id="speed" class="speed" aria-label="Playback speed"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="1.5">1.5×</option><option value="2">2×</option></select><span class="time" id="frameLabel">Frame —</span></div></section>
+    <section class="metrics"><div class="card metric loss"><span>Frame loss</span><strong id="frameLoss">—</strong><small>Flow-matching objective</small></div><div class="card metric mae"><span>Frame action MAE</span><strong id="frameMae">—</strong><small>Mean absolute error across 7 actions</small></div><div class="card metric"><span>Episode mean loss</span><strong id="meanLoss">—</strong><small>All frames in this episode</small></div><div class="card metric"><span>Episode mean MAE</span><strong id="meanMae">—</strong><small>All frames in this episode</small></div></section>
+    <section class="card rollout" id="rolloutPanel" hidden><div class="rollout-heading"><div><div class="eyebrow">Model-controlled simulation</div><h3>Closed-loop LIBERO rollout</h3><p>The trained policy chooses actions while MuJoCo advances the scene. This video is separate from the recorded test demonstration above.</p></div><div class="rollout-actions"><span class="rollout-status" id="rolloutStatus"></span><button class="rollout-play" id="rolloutPlay" type="button">Play rollout</button></div></div><div class="rollout-body"><div class="video-wrap"><video id="rolloutVideo" controls preload="metadata" muted playsinline></video><div class="corner model-corner">MODEL ROLLOUT</div></div><div class="rollout-details" id="rolloutDetails"></div></div></section>
+    <section class="lower">
+      <div class="stack">
+        <div class="card panel"><div class="section-title"><h3>Ground truth and model action</h3><select id="dimension" class="dimension" aria-label="Action dimension"></select></div><canvas id="actionChart" aria-label="Ground truth and predicted action chart"></canvas><div class="legend"><span><i class="swatch" style="background:var(--cyan)"></i>Ground truth</span><span><i class="swatch" style="background:var(--blue)"></i>Model prediction</span></div></div>
+        <div class="card panel"><div class="section-title"><h3>Loss and action error over time</h3><span>Current frame marker</span></div><canvas id="metricChart" aria-label="Loss and action error chart"></canvas><div class="legend"><span><i class="swatch" style="background:var(--amber)"></i>Flow-matching loss</span><span><i class="swatch" style="background:var(--pink)"></i>Action MAE</span></div></div>
+      </div>
+      <div class="stack">
+        <div class="card panel"><div class="section-title"><h3>Current action</h3><span id="stateLabel">Frame 0</span></div><table class="action-table"><thead><tr><th>Dim</th><th>Ground truth</th><th>Prediction</th><th>|Error|</th></tr></thead><tbody id="actions"></tbody></table></div>
+        <div class="card panel"><div class="section-title"><h3>Recorded robot state</h3><span>8 dimensions</span></div><div class="values" id="states"></div></div>
+      </div>
+    </section>
+    <div class="notice"><strong>About the plots and ground-truth videos.</strong> Each action prediction and loss value uses that frame's recorded cameras and robot state. The two videos above are ground-truth demonstrations, and the plotted loss is the fixed-seed flow-matching objective on recorded future actions. The separate model rollout, when available, follows its own simulator state and is not frame-aligned with these plots.</div>
+    <div class="footer">Local only · No data is uploaded</div>
+  </main>
+  <script src="/inference.js"></script>
+</body>
+</html>

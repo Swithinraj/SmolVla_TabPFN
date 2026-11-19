@@ -1,0 +1,24 @@
+sim:
+  type: libero
+  task: libero_10
+  fps: 20
+  kwargs:
+    gym_kwargs:
+      obs_type: pixels_agent_pos
+      render_mode: rgb_array
+      observation_height: 256
+      observation_width: 256
+      control_freq: 20
+      hard_reset: true
+      task_ids: [1]
+    camera_name: agentview_image,robot0_eye_in_hand_image
+    init_states: true
+    control_mode: relative
+    episode_length: 520
+    camera_name_mapping:
+    is_libero_plus: false
+deployment: libero
+zenoh:
+  listen_endpoints: [tcp/0.0.0.0:7448]
+max_envs: 1
+max_sessions: 1

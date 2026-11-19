@@ -1,0 +1,11 @@
+W1119 17:01:00.648000 30584 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+tabpfn ready: forecast latency 228 ms
+Loading  HuggingFaceTB/SmolVLM2-500M-Video-Instruct weights ...
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/489 [00:00<?, ?it/s]Loading weights:   6%|5         | 28/489 [00:00<00:01, 233.39it/s]Loading weights:  11%|#         | 52/489 [00:00<00:02, 216.07it/s]Loading weights:  15%|#5        | 74/489 [00:00<00:02, 187.52it/s]Loading weights:  19%|#9        | 95/489 [00:00<00:02, 193.75it/s]Loading weights:  24%|##3       | 115/489 [00:00<00:02, 154.70it/s]Loading weights:  28%|##7       | 136/489 [00:00<00:02, 162.01it/s]Loading weights:  31%|###1      | 154/489 [00:00<00:02, 159.48it/s]Loading weights:  35%|###4      | 171/489 [00:01<00:02, 156.75it/s]Loading weights:  39%|###8      | 190/489 [00:01<00:01, 163.75it/s]Loading weights:  43%|####2     | 208/489 [00:01<00:01, 150.99it/s]Loading weights:  46%|####6     | 226/489 [00:01<00:01, 153.95it/s]Loading weights:  50%|####9     | 243/489 [00:01<00:01, 153.16it/s]Loading weights:  54%|#####3    | 262/489 [00:01<00:01, 153.96it/s]Loading weights:  57%|#####6    | 278/489 [00:01<00:01, 146.05it/s]Loading weights:  64%|######3   | 312/489 [00:01<00:00, 195.56it/s]Loading weights:  72%|#######2  | 353/489 [00:01<00:00, 251.82it/s]Loading weights:  81%|########  | 394/489 [00:02<00:00, 289.50it/s]Loading weights:  89%|########9 | 437/489 [00:02<00:00, 328.82it/s]Loading weights:  97%|#########6| 473/489 [00:02<00:00, 308.74it/s]Loading weights: 100%|##########| 489/489 [00:02<00:00, 214.19it/s]
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+big smoother clean hard oracle: held 19/24 (nudged 8/9) touched 23 jerk 12531 points 6.3
+big smoother clean hard tabpfn: held 1/24 (nudged 1/9) touched 19 jerk 15454 points 0.3
+big smoother clean indist oracle: held 17/24 (nudged 0/0) touched 24 jerk 10145 points 6.7
+big smoother clean indist tabpfn: held 16/24 (nudged 0/0) touched 24 jerk 14361 points 4.7

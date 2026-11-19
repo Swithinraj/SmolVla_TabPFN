@@ -1,0 +1,54 @@
+stage2 run: D:\smolVLA_Enhance\outputs\so101_ball_20261118_011951
+=== record 2026-11-18T15:27:22.5676164+01:00
+tabpfn ready: forecast latency 191 ms
+25/400 episodes (25 launches tried)
+50/400 episodes (50 launches tried)
+75/400 episodes (75 launches tried)
+100/400 episodes (101 launches tried)
+125/400 episodes (126 launches tried)
+150/400 episodes (151 launches tried)
+175/400 episodes (176 launches tried)
+200/400 episodes (201 launches tried)
+225/400 episodes (226 launches tried)
+250/400 episodes (251 launches tried)
+275/400 episodes (276 launches tried)
+300/400 episodes (302 launches tried)
+325/400 episodes (327 launches tried)
+350/400 episodes (353 launches tried)
+375/400 episodes (378 launches tried)
+400/400 episodes (403 launches tried)
+done: 400 episodes, 21086 frames -> data\so101_ball_fc_train
+=== train 2026-11-18T16:52:41.2171589+01:00
+Init: D:\smolVLA_Enhance\outputs\so101_ball_20261118_011951\checkpoints\015000\pretrained_model; dataset: D:\smolVLA_Enhance\data\so101_ball_fc_train; output: d:\smolVLA_Enhance\outputs\so101_ball_stage3; steps: 10000; batch: 4
+Loading  HuggingFaceTB/SmolVLM2-500M-Video-Instruct weights ...
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+=== eval 2026-11-18T18:51:40.3773934+01:00
+tabpfn ready: forecast latency 194 ms
+noop hard {'n': 50, 'blocked': 0, 'block_rate': 0.0, 'touched': 0, 'crossed': 47}
+expert_oracle hard {'n': 50, 'blocked': 49, 'block_rate': 0.98, 'touched': 49, 'crossed': 0}
+noop indist {'n': 50, 'blocked': 6, 'block_rate': 0.12, 'touched': 5, 'crossed': 44}
+expert_oracle indist {'n': 50, 'blocked': 50, 'block_rate': 1.0, 'touched': 50, 'crossed': 0}
+Loading  HuggingFaceTB/SmolVLM2-500M-Video-Instruct weights ...
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+stage2 hard tabpfn: blocked 20/50 (nudged 10/26) touched 44
+stage2 hard cv: blocked 17/50 (nudged 8/26) touched 49
+stage2 hard oracle: blocked 36/50 (nudged 17/26) touched 49
+stage2 hard none: blocked 13/50 (nudged 6/26) touched 18
+stage2 indist tabpfn: blocked 45/50 (nudged 0/0) touched 50
+stage2 indist cv: blocked 27/50 (nudged 0/0) touched 50
+stage2 indist oracle: blocked 50/50 (nudged 0/0) touched 50
+stage2 indist none: blocked 28/50 (nudged 0/0) touched 28
+Loading  HuggingFaceTB/SmolVLM2-500M-Video-Instruct weights ...
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+stage3 hard tabpfn: blocked 15/50 (nudged 7/26) touched 27
+stage3 hard cv: blocked 18/50 (nudged 9/26) touched 27
+stage3 hard oracle: blocked 16/50 (nudged 9/26) touched 30
+stage3 hard none: blocked 14/50 (nudged 9/26) touched 25
+stage3 indist tabpfn: blocked 35/50 (nudged 0/0) touched 37
+stage3 indist cv: blocked 37/50 (nudged 0/0) touched 43
+stage3 indist oracle: blocked 28/50 (nudged 0/0) touched 34
+stage3 indist none: blocked 38/50 (nudged 0/0) touched 37
+finished 2026-11-19T01:32:13.5262441+01:00

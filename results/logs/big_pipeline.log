@@ -1,0 +1,47 @@
+=== big train 2026-11-19T07:05:37.5021148+01:00
+Init: outputs\catch_pilot_s2\checkpoints\003000\pretrained_model; dataset: D:\smolVLA_Enhance\data\so101_catch_v2; output: outputs\catch_big; steps: 12000; batch: 4
+Loading  HuggingFaceTB/SmolVLM2-500M-Video-Instruct weights ...
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+=== big eval 2026-11-19T09:26:19.4451859+01:00
+tabpfn ready: forecast latency 200 ms
+Loading  HuggingFaceTB/SmolVLM2-500M-Video-Instruct weights ...
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+big smooth clean hard oracle: held 22/24 (nudged 9/9) touched 24 jerk 18188 points 4.8
+big smooth clean hard tabpfn: held 7/24 (nudged 4/9) touched 20 jerk 24195 points 1.3
+big smooth clean hard none: held 5/24 (nudged 3/9) touched 21 jerk 22400 points 0.9
+big smooth clean indist oracle: held 20/24 (nudged 0/0) touched 23 jerk 15801 points 4.9
+big smooth clean indist tabpfn: held 20/24 (nudged 0/0) touched 24 jerk 22880 points 3.6
+big smooth clean indist none: held 12/24 (nudged 0/0) touched 22 jerk 23152 points 2.2
+big smooth real1 hard oracle: held 19/24 (nudged 9/9) touched 23 jerk 25703 points 3.0
+big smooth real1 hard tabpfn: held 4/24 (nudged 1/9) touched 20 jerk 37326 points 0.6
+big smooth real1 hard none: held 4/24 (nudged 1/9) touched 21 jerk 32794 points 0.6
+big smooth real1 indist oracle: held 19/24 (nudged 0/0) touched 24 jerk 22112 points 3.7
+big smooth real1 indist tabpfn: held 13/24 (nudged 0/0) touched 23 jerk 34660 points 1.8
+big smooth real1 indist none: held 12/24 (nudged 0/0) touched 23 jerk 32658 points 1.7
+big smoother clean hard oracle: held 19/24 (nudged 8/9) touched 24 jerk 10936 points 6.8
+big smoother clean hard tabpfn: held 9/24 (nudged 4/9) touched 22 jerk 15621 points 2.5
+big smoother clean hard none: held 6/24 (nudged 3/9) touched 21 jerk 14795 points 1.7
+big smoother clean indist oracle: held 19/24 (nudged 0/0) touched 24 jerk 9163 points 7.7
+big smoother clean indist tabpfn: held 16/24 (nudged 0/0) touched 24 jerk 15869 points 4.3
+big smoother clean indist none: held 10/24 (nudged 0/0) touched 23 jerk 14725 points 2.7
+big smoother real1 hard oracle: held 14/24 (nudged 7/9) touched 23 jerk 16373 points 3.4
+big smoother real1 hard tabpfn: held 5/24 (nudged 2/9) touched 18 jerk 21253 points 1.0
+big smoother real1 hard none: held 1/24 (nudged 0/9) touched 18 jerk 19143 points 0.2
+big smoother real1 indist oracle: held 18/24 (nudged 0/0) touched 23 jerk 14207 points 5.5
+big smoother real1 indist tabpfn: held 8/24 (nudged 0/0) touched 24 jerk 20848 points 1.8
+big smoother real1 indist none: held 11/24 (nudged 0/0) touched 23 jerk 19050 points 2.4
+big safe clean hard oracle: held 23/24 (nudged 9/9) touched 24 jerk 16723 points 5.6
+big safe clean hard tabpfn: held 10/24 (nudged 5/9) touched 22 jerk 27228 points 1.7
+big safe clean hard none: held 8/24 (nudged 4/9) touched 21 jerk 24628 points 1.3
+big safe clean indist oracle: held 22/24 (nudged 0/0) touched 24 jerk 14749 points 5.9
+big safe clean indist tabpfn: held 15/24 (nudged 0/0) touched 23 jerk 24027 points 2.6
+big safe clean indist none: held 9/24 (nudged 0/0) touched 22 jerk 23443 points 1.6
+big safe real1 hard oracle: held 19/24 (nudged 9/9) touched 23 jerk 25340 points 3.1
+big safe real1 hard tabpfn: held 4/24 (nudged 1/9) touched 20 jerk 37326 points 0.6
+big safe real1 hard none: held 4/24 (nudged 1/9) touched 21 jerk 32794 points 0.6
+big safe real1 indist oracle: held 19/24 (nudged 0/0) touched 24 jerk 21850 points 3.8
+big safe real1 indist tabpfn: held 13/24 (nudged 0/0) touched 23 jerk 34660 points 1.8
+big safe real1 indist none: held 12/24 (nudged 0/0) touched 23 jerk 32658 points 1.7
+=== big done 2026-11-19T16:21:55.6034856+01:00
