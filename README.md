@@ -78,6 +78,11 @@ Example rollouts (clean sim, exact forecast, then TabPFN forecast on a hard laun
 Datasets, checkpoints (several GB) and the Python environment are **not** in the repository; REPRODUCE explains how to
 regenerate them. The earlier LIBERO / Franka work is kept in [docs/LIBERO_LEGACY.md](docs/LIBERO_LEGACY.md).
 
+## Continue on the cluster
+
+**[docs/CLUSTER_CONTINUE.md](docs/CLUSTER_CONTINUE.md)** is the hand-over guide: one-V100 rule, setup, smoke tests, and what to do next in order.
+Cluster job scripts: [scripts/cluster/](scripts/cluster/).
+
 ## Status and next steps
 
 Open items are in [docs/TODO.md](docs/TODO.md). The most important: retrain without the blue marker so the policy relies on the

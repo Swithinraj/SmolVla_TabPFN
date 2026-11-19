@@ -125,7 +125,7 @@ def main():
                 tv, my = pipe.vector(t)
             else:
                 tv, my = oracle_vector(t, tr, ys, cc[0], cc[1])
-            env.set_marker(*((X_INT, my) if my is not None else (0.8, 0.0)))
+            env.set_marker(*((X_INT, my) if (my is not None and not os.environ.get("NO_MARKER")) else (0.8, 0.0)))   # NO_MARKER=1: record without the blue dot
             if my is not None:
                 errs.append(abs(my - cc[0]))
             obs = rl.obs(env.observe())
