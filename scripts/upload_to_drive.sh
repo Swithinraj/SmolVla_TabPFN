@@ -1,7 +1,7 @@
 #!/bin/bash
 # Upload checkpoints, datasets and evaluation outputs to the shared Drive folder with rclone (remote "gdrive:").
 cd /d/smolVLA_Enhance
-F=18BWYkCl592-N_dSM5L2XeRnGBhfThkyl
+F="${DRIVE_FOLDER_ID:?set DRIVE_FOLDER_ID to the target Drive folder id}"
 R="gdrive:SmolVLA_TabPFN_SO101"
 RC="rclone copy --drive-root-folder-id $F --transfers 3 --drive-chunk-size 128M --stats 60s --stats-one-line -v"
 set -x
