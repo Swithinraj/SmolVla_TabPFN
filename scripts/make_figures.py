@@ -214,5 +214,98 @@ if abl:
     plt.close(fig)
     summary["marker_hsv_ablation"] = [dict(setting=a[0], split_cond=a[1], held=a[2], n=a[3]) for a in abl]
 
+# 7) retrained WITHOUT the marker (cluster run 2026-11-19): TabPFN targets, no marker, forecaster fed by HSV detections
+CELLS = [("indist", "clean"), ("indist", "real1"), ("hard", "clean"), ("hard", "real1")]
+NM = [("old model: marker + true track (reference)", "outputs/catch_big/eval/closed_loop.json", "big", "#CC79A7"),
+      ("old model: no marker, HSV", "results/catch_nomarker/eval_old_model_cluster.json", "run", "#E69F00"),
+      ("retrained no marker, from stage 2", "results/catch_nomarker/eval_from_stage2.json", "run", "#0072B2"),
+      ("retrained no marker, from catch_big", "results/catch_nomarker/eval_from_catch_big.json", "run", "#009E73")]
+nm_rows = []
+for lab, path, name, col in NM:
+    d = load(path)
+    if not d:
+        continue
+    for split, cond in CELLS:
+        for mode in ("tabpfn", "oracle", "none"):
+            k = f"{name}|smoother|{cond}|{split}|{mode}"
+            if k in d["results"]:
+                nm_rows.append(dict(setting=lab, split=split, cond=cond, mode=mode, held=d["results"][k]["held"],
+                                    n=d["results"][k]["n"], jerk_median=d["results"][k]["jerk_median"], color=col))
+if nm_rows:
+    fig, ax = plt.subplots(figsize=(10, 3.8))
+    present = [x for x in NM if any(r["setting"] == x[0] for r in nm_rows)]
+    w = 0.8 / len(present)
+    x = np.arange(len(CELLS))
+    for i, (lab, _, _, col) in enumerate(present):
+        for j, (split, cond) in enumerate(CELLS):
+            v = [r for r in nm_rows if r["setting"] == lab and r["split"] == split and r["cond"] == cond and r["mode"] == "tabpfn"]
+            if v:
+                pos = x[j] + (i - (len(present) - 1) / 2) * w
+                ax.bar(pos, 100 * v[0]["held"] / v[0]["n"], w * 0.92, color=col, label=lab if j == 0 else None)
+                ax.text(pos, 100 * v[0]["held"] / v[0]["n"] + 1.5, f"{v[0]['held']}/{v[0]['n']}", ha="center", fontsize=7)
+    ax.axhline(100 * 9 / 24, color="#666666", lw=0.8, ls="--")
+    ax.text(len(CELLS) - 0.5, 100 * 9 / 24 + 1.5, "target on hard: 9/24", ha="right", fontsize=7, color="#444444")
+    ax.set_xticks(x)
+    ax.set_xticklabels([f"{s_}/{'randomized' if c_ == 'real1' else 'clean'}" for s_, c_ in CELLS])
+    ax.set_ylabel("held (%)")
+    ax.set_ylim(0, 105)
+    ax.set_title("Retrained without the marker: TabPFN targets, forecaster fed only by HSV detections (n = 24)", loc="left", fontsize=9)
+    ax.legend(frameon=False, fontsize=7, ncol=2, loc="upper right")
+    fig.tight_layout()
+    fig.savefig(OUT / "nomarker_retrain.png", bbox_inches="tight")
+    plt.close(fig)
+    summary["nomarker_retrain"] = [{k: v for k, v in r.items() if k != "color"} for r in nm_rows]
+
+# 8) smoothness sweep (inference only): 5_catch_big, oracle targets, clean, marker on
+sw = load("results/catch_big/smooth_sweep.json")
+if sw:
+    VAR = []
+    for k in sw["results"]:
+        v = k.split("|")[1]
+        if v not in VAR:
+            VAR.append(v)
+    pretty = lambda v: "smoother (p5 e0.05 a0.7)" if v == "smoother" else v.replace("e", " e").replace("a", " a")  # noqa: E731
+    rows = []
+    for v in VAR:
+        for split in ("indist", "hard"):
+            r = sw["results"].get(f"run|{v}|clean|{split}|oracle")
+            if r:
+                rows.append(dict(variant=v, split=split, held=r["held"], n=r["n"], jerk_median=r["jerk_median"],
+                                 points_per_launch=r["points"] / r["n"]))
+    fig, axs = plt.subplots(1, 3, figsize=(12, 3.8), sharey=True)
+    y = np.arange(len(VAR))[::-1]
+    h = 0.38
+    for si, (split, col) in enumerate((("indist", "#0072B2"), ("hard", "#E69F00"))):
+        rr = {r["variant"]: r for r in rows if r["split"] == split}
+        off = (0.5 - si) * h
+        for vi, v in enumerate(VAR):
+            if v not in rr:
+                continue
+            r = rr[v]
+            axs[0].barh(y[vi] + off, r["held"], h * 0.9, color=col, label=split if vi == 0 else None)
+            axs[0].text(r["held"] + 0.3, y[vi] + off, f"{r['held']}/{r['n']}", va="center", fontsize=6.5)
+            axs[1].barh(y[vi] + off, r["jerk_median"], h * 0.9, color=col)
+            axs[2].barh(y[vi] + off, r["points_per_launch"], h * 0.9, color=col)
+            axs[2].text(r["points_per_launch"] + 0.01, y[vi] + off, f"{r['points_per_launch']:.2f}", va="center", fontsize=6.5)
+    axs[0].set_yticks(y)
+    axs[0].set_yticklabels([pretty(v) for v in VAR], fontsize=8)
+    axs[0].set_xlabel("held (of 24)")
+    axs[0].set_xlim(0, 27)
+    axs[1].axvline(4000, color="#666666", lw=0.8, ls="--")
+    axs[1].axvline(6000, color="#666666", lw=0.8, ls=":")
+    axs[1].text(3850, len(VAR) - 0.4, "score 4000", fontsize=6.5, ha="right", color="#444444")
+    axs[1].text(6150, len(VAR) - 0.4, "goal 6000", fontsize=6.5, ha="left", color="#444444")
+    axs[1].set_xlabel("median jerk (deg/s³)")
+    axs[2].axvline(0.6, color="#666666", lw=0.8, ls=":")
+    axs[2].set_xlabel("points per launch (goal 0.6)")
+    axs[2].set_xlim(0, 0.75)
+    axs[0].legend(frameon=False, fontsize=8, loc="lower right")
+    fig.suptitle("Smoothing sweep, inference only (5_catch_big, oracle targets, clean). p = re-query period, e = chunk-blend decay, "
+                 "a = EMA", x=0.01, ha="left", fontsize=9)
+    fig.tight_layout()
+    fig.savefig(OUT / "smoothness_sweep.png", bbox_inches="tight")
+    plt.close(fig)
+    summary["smoothness_sweep"] = rows
+
 json.dump(summary, open(R / "results/summary.json", "w"), indent=1)
 print("figures:", sorted(p.name for p in OUT.glob("*.png")))

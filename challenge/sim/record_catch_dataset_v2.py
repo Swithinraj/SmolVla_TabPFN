@@ -10,6 +10,9 @@ Policy inputs (state dims 7-12 + blue marker at the target crossing point):
   tolerate forecast error second (stage 3, trained on noisy targets only, learned to ignore the target).
 Labels (actions): scripted catch expert planned from the TRUE crossing. Only episodes that end holding the ball are kept.
 Launch mix: half easy, half irregular (hidden slope + rough patch + 50% random mid-roll nudge).
+--tracker hsv: the forecaster (tabpfn / cv episodes) is fed ONLY by HSV detections on the rendered (and, with realism,
+randomized) top camera image, exactly as in eval_catch.py --tracker hsv, so training inputs match deployment.
+Combine with NO_MARKER=1 to record the real-world setting (no blue dot).
 """
 from __future__ import annotations
 
@@ -42,9 +45,31 @@ HOLD_AFTER_LIFT = 0.7
 KIND_P = (("oracle", 0.3), ("tabpfn", 0.5), ("cv", 0.2))
 
 
-def build_tabpfn(env, expert):
+def tabpfn_context(env, expert):
+    """The forecaster's 1500-launch context rows. Deterministic (fixed seeds), so they are cached in .cache/ and shared
+    by all recording shards. Rendering is switched off while building them: env.reset() would otherwise render both
+    cameras for every launch (wasted, and very slow with software rendering on CPU nodes); physics and RNG are unchanged."""
+    cache = Path(__file__).resolve().parents[2] / ".cache" / f"tabpfn_ctx_v2_1500_0_4_{NOISE}.npz"
+    if cache.exists():
+        z = np.load(cache)
+        return z["X"], z["T"], z["P"]
     rng0 = np.random.default_rng(1)
-    X, T, P = make_rows_v2(expert.ghost, env, lambda e, s: mixed_irregular(e, s), 1500, 0, 4, rng0, noise=NOISE)
+    rend, env.renderer = env.renderer, None
+    try:
+        X, T, P = make_rows_v2(expert.ghost, env, lambda e, s: mixed_irregular(e, s), 1500, 0, 4, rng0, noise=NOISE)
+    finally:
+        env.renderer = rend
+    cache.parent.mkdir(parents=True, exist_ok=True)
+    tmp = cache.with_name(f"{cache.stem}.{os.getpid()}.npz")
+    np.savez(tmp, X=X, T=T, P=P)
+    os.replace(tmp, cache)
+    return X, T, P
+
+
+def build_tabpfn(env, expert):
+    t0 = time.time()
+    X, T, P = tabpfn_context(env, expert)
+    print(f"tabpfn context: {len(X)} rows in {time.time() - t0:.0f} s", flush=True)
     tp = TabPFNForecasterV2().fit(X, T, P)
     probe = X[0]
     tp.predict(probe)
@@ -71,6 +96,11 @@ def main():
     ap.add_argument("--realism", type=float, default=1.0)
     ap.add_argument("--clean-frac", type=float, default=0.25, help="fraction of episodes recorded with randomization off")
     ap.add_argument("--repo-id", default="local/so101_catch_train")
+    ap.add_argument("--tracker", default="truth", choices=["truth", "hsv"],
+                    help="hsv: forecaster sees only HSV ball detections on the top camera (deployment setting)")
+    ap.add_argument("--delay", default="measured", choices=["measured", "random"],
+                    help="forecast compute delay: measured TabPFN latency clipped to 0.15-0.30 s (original), or drawn "
+                         "per episode from U(0.15, 0.30) s (independent of the recording hardware; CPU nodes measure >0.3 s)")
     a = ap.parse_args()
     root = Path(a.root)
     if root.exists():
@@ -79,6 +109,11 @@ def main():
         shutil.rmtree(root)
     env = CatchEnv(cameras=("top", "front"), height=a.height, width=a.width, episode_seconds=7.0)
     expert = CatchExpert(env)
+    hsv = None
+    if a.tracker == "hsv":
+        from hsv_tracker import HSVTracker
+        hsv = HSVTracker(env)
+        print("HSV tracker calibrated with", hsv.n_calib, "points", flush=True)
     tp, delay = build_tabpfn(env, expert)
     delay = float(np.clip(delay, 0.15, 0.30))      # deployment-like compute delay, independent of recording load
     print(f"tabpfn ready: forecast delay {1000 * delay:.0f} ms", flush=True)
@@ -94,6 +129,7 @@ def main():
                                robot_type="so101_follower", use_videos=True)
     kinds, probs = zip(*KIND_P)
     sidecar, kept, tried = [], 0, 0
+    t_start = time.time()
     while kept < a.episodes:
         seed = a.seed0 + tried
         tried += 1
@@ -106,7 +142,8 @@ def main():
         if c is None or not expert.ok:
             continue
         kind = str(rng.choice(kinds, p=probs))
-        pipe = ForecastPipeline(kind, tp=tp, delay=delay) if kind in ("tabpfn", "cv") else None
+        ep_delay = float(rng.uniform(0.15, 0.30)) if a.delay == "random" else delay
+        pipe = ForecastPipeline(kind, tp=tp, delay=ep_delay) if kind in ("tabpfn", "cv") else None
         tt, xt, yt, cc = expert.ghost.track()                      # arm-independent ball track (kick-aware)
         if cc is None:
             continue
@@ -117,7 +154,13 @@ def main():
         info = {}
         while env.t / env.fps < t_end and env.t < env.max_steps:
             i, t = env.t, env.t / env.fps
-            if pipe is not None:
+            if pipe is not None and hsv is not None:     # deployment setting: forecaster fed ONLY by HSV detections
+                img = rl.obs(dict(state=env.joint_state(), top=hsv._render_top()))["top"]
+                pt = hsv(img)
+                if pt is not None:
+                    pipe.update(i, t, pt[0], pt[1])
+                tv, my = pipe.vector(t)
+            elif pipe is not None:
                 if i < len(tt):
                     rd = rl.track(xt[i], yt[i])
                     if rd is not None:
@@ -142,11 +185,12 @@ def main():
                           "observation.state": f["state"], "action": f["action"], "task": TASK})
         ds.save_episode()
         sidecar.append(dict(episode=kept, seed=seed, irregular=hard, kind=kind, delay_steps=d, realism=rl.strength, launch=env.launch,
-                            crossing_y=cc[0], crossing_t=cc[1], frames=len(frames),
+                            crossing_y=cc[0], crossing_t=cc[1], frames=len(frames), tracker=a.tracker, forecast_delay_s=ep_delay,
+                            no_marker=bool(os.environ.get("NO_MARKER")),
                             mean_target_y_err_m=float(np.mean(errs)) if errs else None))
         kept += 1
-        if kept % 10 == 0:
-            print(f"{kept}/{a.episodes} episodes ({tried} launches tried, {ds.meta.total_frames} frames)", flush=True)
+        print(f"{kept}/{a.episodes} episodes ({tried} launches tried, {ds.meta.total_frames} frames, "
+              f"{time.time() - t_start:.0f} s)", flush=True)
     ds.finalize()
     (root / "sidecar.json").write_text(json.dumps(sidecar))
     print(f"done: {kept} episodes, {ds.meta.total_frames} frames -> {root}")

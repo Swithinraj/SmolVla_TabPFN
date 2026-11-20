@@ -3,13 +3,19 @@
 Ordered by what most changes the outcome. Each item says what to test and how we would know it worked.
 
 ## Highest priority
-1. **Retrain without the blue marker.** The policy leans on the dot when the forecast is noisy (hard launches with TabPFN
-   targets: 9/24 with the dot, 1/24 without). Re-record the 400 demonstrations with the dot hidden (or never rendered), keep the 6
-   numeric forecast values in the state, train from the current checkpoint, and re-run the marker-off / HSV evaluation. Needs
-   about 6 h of recording and 2.5 h of training. Success: TabPFN targets on hard launches back to 9/24 or better without the dot.
-2. **Bring jerk down to the score threshold (4000 deg/s³; now 9k–16k).** Ideas, cheapest first: stronger blending of chunks;
-   executing fewer steps of each chunk; a jerk penalty or smoothed-label fine-tune (train on the expert's min-jerk trajectories
-   resampled to the same chunk length); longer training. Success: oracle-target points per launch above 0.6.
+1. **Make the HSV-fed forecast good enough on hard launches.** Retraining without the marker is done (2026-11-19, cluster;
+   [RESULTS.md](RESULTS.md#retrained-without-the-marker-cluster-one-v100-2026-11-19)): exact targets hold 20–21/24 on hard
+   launches without the dot, but HSV-fed TabPFN targets only 3–4/24 (goal 9/24). Next, cheapest first: (a) a lead-time check of
+   the HSV-fed forecast (`forecast_check.py` with HSV input) on hard launches; (b) stop feeding the forecaster once the ball is
+   past the catch plane or occluded by the arm (detections of the ball in the gripper currently keep updating the target);
+   (c) then item 3 (noise / delay augmentation) on the new data. Success: TabPFN targets on hard launches at 9/24 or better
+   without the dot.
+2. **Bring jerk down to the score threshold (4000 deg/s³; now 9k–16k).** The inference-only sweep is done
+   ([RESULTS.md](RESULTS.md#smoothing-sweep-inference-only-cluster-one-v100-2026-11-20)): re-querying every 3 steps instead of
+   5 cuts jerk ~40% at the same catch rate (points per launch 0.29 → 0.49); more EMA loses catches. Next: p3 combined with more
+   blending (e 0.02/0.01) and a 0.75, p4, and p3 as the controller for the no-marker models; then the training-side fixes (a
+   jerk penalty or a smoothed-label fine-tune on the expert's min-jerk trajectories resampled to the chunk length).
+   Success: median jerk under 6000 with the catch rate unchanged, oracle-target points per launch above 0.6.
 3. **Train the policy to use the forecast when it is noisy**, not only exact: noise-augmented targets inside the training loop, and
    the forecast delay randomized (0.15–0.30 s) so late kick information is expected. Success: hard-launch TabPFN catch rate
    closes part of the gap to oracle (9/24 vs 19/24).

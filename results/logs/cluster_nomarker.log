@@ -1,0 +1,312 @@
+# Cluster run 2026-11-19/20 (one V100). Excerpts of logs/*.out: recording, training loss every 2000 steps, evaluation lines.
+## recording (gpu_record_nomarker.sbatch)
+20:58 shard nm_0 seeds from 900000
+done: 50 episodes, 4663 frames -> data/catch_nm_0
+21:05 shard nm_1 seeds from 910000
+done: 50 episodes, 4699 frames -> data/catch_nm_1
+21:12 shard nm_2 seeds from 920000
+done: 50 episodes, 4672 frames -> data/catch_nm_2
+21:20 shard nm_3 seeds from 930000
+done: 50 episodes, 4481 frames -> data/catch_nm_3
+21:27 shard nm_4 seeds from 940000
+done: 50 episodes, 4577 frames -> data/catch_nm_4
+21:33 shard nm_5 seeds from 950000
+done: 50 episodes, 4573 frames -> data/catch_nm_5
+21:40 shard nm_6 seeds from 960000
+done: 50 episodes, 4702 frames -> data/catch_nm_6
+21:47 shard nm_7 seeds from 970000
+done: 50 episodes, 4617 frames -> data/catch_nm_7
+merged ['catch_nm_0', 'catch_nm_1', 'catch_nm_2', 'catch_nm_3', 'catch_nm_4', 'catch_nm_5', 'catch_nm_6', 'catch_nm_7'] -> data/so101_catch_nm episodes 400
+## catch_nm_from_s2 (logs/g-train-nm-492065.out)
+step:2K smpl:6K ep:65 epch:0.16 loss:0.106
+step:2K smpl:6K ep:67 epch:0.17 loss:0.115
+step:2K smpl:6K ep:69 epch:0.17 loss:0.104
+step:2K smpl:7K ep:71 epch:0.18 loss:0.112
+step:2K smpl:7K ep:74 epch:0.18 loss:0.086
+step:2K smpl:7K ep:76 epch:0.19 loss:0.108
+step:2K smpl:7K ep:78 epch:0.19 loss:0.144
+step:2K smpl:7K ep:80 epch:0.20 loss:0.093
+step:2K smpl:8K ep:82 epch:0.21 loss:0.092
+step:2K smpl:8K ep:84 epch:0.21 loss:0.113
+step:2K smpl:8K ep:87 epch:0.22 loss:0.102
+step:2K smpl:8K ep:89 epch:0.22 loss:0.111
+step:2K smpl:8K ep:91 epch:0.23 loss:0.102
+step:2K smpl:9K ep:93 epch:0.23 loss:0.104
+step:2K smpl:9K ep:95 epch:0.24 loss:0.130
+step:2K smpl:9K ep:97 epch:0.24 loss:0.100
+step:2K smpl:9K ep:100 epch:0.25 loss:0.136
+step:2K smpl:9K ep:102 epch:0.25 loss:0.089
+step:2K smpl:10K ep:104 epch:0.26 loss:0.094
+step:2K smpl:10K ep:106 epch:0.26 loss:0.115
+step:2K smpl:10K ep:108 epch:0.27 loss:0.099
+step:4K smpl:14K ep:151 epch:0.38 loss:0.093
+step:4K smpl:14K ep:154 epch:0.38 loss:0.091
+step:4K smpl:14K ep:156 epch:0.39 loss:0.100
+step:4K smpl:15K ep:158 epch:0.39 loss:0.085
+step:4K smpl:15K ep:160 epch:0.40 loss:0.100
+step:4K smpl:15K ep:162 epch:0.41 loss:0.071
+step:4K smpl:15K ep:164 epch:0.41 loss:0.112
+step:4K smpl:15K ep:167 epch:0.42 loss:0.101
+step:4K smpl:16K ep:169 epch:0.42 loss:0.084
+step:4K smpl:16K ep:171 epch:0.43 loss:0.092
+step:4K smpl:16K ep:173 epch:0.43 loss:0.068
+step:4K smpl:16K ep:175 epch:0.44 loss:0.083
+step:4K smpl:16K ep:177 epch:0.44 loss:0.084
+step:4K smpl:17K ep:180 epch:0.45 loss:0.105
+step:4K smpl:17K ep:182 epch:0.45 loss:0.079
+step:4K smpl:17K ep:184 epch:0.46 loss:0.088
+step:4K smpl:17K ep:186 epch:0.47 loss:0.068
+step:4K smpl:17K ep:188 epch:0.47 loss:0.074
+step:4K smpl:18K ep:190 epch:0.48 loss:0.084
+step:4K smpl:18K ep:193 epch:0.48 loss:0.091
+step:4K smpl:18K ep:195 epch:0.49 loss:0.077
+step:6K smpl:22K ep:238 epch:0.59 loss:0.108
+step:6K smpl:22K ep:240 epch:0.60 loss:0.070
+step:6K smpl:22K ep:242 epch:0.61 loss:0.072
+step:6K smpl:23K ep:244 epch:0.61 loss:0.062
+step:6K smpl:23K ep:247 epch:0.62 loss:0.070
+step:6K smpl:23K ep:249 epch:0.62 loss:0.069
+step:6K smpl:23K ep:251 epch:0.63 loss:0.081
+step:6K smpl:23K ep:253 epch:0.63 loss:0.081
+step:6K smpl:24K ep:255 epch:0.64 loss:0.068
+step:6K smpl:24K ep:257 epch:0.64 loss:0.100
+step:6K smpl:24K ep:260 epch:0.65 loss:0.048
+step:6K smpl:24K ep:262 epch:0.65 loss:0.074
+step:6K smpl:24K ep:264 epch:0.66 loss:0.053
+step:6K smpl:25K ep:266 epch:0.67 loss:0.063
+step:6K smpl:25K ep:268 epch:0.67 loss:0.056
+step:6K smpl:25K ep:270 epch:0.68 loss:0.073
+step:6K smpl:25K ep:273 epch:0.68 loss:0.062
+step:6K smpl:25K ep:275 epch:0.69 loss:0.066
+step:6K smpl:26K ep:277 epch:0.69 loss:0.049
+step:6K smpl:26K ep:279 epch:0.70 loss:0.065
+step:6K smpl:26K ep:281 epch:0.70 loss:0.081
+step:8K smpl:30K ep:324 epch:0.81 loss:0.063
+step:8K smpl:30K ep:327 epch:0.82 loss:0.060
+step:8K smpl:30K ep:329 epch:0.82 loss:0.061
+step:8K smpl:31K ep:331 epch:0.83 loss:0.047
+step:8K smpl:31K ep:333 epch:0.83 loss:0.060
+step:8K smpl:31K ep:335 epch:0.84 loss:0.059
+step:8K smpl:31K ep:337 epch:0.84 loss:0.050
+step:8K smpl:31K ep:340 epch:0.85 loss:0.054
+step:8K smpl:32K ep:342 epch:0.85 loss:0.049
+step:8K smpl:32K ep:344 epch:0.86 loss:0.059
+step:8K smpl:32K ep:346 epch:0.87 loss:0.065
+step:8K smpl:32K ep:348 epch:0.87 loss:0.049
+step:8K smpl:32K ep:350 epch:0.88 loss:0.064
+step:8K smpl:33K ep:353 epch:0.88 loss:0.049
+step:8K smpl:33K ep:355 epch:0.89 loss:0.061
+step:8K smpl:33K ep:357 epch:0.89 loss:0.056
+step:8K smpl:33K ep:359 epch:0.90 loss:0.053
+step:8K smpl:33K ep:361 epch:0.90 loss:0.062
+step:8K smpl:34K ep:363 epch:0.91 loss:0.066
+step:8K smpl:34K ep:366 epch:0.91 loss:0.062
+step:8K smpl:34K ep:368 epch:0.92 loss:0.052
+step:10K smpl:38K ep:411 epch:1.03 loss:0.040
+step:10K smpl:38K ep:413 epch:1.03 loss:0.042
+step:10K smpl:38K ep:415 epch:1.04 loss:0.064
+step:10K smpl:39K ep:417 epch:1.04 loss:0.052
+step:10K smpl:39K ep:420 epch:1.05 loss:0.052
+step:10K smpl:39K ep:422 epch:1.05 loss:0.047
+step:10K smpl:39K ep:424 epch:1.06 loss:0.053
+step:10K smpl:39K ep:426 epch:1.07 loss:0.051
+step:10K smpl:40K ep:428 epch:1.07 loss:0.063
+step:10K smpl:40K ep:430 epch:1.08 loss:0.048
+step:10K smpl:40K ep:433 epch:1.08 loss:0.043
+step:10K smpl:40K ep:435 epch:1.09 loss:0.052
+step:10K smpl:40K ep:437 epch:1.09 loss:0.048
+step:10K smpl:41K ep:439 epch:1.10 loss:0.071
+step:10K smpl:41K ep:441 epch:1.10 loss:0.041
+step:10K smpl:41K ep:443 epch:1.11 loss:0.059
+step:10K smpl:41K ep:446 epch:1.11 loss:0.051
+step:10K smpl:41K ep:448 epch:1.12 loss:0.054
+step:10K smpl:42K ep:450 epch:1.12 loss:0.045
+step:10K smpl:42K ep:452 epch:1.13 loss:0.057
+step:10K smpl:42K ep:454 epch:1.14 loss:0.052
+step:12K smpl:46K ep:498 epch:1.24 loss:0.046
+step:12K smpl:46K ep:500 epch:1.25 loss:0.046
+step:12K smpl:46K ep:502 epch:1.25 loss:0.047
+step:12K smpl:47K ep:504 epch:1.26 loss:0.043
+step:12K smpl:47K ep:506 epch:1.27 loss:0.052
+step:12K smpl:47K ep:508 epch:1.27 loss:0.050
+step:12K smpl:47K ep:510 epch:1.28 loss:0.065
+step:12K smpl:47K ep:513 epch:1.28 loss:0.075
+step:12K smpl:48K ep:515 epch:1.29 loss:0.041
+step:12K smpl:48K ep:517 epch:1.29 loss:0.042
+step:12K smpl:48K ep:519 epch:1.30 loss:0.056
+tabpfn ready: forecast latency 156 ms
+run smoother clean hard oracle: held 20/24 (nudged 8/9) touched 23 jerk 11989 points 6.9
+run smoother clean hard tabpfn: held 3/24 (nudged 1/9) touched 22 jerk 13876 points 1.0
+run smoother clean hard none: held 1/24 (nudged 1/9) touched 21 jerk 11990 points 0.3
+run smoother clean indist oracle: held 20/24 (nudged 0/0) touched 24 jerk 9474 points 8.4
+run smoother clean indist tabpfn: held 20/24 (nudged 0/0) touched 24 jerk 14262 points 5.8
+run smoother clean indist none: held 8/24 (nudged 0/0) touched 24 jerk 12454 points 2.6
+run smoother real1 hard oracle: held 17/24 (nudged 7/9) touched 23 jerk 14395 points 4.7
+run smoother real1 hard tabpfn: held 6/24 (nudged 2/9) touched 21 jerk 19006 points 1.4
+run smoother real1 hard none: held 3/24 (nudged 1/9) touched 18 jerk 17884 points 0.8
+run smoother real1 indist oracle: held 15/24 (nudged 0/0) touched 24 jerk 12697 points 5.3
+run smoother real1 indist tabpfn: held 14/24 (nudged 0/0) touched 24 jerk 20301 points 3.1
+run smoother real1 indist none: held 8/24 (nudged 0/0) touched 23 jerk 16820 points 2.2
+## catch_nm_from_big (logs/g-train-nm-492066.out)
+step:2K smpl:6K ep:65 epch:0.16 loss:0.072
+step:2K smpl:6K ep:67 epch:0.17 loss:0.086
+step:2K smpl:6K ep:69 epch:0.17 loss:0.075
+step:2K smpl:7K ep:71 epch:0.18 loss:0.085
+step:2K smpl:7K ep:74 epch:0.18 loss:0.066
+step:2K smpl:7K ep:76 epch:0.19 loss:0.080
+step:2K smpl:7K ep:78 epch:0.19 loss:0.104
+step:2K smpl:7K ep:80 epch:0.20 loss:0.076
+step:2K smpl:8K ep:82 epch:0.21 loss:0.071
+step:2K smpl:8K ep:84 epch:0.21 loss:0.080
+step:2K smpl:8K ep:87 epch:0.22 loss:0.081
+step:2K smpl:8K ep:89 epch:0.22 loss:0.087
+step:2K smpl:8K ep:91 epch:0.23 loss:0.076
+step:2K smpl:9K ep:93 epch:0.23 loss:0.081
+step:2K smpl:9K ep:95 epch:0.24 loss:0.098
+step:2K smpl:9K ep:97 epch:0.24 loss:0.076
+step:2K smpl:9K ep:100 epch:0.25 loss:0.111
+step:2K smpl:9K ep:102 epch:0.25 loss:0.074
+step:2K smpl:10K ep:104 epch:0.26 loss:0.077
+step:2K smpl:10K ep:106 epch:0.26 loss:0.089
+step:2K smpl:10K ep:108 epch:0.27 loss:0.080
+step:4K smpl:14K ep:151 epch:0.38 loss:0.077
+step:4K smpl:14K ep:154 epch:0.38 loss:0.079
+step:4K smpl:14K ep:156 epch:0.39 loss:0.082
+step:4K smpl:15K ep:158 epch:0.39 loss:0.073
+step:4K smpl:15K ep:160 epch:0.40 loss:0.086
+step:4K smpl:15K ep:162 epch:0.41 loss:0.060
+step:4K smpl:15K ep:164 epch:0.41 loss:0.097
+step:4K smpl:15K ep:167 epch:0.42 loss:0.087
+step:4K smpl:16K ep:169 epch:0.42 loss:0.069
+step:4K smpl:16K ep:171 epch:0.43 loss:0.075
+step:4K smpl:16K ep:173 epch:0.43 loss:0.056
+step:4K smpl:16K ep:175 epch:0.44 loss:0.072
+step:4K smpl:16K ep:177 epch:0.44 loss:0.074
+step:4K smpl:17K ep:180 epch:0.45 loss:0.092
+step:4K smpl:17K ep:182 epch:0.45 loss:0.069
+step:4K smpl:17K ep:184 epch:0.46 loss:0.075
+step:4K smpl:17K ep:186 epch:0.47 loss:0.059
+step:4K smpl:17K ep:188 epch:0.47 loss:0.064
+step:4K smpl:18K ep:190 epch:0.48 loss:0.076
+step:4K smpl:18K ep:193 epch:0.48 loss:0.080
+step:4K smpl:18K ep:195 epch:0.49 loss:0.066
+step:6K smpl:22K ep:238 epch:0.59 loss:0.093
+step:6K smpl:22K ep:240 epch:0.60 loss:0.061
+step:6K smpl:22K ep:242 epch:0.61 loss:0.061
+step:6K smpl:23K ep:244 epch:0.61 loss:0.054
+step:6K smpl:23K ep:247 epch:0.62 loss:0.058
+step:6K smpl:23K ep:249 epch:0.62 loss:0.060
+step:6K smpl:23K ep:251 epch:0.63 loss:0.074
+step:6K smpl:23K ep:253 epch:0.63 loss:0.070
+step:6K smpl:24K ep:255 epch:0.64 loss:0.060
+step:6K smpl:24K ep:257 epch:0.64 loss:0.090
+step:6K smpl:24K ep:260 epch:0.65 loss:0.043
+step:6K smpl:24K ep:262 epch:0.65 loss:0.065
+step:6K smpl:24K ep:264 epch:0.66 loss:0.048
+step:6K smpl:25K ep:266 epch:0.67 loss:0.054
+step:6K smpl:25K ep:268 epch:0.67 loss:0.049
+step:6K smpl:25K ep:270 epch:0.68 loss:0.066
+step:6K smpl:25K ep:273 epch:0.68 loss:0.053
+step:6K smpl:25K ep:275 epch:0.69 loss:0.056
+step:6K smpl:26K ep:277 epch:0.69 loss:0.041
+step:6K smpl:26K ep:279 epch:0.70 loss:0.056
+step:6K smpl:26K ep:281 epch:0.70 loss:0.070
+step:8K smpl:30K ep:324 epch:0.81 loss:0.059
+step:8K smpl:30K ep:327 epch:0.82 loss:0.053
+step:8K smpl:30K ep:329 epch:0.82 loss:0.051
+step:8K smpl:31K ep:331 epch:0.83 loss:0.043
+step:8K smpl:31K ep:333 epch:0.83 loss:0.052
+step:8K smpl:31K ep:335 epch:0.84 loss:0.053
+step:8K smpl:31K ep:337 epch:0.84 loss:0.042
+step:8K smpl:31K ep:340 epch:0.85 loss:0.049
+step:8K smpl:32K ep:342 epch:0.85 loss:0.044
+step:8K smpl:32K ep:344 epch:0.86 loss:0.056
+step:8K smpl:32K ep:346 epch:0.87 loss:0.055
+step:8K smpl:32K ep:348 epch:0.87 loss:0.042
+step:8K smpl:32K ep:350 epch:0.88 loss:0.059
+step:8K smpl:33K ep:353 epch:0.88 loss:0.043
+step:8K smpl:33K ep:355 epch:0.89 loss:0.057
+step:8K smpl:33K ep:357 epch:0.89 loss:0.051
+step:8K smpl:33K ep:359 epch:0.90 loss:0.050
+step:8K smpl:33K ep:361 epch:0.90 loss:0.058
+step:8K smpl:34K ep:363 epch:0.91 loss:0.060
+step:8K smpl:34K ep:366 epch:0.91 loss:0.056
+step:8K smpl:34K ep:368 epch:0.92 loss:0.048
+step:10K smpl:38K ep:411 epch:1.03 loss:0.035
+step:10K smpl:38K ep:413 epch:1.03 loss:0.037
+step:10K smpl:38K ep:415 epch:1.04 loss:0.057
+step:10K smpl:39K ep:417 epch:1.04 loss:0.048
+step:10K smpl:39K ep:420 epch:1.05 loss:0.048
+step:10K smpl:39K ep:422 epch:1.05 loss:0.041
+step:10K smpl:39K ep:424 epch:1.06 loss:0.049
+step:10K smpl:39K ep:426 epch:1.07 loss:0.044
+step:10K smpl:40K ep:428 epch:1.07 loss:0.058
+step:10K smpl:40K ep:430 epch:1.08 loss:0.042
+step:10K smpl:40K ep:433 epch:1.08 loss:0.038
+step:10K smpl:40K ep:435 epch:1.09 loss:0.045
+step:10K smpl:40K ep:437 epch:1.09 loss:0.042
+step:10K smpl:41K ep:439 epch:1.10 loss:0.066
+step:10K smpl:41K ep:441 epch:1.10 loss:0.035
+step:10K smpl:41K ep:443 epch:1.11 loss:0.052
+step:10K smpl:41K ep:446 epch:1.11 loss:0.044
+step:10K smpl:41K ep:448 epch:1.12 loss:0.048
+step:10K smpl:42K ep:450 epch:1.12 loss:0.041
+step:10K smpl:42K ep:452 epch:1.13 loss:0.051
+step:10K smpl:42K ep:454 epch:1.14 loss:0.049
+step:12K smpl:46K ep:498 epch:1.24 loss:0.041
+step:12K smpl:46K ep:500 epch:1.25 loss:0.042
+step:12K smpl:46K ep:502 epch:1.25 loss:0.042
+step:12K smpl:47K ep:504 epch:1.26 loss:0.040
+step:12K smpl:47K ep:506 epch:1.27 loss:0.046
+step:12K smpl:47K ep:508 epch:1.27 loss:0.044
+step:12K smpl:47K ep:510 epch:1.28 loss:0.060
+step:12K smpl:47K ep:513 epch:1.28 loss:0.068
+step:12K smpl:48K ep:515 epch:1.29 loss:0.036
+step:12K smpl:48K ep:517 epch:1.29 loss:0.037
+step:12K smpl:48K ep:519 epch:1.30 loss:0.047
+tabpfn ready: forecast latency 164 ms
+run smoother clean hard oracle: held 21/24 (nudged 8/9) touched 23 jerk 10493 points 7.8
+run smoother clean hard tabpfn: held 4/24 (nudged 1/9) touched 22 jerk 13119 points 1.4
+run smoother clean hard none: held 2/24 (nudged 1/9) touched 20 jerk 12838 points 0.7
+run smoother clean indist oracle: held 20/24 (nudged 0/0) touched 24 jerk 9010 points 9.0
+run smoother clean indist tabpfn: held 20/24 (nudged 0/0) touched 24 jerk 13300 points 6.2
+run smoother clean indist none: held 7/24 (nudged 0/0) touched 24 jerk 12734 points 2.3
+run smoother real1 hard oracle: held 18/24 (nudged 7/9) touched 23 jerk 14172 points 5.4
+run smoother real1 hard tabpfn: held 6/24 (nudged 2/9) touched 20 jerk 19128 points 1.5
+run smoother real1 hard none: held 4/24 (nudged 2/9) touched 20 jerk 19069 points 1.0
+run smoother real1 indist oracle: held 18/24 (nudged 0/0) touched 24 jerk 11850 points 6.9
+run smoother real1 indist tabpfn: held 14/24 (nudged 0/0) touched 24 jerk 19729 points 3.3
+run smoother real1 indist none: held 9/24 (nudged 0/0) touched 23 jerk 18480 points 2.3
+## smoothness sweep + smoke (gpu1_smoke_and_smooth_sweep.sbatch)
+run smoother clean indist oracle: held 3/4 (nudged 0/0) touched 4 jerk 10921 points 1.1
+SMOKE held [3]
+run smoother clean indist oracle: held 18/24 (nudged 0/0) touched 24 jerk 10607 points 7.0
+run smoother clean hard oracle: held 18/24 (nudged 8/9) touched 24 jerk 12650 points 5.8
+run p5e0.02a0.7 clean indist oracle: held 18/24 (nudged 0/0) touched 24 jerk 9204 points 7.8
+run p5e0.02a0.7 clean hard oracle: held 17/24 (nudged 8/9) touched 24 jerk 11566 points 5.9
+run p5e0.01a0.7 clean indist oracle: held 18/24 (nudged 0/0) touched 24 jerk 9047 points 8.0
+run p5e0.01a0.7 clean hard oracle: held 17/24 (nudged 8/9) touched 24 jerk 11239 points 6.1
+run p3e0.05a0.7 clean indist oracle: held 19/24 (nudged 0/0) touched 24 jerk 6354 points 11.7
+run p3e0.05a0.7 clean hard oracle: held 20/24 (nudged 8/9) touched 24 jerk 7814 points 10.5
+run p2e0.05a0.7 clean indist oracle: held 19/24 (nudged 0/0) touched 24 jerk 8172 points 10.1
+run p2e0.05a0.7 clean hard oracle: held 20/24 (nudged 9/9) touched 24 jerk 9070 points 9.0
+run p5e0.05a0.8 clean indist oracle: held 14/24 (nudged 0/0) touched 24 jerk 8412 points 7.0
+run p5e0.05a0.8 clean hard oracle: held 6/24 (nudged 3/9) touched 23 jerk 10210 points 2.5
+run p5e0.05a0.9 clean indist oracle: held 2/24 (nudged 0/0) touched 20 jerk 5732 points 1.5
+run p5e0.05a0.9 clean hard oracle: held 0/24 (nudged 0/9) touched 11 jerk 7601 points 0.0
+run p3e0.02a0.8 clean indist oracle: held 14/24 (nudged 0/0) touched 24 jerk 4562 points 11.8
+run p3e0.02a0.8 clean hard oracle: held 7/24 (nudged 4/9) touched 23 jerk 5375 points 5.4
+## old model, no marker + HSV (gpu_eval_baseline_nomarker.sbatch)
+tabpfn ready: forecast latency 163 ms
+run smoother clean hard oracle: held 19/24 (nudged 8/9) touched 23 jerk 12747 points 6.2
+run smoother clean hard tabpfn: held 2/24 (nudged 1/9) touched 19 jerk 15483 points 0.6
+run smoother clean hard none: held 2/24 (nudged 1/9) touched 19 jerk 13640 points 0.6
+run smoother clean indist oracle: held 19/24 (nudged 0/0) touched 24 jerk 9944 points 7.5
+run smoother clean indist tabpfn: held 17/24 (nudged 0/0) touched 24 jerk 14374 points 4.9
+run smoother clean indist none: held 9/24 (nudged 0/0) touched 24 jerk 14536 points 2.8
+run smoother real1 hard oracle: held 14/24 (nudged 6/9) touched 23 jerk 16477 points 3.5
+run smoother real1 hard tabpfn: held 3/24 (nudged 0/9) touched 18 jerk 20974 points 0.7
+run smoother real1 hard none: held 2/24 (nudged 0/9) touched 18 jerk 19492 points 0.4
+run smoother real1 indist oracle: held 17/24 (nudged 0/0) touched 24 jerk 13838 points 5.3
+run smoother real1 indist tabpfn: held 11/24 (nudged 0/0) touched 24 jerk 20870 points 2.5
+run smoother real1 indist none: held 11/24 (nudged 0/0) touched 23 jerk 19226 points 2.4

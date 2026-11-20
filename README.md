@@ -31,11 +31,13 @@ What the results say, plainly:
    predicted early, and the policy pre-positions from the early forecast. The gap to the oracle is mostly this, plus the policy
    not trusting the noisy numbers (see the stage-3 result in [docs/EXPERIMENT_LOG.md](docs/EXPERIMENT_LOG.md)).
 3. **Smoothness is the weak point.** Jerk is 9k–16k deg/s³ after smoothing against about 1.6k for the scripted expert, so a
-   catch scores about 0.3 points instead of 0.93 (the score divides a threshold of 4000 by the jerk).
+   catch scores about 0.3 points instead of 0.93 (the score divides a threshold of 4000 by the jerk). Re-querying the policy
+   every 3 steps instead of 5 cuts jerk by about 40% at the same catch rate (0.49 points per launch; still short of the goal).
 4. **Real-world inputs** (no blue target marker, ball position from an HSV colour detector only): the HSV detector is accurate
    (0.05 cm clean, 2 cm randomized) and costs little, but with the marker hidden the policy collapses on hard launches with
-   TabPFN targets (1–2/24 vs 9/24), because it was trained with the marker. Retraining without it is the first TODO item
-   ([details](docs/RESULTS.md#4-real-world-inputs-no-marker-hsv-only-tracking)).
+   TabPFN targets (1–2/24 vs 9/24). Retraining without the marker on HSV-fed data (2026-11-19) restores exact-target
+   catching without the dot (20–21/24 on hard launches) but HSV-fed TabPFN targets on hard launches stay at 3–4/24: the
+   bottleneck is now the HSV-fed forecast on hard launches ([details](docs/RESULTS.md#4-real-world-inputs-no-marker-hsv-only-tracking)).
 
 Example rollouts (clean sim, exact forecast, then TabPFN forecast on a hard launch): [docs/gifs/](docs/gifs/) (`big_smoother_clean_indist_oracle_0.gif`, `big_smoother_clean_hard_oracle_0.gif`, `big_smoother_clean_hard_tabpfn_0.gif`). Each shows the top and front camera views.
 

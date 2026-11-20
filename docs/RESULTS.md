@@ -75,6 +75,33 @@ What this shows:
 
 ![smoothness](figures/catch_smoothness.png)
 
+### Smoothing sweep, inference only (cluster, one V100, 2026-11-20)
+
+Same big-run checkpoint, exact targets, clean, marker on, n = 24, same seeds, **no safety filter** (the table above used it,
+so the "smoother" reference here holds 18 and 18 instead of 19 and 19). Variant names: p = re-query period (how many steps of
+each 50-step chunk are executed), e = decay of the chunk-blending weights (smaller = more blending), a = EMA on the five arm
+joints. Raw JSON: `results/catch_big/smooth_sweep.json`.
+
+| variant | in-dist held | in-dist median jerk | in-dist points/launch | hard held | hard median jerk | hard points/launch |
+|---|---|---|---|---|---|---|
+| smoother (p5 e0.05 a0.7) | 18/24 | 10,607 | 0.29 | 18/24 | 12,650 | 0.24 |
+| p5 e0.02 a0.7 | 18/24 | 9,204 | 0.32 | 17/24 | 11,566 | 0.25 |
+| p5 e0.01 a0.7 | 18/24 | 9,047 | 0.33 | 17/24 | 11,239 | 0.25 |
+| **p3 e0.05 a0.7** | **19/24** | **6,354** | **0.49** | **20/24** | **7,814** | **0.44** |
+| p2 e0.05 a0.7 | 19/24 | 8,172 | 0.42 | 20/24 | 9,070 | 0.38 |
+| p5 e0.05 a0.8 | 14/24 | 8,412 | 0.29 | 6/24 | 10,210 | 0.10 |
+| p5 e0.05 a0.9 | 2/24 | 5,732 | 0.06 | 0/24 | 7,601 | 0.00 |
+| p3 e0.02 a0.8 | 14/24 | 4,562 | 0.49 | 7/24 | 5,375 | 0.23 |
+
+![smoothing sweep](figures/smoothness_sweep.png)
+
+- Re-querying every 3 steps instead of 5 cuts the median jerk by about 40% (10.6k → 6.4k in-dist, 12.7k → 7.8k hard) without
+  costing catches (19 and 20 of 24), so points per launch rise from 0.29 to 0.49 and from 0.24 to 0.44. Every 2 steps is less
+  smooth than every 3.
+- More chunk blending (e 0.02 or 0.01) lowers jerk a little (10–15%).
+- More EMA loses catches quickly (a 0.8: 14 and 6 of 24; a 0.9: 2 and 0): the filtered arm lags behind the ball.
+- The goal (median jerk under 6000 with the catch rate unchanged, more than 0.6 points per launch) is not reached yet.
+
 ## 3. Is TabPFN forecasting correctly?
 
 Direct check of the forecast against the true crossing (24 launches per split, ball only, no arm; tracker noise 0.4 cm or the
@@ -123,8 +150,49 @@ that, and the real tracker would be a colour or YOLO detector. Two ablations (Ta
 | no marker, true ball track | 16/24 | 1/24 | not run | not run |
 | no marker, HSV track | 19/24 | 2/24 | 10/24 | 3/24 |
 
-(Differences of 2–3 launches are within noise.) **Take-away for deployment:** the HSV tracker is accurate enough; the limiting factor
-is that the policy was trained with the marker. Retraining without the marker is the first item in the [TODO](TODO.md).
+(Differences of 2–3 launches are within noise.) **Take-away for deployment:** the HSV tracker is accurate enough; the hypothesis was
+that the limiting factor is that the policy was trained with the marker. Retraining without the marker (next subsection) supports
+that on easy launches but not on hard ones.
+
+### Retrained without the marker (cluster, one V100, 2026-11-19)
+
+**Data**: 400 new demonstrations (`so101_catch_nm`, 36,984 frames), recorded with the same recipe as `so101_catch_v2`
+(30/50/20% exact/TabPFN/constant-velocity targets, 25% clean, half irregular launches, only held episodes kept) except that
+**the blue marker is never drawn** and **the forecaster is fed only by HSV detections** on the rendered (and, when randomized,
+perturbed) top-camera image, the same code path as `eval_catch.py --tracker hsv`
+([record_catch_dataset_v2.py](../challenge/sim/record_catch_dataset_v2.py) `--tracker hsv`, `NO_MARKER=1`). Forecast delay: the
+measured TabPFN latency on the V100 (0.16 s). Seeds 900000 + 10000·k for the 8 shards k = 0…7 (50 episodes each).
+**Training**: the big-run recipe (12,000 steps, batch 4, lr 1e-4, fp32) from two starting points, the stage-2 weights and the
+big-run checkpoint; final training loss 0.056 and 0.047. **Evaluation**: `NO_MARKER=1 --tracker hsv`, "smoother", no safety
+filter, n = 24, same seeds. The old big-run model was re-run in the same setting on the cluster as the reference; it reproduces
+the earlier HSV row within noise (17/2/11/3 here vs 19/2/10/3 above). Raw JSON: `results/catch_nomarker/`.
+
+| no marker, HSV track, "smoother" | in-dist clean | hard clean | in-dist randomized | hard randomized |
+|---|---|---|---|---|
+| TabPFN targets: old model (cluster re-run) | 17/24 | 2/24 | 11/24 | 3/24 |
+| TabPFN targets: retrained from stage 2 | 20/24 | 3/24 | 14/24 | 6/24 |
+| TabPFN targets: retrained from big run | 20/24 | 4/24 | 14/24 | 6/24 |
+| exact targets: old / from stage 2 / from big run | 19 / 20 / 20 | 19 / 20 / 21 | 17 / 15 / 18 | 14 / 17 / 18 |
+| no target: old / from stage 2 / from big run | 9 / 8 / 7 | 2 / 1 / 2 | 11 / 8 / 9 | 2 / 3 / 4 |
+
+![no-marker retrain](figures/nomarker_retrain.png)
+
+(The reference bars "marker + true track" are the big-run main table, which used the safety filter.)
+
+What this shows:
+- **The success test is not met.** TabPFN targets on hard launches without the marker reach 3–4/24 clean and 6/24 randomized,
+  against the goal of 9/24 (the old model with the marker and the true ball track). The gains over the old model on the same
+  inputs (+1–2 hard clean, +3 hard randomized, +3 in-dist) are within or at the edge of noise at n = 24.
+- With exact targets the retrained models hold 20–21/24 on hard launches (17–18 randomized) with no marker at all, so they do
+  use the six forecast numbers; the missing marker is not what fails on hard launches.
+- What fails is the HSV-fed TabPFN forecast on hard launches. Only 1 of the 9 nudged launches is held, but most failures are on
+  launches without a nudge (2–3 of 15 held), so nudges are not the whole explanation.
+- A pointer, not a result: in the recorded data the mean absolute error of the TabPFN target over an episode is about 3 cm with
+  HSV input (similar for clean/randomized and easy/irregular launches), against 0.7–2.0 cm with the true track + 4 mm noise in
+  `so101_catch_v2`. Part of this is the metric: with HSV the forecaster keeps receiving detections after the crossing (the ball
+  in the gripper), while the true-track path stops at the crossing. The arm occluding the ball near the catch is another
+  candidate. A lead-time check of the HSV-fed forecast (as in section 3) is the next step ([TODO](TODO.md)).
+- Starting from the big-run checkpoint or from stage 2 makes no measurable difference.
 
 ## 5. TabPFN "spatial brain": zone prediction, uncertainty gate, few-shot adaptation
 

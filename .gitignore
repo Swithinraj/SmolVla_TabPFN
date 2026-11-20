@@ -21,3 +21,9 @@ nohup.out
 .venv-libero-wsl/
 .tmp/
 .venv*/
+
+# cluster: machine-specific settings and job logs
+/scripts/cluster/local.env
+/logs/
+/drive_pull/
+/checkpoints/

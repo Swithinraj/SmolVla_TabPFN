@@ -45,6 +45,24 @@ SAFE = dict(period=5, fixed_noise=True, ens_m=0.05, ema=0.5, max_step=10.0)   # 
 RAW = dict(period=5)
 
 
+def parse_variant(v: str) -> dict:
+    """Named variant (raw/smooth/smoother/safe) or a parameter string for smoothing sweeps:
+    p<period>[e<ens_m>][a<ema>][w<ens_window>][m<max_step>], e.g. p3e0.02a0.8 (fixed noise is always on for these)."""
+    import re
+    named = {"raw": RAW, "smooth": SMOOTH, "smoother": SMOOTHER, "safe": SAFE}
+    if v in named:
+        return named[v]
+    m = re.fullmatch(r"p(\d+)(?:e([\d.]+))?(?:a([\d.]+))?(?:w(\d+))?(?:m([\d.]+))?", v)
+    if m is None:
+        raise ValueError(f"unknown variant {v!r}")
+    kw = dict(period=int(m[1]), fixed_noise=True, ens_m=float(m[2] or 0.0), ema=float(m[3] or 0.0))
+    if m[4]:
+        kw["ens_window"] = int(m[4])
+    if m[5]:
+        kw["max_step"] = float(m[5])
+    return kw
+
+
 class GatedPipe:
     """Uncertainty / time gate: the policy only sees the TabPFN target once it is trustworthy (time-to-cross < gate_t
     and/or sigma_y < gate_s); before that it gets the 'no target' input (zeros, no marker)."""
@@ -240,9 +258,10 @@ def main():
         ctrl = SmoothPolicyController(Path(path), **RAW)
         ctrl.task = TASK
         for variant in a.variants.split(","):
-            kw = {"smooth": SMOOTH, "smoother": SMOOTHER, "safe": SAFE}.get(variant, RAW)
+            kw = parse_variant(variant)
             ctrl.period, ctrl.fixed_noise, ctrl.ens_m, ctrl.ema = kw["period"], kw.get("fixed_noise", False), kw.get("ens_m", 0.0), kw.get("ema", 0.0)
             ctrl.max_step = kw.get("max_step")
+            ctrl.ens_window = kw.get("ens_window", 10)
             for cond, rl in conds.items():
               for split, ls in launches.items():
                 for mode in modes:

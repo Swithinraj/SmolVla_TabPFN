@@ -1,0 +1,5339 @@
+{
+  "n_per_split": 24,
+  "expert_solvable_fraction": {
+    "hard": 0.6666666666666666,
+    "indist": 1.0
+  },
+  "smooth_ref_jerk": 4000.0,
+  "results": {
+    "run|smoother|clean|hard|oracle": {
+      "n": 24,
+      "held": 19,
+      "ever_held": 19,
+      "touched": 23,
+      "jerk_median": 12747.145603560602,
+      "smooth_mean": 0.33403914587260103,
+      "points": 6.218352160115324,
+      "episodes": [
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 11380.685983347526,
+          "speed_rms": 61.816701291569245,
+          "smooth": 0.3514726621798448,
+          "points": 0.3514726621798448,
+          "steps": 96,
+          "safety": null,
+          "final_ball": [
+            0.274569334235332,
+            -0.047727579478009034,
+            0.07077925639000965
+          ],
+          "seed": 700001,
+          "kick": true
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 8503.412694042281,
+          "speed_rms": 50.08403348901635,
+          "smooth": 0.47039937304260293,
+          "points": 0.47039937304260293,
+          "steps": 112,
+          "safety": null,
+          "final_ball": [
+            0.292036863104189,
+            -0.051450684688632044,
+            0.07031240300176202
+          ],
+          "seed": 700002,
+          "kick": true
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 10714.907731999507,
+          "speed_rms": 52.39057449645793,
+          "smooth": 0.3733116607298643,
+          "points": 0.0,
+          "steps": 106,
+          "safety": null,
+          "final_ball": [
+            0.34661069110831144,
+            0.2629102036888775,
+            0.019769817381585054
+          ],
+          "seed": 700004,
+          "kick": true
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 8939.504084923365,
+          "speed_rms": 55.417901379589765,
+          "smooth": 0.4474521138981381,
+          "points": 0.4474521138981381,
+          "steps": 105,
+          "safety": null,
+          "final_ball": [
+            0.288294907939274,
+            -0.04975717276435688,
+            0.07065859335122385
+          ],
+          "seed": 700005,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 12520.3476973513,
+          "speed_rms": 64.68886848162214,
+          "smooth": 0.3194799455007313,
+          "points": 0.3194799455007313,
+          "steps": 92,
+          "safety": null,
+          "final_ball": [
+            0.26584093834583256,
+            -0.022405049579727037,
+            0.07079969849546286
+          ],
+          "seed": 700006,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": false,
+          "jerk": 8866.534936266975,
+          "speed_rms": 51.10877633843973,
+          "smooth": 0.4511345219696497,
+          "points": 0.0,
+          "steps": 97,
+          "safety": null,
+          "final_ball": [
+            0.10051328495706996,
+            -0.431241062013263,
+            -0.02385526480386375
+          ],
+          "seed": 700007,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 10933.104990664027,
+          "speed_rms": 53.01797355074769,
+          "smooth": 0.3658612995499148,
+          "points": 0.3658612995499148,
+          "steps": 107,
+          "safety": null,
+          "final_ball": [
+            0.2417499866046639,
+            0.06529387076116308,
+            0.06932775743853388
+          ],
+          "seed": 700009,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 16161.117301414746,
+          "speed_rms": 59.31470980976426,
+          "smooth": 0.24750763981212112,
+          "points": 0.24750763981212112,
+          "steps": 92,
+          "safety": null,
+          "final_ball": [
+            0.24603469332940744,
+            0.03296453854249689,
+            0.06678690242220657
+          ],
+          "seed": 700010,
+          "kick": true
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 13418.170009641792,
+          "speed_rms": 55.56164236562568,
+          "smooth": 0.2981032433726619,
+          "points": 0.2981032433726619,
+          "steps": 101,
+          "safety": null,
+          "final_ball": [
+            0.23868082292650777,
+            0.09206339051807369,
+            0.0684239943903645
+          ],
+          "seed": 700012,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 16289.572150829314,
+          "speed_rms": 60.3897456100698,
+          "smooth": 0.2455558662292034,
+          "points": 0.2455558662292034,
+          "steps": 95,
+          "safety": null,
+          "final_ball": [
+            0.24600881407726397,
+            0.08902437565666817,
+            0.07575018255321006
+          ],
+          "seed": 700013,
+          "kick": true
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 13213.540775954336,
+          "speed_rms": 62.010712252964986,
+          "smooth": 0.30271976813959645,
+          "points": 0.0,
+          "steps": 96,
+          "safety": null,
+          "final_ball": [
+            0.3375813722234319,
+            0.4305682204918382,
+            -0.01869097255020702
+          ],
+          "seed": 700014,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 12433.967156648803,
+          "speed_rms": 54.42508229303976,
+          "smooth": 0.32169941818296377,
+          "points": 0.32169941818296377,
+          "steps": 104,
+          "safety": null,
+          "final_ball": [
+            0.24352602717146174,
+            0.0762543996433187,
+            0.07003634325169128
+          ],
+          "seed": 700016,
+          "kick": true
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 15731.415570277943,
+          "speed_rms": 62.44170723820419,
+          "smooth": 0.25426828133365037,
+          "points": 0.25426828133365037,
+          "steps": 90,
+          "safety": null,
+          "final_ball": [
+            0.2516364508321855,
+            0.011276269380296574,
+            0.06801406666314508
+          ],
+          "seed": 700017,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 14333.303847145666,
+          "speed_rms": 64.66361072494615,
+          "smooth": 0.27907034153863697,
+          "points": 0.27907034153863697,
+          "steps": 89,
+          "safety": null,
+          "final_ball": [
+            0.25166183961722033,
+            0.1594017126649141,
+            0.0717730543209529
+          ],
+          "seed": 700021,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 12973.943509769906,
+          "speed_rms": 54.29242239452586,
+          "smooth": 0.3083102679603806,
+          "points": 0.3083102679603806,
+          "steps": 99,
+          "safety": null,
+          "final_ball": [
+            0.26905162061018584,
+            0.009385947976990324,
+            0.06846406158692693
+          ],
+          "seed": 700023,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 13379.447790846765,
+          "speed_rms": 63.95758790989938,
+          "smooth": 0.29896600087908753,
+          "points": 0.29896600087908753,
+          "steps": 91,
+          "safety": null,
+          "final_ball": [
+            0.25148204590632084,
+            -0.004504136365978886,
+            0.0694180575462459
+          ],
+          "seed": 700024,
+          "kick": true
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 12109.592026589911,
+          "speed_rms": 55.26045356019324,
+          "smooth": 0.33031666064528925,
+          "points": 0.33031666064528925,
+          "steps": 96,
+          "safety": null,
+          "final_ball": [
+            0.26543053043795817,
+            0.19765061921873256,
+            0.06853507034302762
+          ],
+          "seed": 700025,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 13736.740253001652,
+          "speed_rms": 63.46415443702041,
+          "smooth": 0.29118989850055216,
+          "points": 0.0,
+          "steps": 70,
+          "safety": null,
+          "final_ball": [
+            0.30499279147024044,
+            0.441246205580613,
+            -0.03630275173423215
+          ],
+          "seed": 700026,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 16287.138840233782,
+          "speed_rms": 64.01375885085841,
+          "smooth": 0.2455925524573342,
+          "points": 0.2455925524573342,
+          "steps": 93,
+          "safety": null,
+          "final_ball": [
+            0.24578144782727693,
+            0.11358112975666483,
+            0.0758293339425244
+          ],
+          "seed": 700027,
+          "kick": true
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 8301.514891184555,
+          "speed_rms": 48.122711963439706,
+          "smooth": 0.4818397668897314,
+          "points": 0.4818397668897314,
+          "steps": 115,
+          "safety": null,
+          "final_ball": [
+            0.2860904600729051,
+            -0.05331040694890804,
+            0.07051394048718963
+          ],
+          "seed": 700028,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 9899.979705802178,
+          "speed_rms": 53.887474566406816,
+          "smooth": 0.4040412322921916,
+          "points": 0.4040412322921916,
+          "steps": 107,
+          "safety": null,
+          "final_ball": [
+            0.2506510995527396,
+            0.15177829453227462,
+            0.07507937986578157
+          ],
+          "seed": 700031,
+          "kick": true
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 15449.797849285895,
+          "speed_rms": 64.80152756098401,
+          "smooth": 0.2589030639119258,
+          "points": 0.2589030639119258,
+          "steps": 89,
+          "safety": null,
+          "final_ball": [
+            0.3085353250878017,
+            0.18202853142928713,
+            0.03553861715143631
+          ],
+          "seed": 700032,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 13816.332493688842,
+          "speed_rms": 59.10913001754886,
+          "smooth": 0.2895124304389141,
+          "points": 0.2895124304389141,
+          "steps": 99,
+          "safety": null,
+          "final_ball": [
+            0.24419879656845064,
+            0.09994812295862295,
+            0.07244257511727263
+          ],
+          "seed": 700034,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 10519.907186941038,
+          "speed_rms": 44.29312745743431,
+          "smooth": 0.3802314914874371,
+          "points": 0.0,
+          "steps": 112,
+          "safety": null,
+          "final_ball": [
+            0.35145418223567154,
+            -0.3420478281813869,
+            0.01976981738160131
+          ],
+          "seed": 700035,
+          "kick": false
+        }
+      ],
+      "held_kicked": "8/9"
+    },
+    "run|smoother|clean|hard|tabpfn": {
+      "n": 24,
+      "held": 2,
+      "ever_held": 4,
+      "touched": 19,
+      "jerk_median": 15482.810546379449,
+      "smooth_mean": 0.25438922438520195,
+      "points": 0.60928346279727,
+      "episodes": [
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 11916.582402731023,
+          "speed_rms": 53.535253366739,
+          "smooth": 0.3356667091970334,
+          "points": 0.0,
+          "steps": 96,
+          "safety": null,
+          "final_ball": [
+            0.23228115334886174,
+            -0.17470497684713626,
+            0.019769817381585054
+          ],
+          "seed": 700001,
+          "kick": true
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 14228.87250105318,
+          "speed_rms": 44.63005441714161,
+          "smooth": 0.28111854960425936,
+          "points": 0.0,
+          "steps": 112,
+          "safety": null,
+          "final_ball": [
+            0.34000081433509743,
+            -0.29255207463283134,
+            0.019769817381585057
+          ],
+          "seed": 700002,
+          "kick": true
+        },
+        {
+          "held": false,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 18559.365715687927,
+          "speed_rms": 60.11565168990544,
+          "smooth": 0.21552460688992542,
+          "points": 0.0,
+          "steps": 69,
+          "safety": null,
+          "final_ball": [
+            0.30264394978738307,
+            0.44687093729564886,
+            -0.041559384974891964
+          ],
+          "seed": 700004,
+          "kick": true
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 13966.329934653459,
+          "speed_rms": 48.22829993693499,
+          "smooth": 0.2864030864740738,
+          "points": 0.0,
+          "steps": 105,
+          "safety": null,
+          "final_ball": [
+            0.34495328631431954,
+            -0.1732210928279355,
+            0.01998393603777301
+          ],
+          "seed": 700005,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 12180.139027780519,
+          "speed_rms": 56.25445787694134,
+          "smooth": 0.3284034764198324,
+          "points": 0.0,
+          "steps": 92,
+          "safety": null,
+          "final_ball": [
+            0.2487497553428066,
+            0.04345637114594727,
+            0.019769817381585054
+          ],
+          "seed": 700006,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": false,
+          "jerk": 13285.17534736516,
+          "speed_rms": 48.36537045992916,
+          "smooth": 0.30108748250683176,
+          "points": 0.0,
+          "steps": 97,
+          "safety": null,
+          "final_ball": [
+            0.1005132849570736,
+            -0.43124106201390155,
+            -0.023855264804908613
+          ],
+          "seed": 700007,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 26782.351576050572,
+          "speed_rms": 50.72347992361124,
+          "smooth": 0.14935208316721885,
+          "points": 0.0,
+          "steps": 107,
+          "safety": null,
+          "final_ball": [
+            0.49252233398206946,
+            -0.2702811823323445,
+            0.019769817381585054
+          ],
+          "seed": 700009,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 13940.968579472063,
+          "speed_rms": 52.702242686304366,
+          "smooth": 0.2869241098419776,
+          "points": 0.0,
+          "steps": 92,
+          "safety": null,
+          "final_ball": [
+            0.1973803231438189,
+            0.05149786099560701,
+            0.019769817381585047
+          ],
+          "seed": 700010,
+          "kick": true
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 20630.55182068827,
+          "speed_rms": 50.27555004317362,
+          "smooth": 0.19388720353998526,
+          "points": 0.0,
+          "steps": 101,
+          "safety": null,
+          "final_ball": [
+            0.5691046311267552,
+            0.35810652297113893,
+            0.019769817381585054
+          ],
+          "seed": 700012,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": false,
+          "jerk": 19219.366899628363,
+          "speed_rms": 64.53365368086625,
+          "smooth": 0.2081234007805609,
+          "points": 0.0,
+          "steps": 57,
+          "safety": null,
+          "final_ball": [
+            0.0474326322516756,
+            0.4430874305953207,
+            -0.021417284522504486
+          ],
+          "seed": 700013,
+          "kick": true
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": false,
+          "jerk": 17606.72301050534,
+          "speed_rms": 64.23297690452429,
+          "smooth": 0.22718594468790898,
+          "points": 0.0,
+          "steps": 65,
+          "safety": null,
+          "final_ball": [
+            0.009455828873570347,
+            0.43333825983002583,
+            -0.02002382925493322
+          ],
+          "seed": 700014,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 13662.796695821413,
+          "speed_rms": 48.57553384998057,
+          "smooth": 0.29276582891871233,
+          "points": 0.29276582891871233,
+          "steps": 104,
+          "safety": null,
+          "final_ball": [
+            0.2532936919860523,
+            0.08233308218885965,
+            0.07334584571623116
+          ],
+          "seed": 700016,
+          "kick": true
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 14122.062452135584,
+          "speed_rms": 54.60599135351404,
+          "smooth": 0.283244746548696,
+          "points": 0.0,
+          "steps": 90,
+          "safety": null,
+          "final_ball": [
+            0.16613493931038076,
+            0.016334883186266996,
+            0.019769817381585047
+          ],
+          "seed": 700017,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 17411.087865397494,
+          "speed_rms": 59.28151749402872,
+          "smooth": 0.2297386602677213,
+          "points": 0.0,
+          "steps": 89,
+          "safety": null,
+          "final_ball": [
+            0.20478217487988165,
+            0.19896421438066614,
+            0.019769817381585047
+          ],
+          "seed": 700021,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 19993.62543041171,
+          "speed_rms": 53.20584779197208,
+          "smooth": 0.20006376601992948,
+          "points": 0.0,
+          "steps": 99,
+          "safety": null,
+          "final_ball": [
+            0.38007078561653135,
+            -0.24076266980487834,
+            0.01977063610104116
+          ],
+          "seed": 700023,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 13490.00893531361,
+          "speed_rms": 55.40257086068344,
+          "smooth": 0.29651574132978953,
+          "points": 0.0,
+          "steps": 91,
+          "safety": null,
+          "final_ball": [
+            0.1871668691161762,
+            0.09685830607528725,
+            0.019769817381585047
+          ],
+          "seed": 700024,
+          "kick": true
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": false,
+          "jerk": 20421.864695057448,
+          "speed_rms": 70.66645249961736,
+          "smooth": 0.19586849975399603,
+          "points": 0.0,
+          "steps": 53,
+          "safety": null,
+          "final_ball": [
+            0.09341027044811112,
+            0.4399465325063311,
+            -0.03614005952597321
+          ],
+          "seed": 700025,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 18843.13656151168,
+          "speed_rms": 62.00391383328438,
+          "smooth": 0.21227888398209974,
+          "points": 0.0,
+          "steps": 70,
+          "safety": null,
+          "final_ball": [
+            0.31069268058006283,
+            0.4408551336746668,
+            -0.035556770832822875
+          ],
+          "seed": 700026,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": false,
+          "jerk": 16793.222043297617,
+          "speed_rms": 64.32426466085442,
+          "smooth": 0.23819133634313194,
+          "points": 0.0,
+          "steps": 64,
+          "safety": null,
+          "final_ball": [
+            -0.024306163976314247,
+            0.4443893065783315,
+            -0.04427547682777258
+          ],
+          "seed": 700027,
+          "kick": true
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 12637.526544681334,
+          "speed_rms": 43.822390662892076,
+          "smooth": 0.31651763387855764,
+          "points": 0.31651763387855764,
+          "steps": 115,
+          "safety": null,
+          "final_ball": [
+            0.27873662324789844,
+            0.011122359866817456,
+            0.06449800340938991
+          ],
+          "seed": 700028,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 15540.89613086888,
+          "speed_rms": 53.44712227865281,
+          "smooth": 0.2573854149925628,
+          "points": 0.0,
+          "steps": 82,
+          "safety": null,
+          "final_ball": [
+            0.31981147237619784,
+            0.4439938062985545,
+            -0.04219669919466025
+          ],
+          "seed": 700031,
+          "kick": true
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 15201.930481720628,
+          "speed_rms": 59.43200793931546,
+          "smooth": 0.2631244765136737,
+          "points": 0.0,
+          "steps": 89,
+          "safety": null,
+          "final_ball": [
+            0.19690408672943174,
+            0.32502736103072194,
+            0.019769817381585047
+          ],
+          "seed": 700032,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 15424.724961890019,
+          "speed_rms": 49.94595894544092,
+          "smooth": 0.2593239107914617,
+          "points": 0.0,
+          "steps": 99,
+          "safety": null,
+          "final_ball": [
+            0.27183916673406683,
+            0.1301382151081208,
+            0.017486678564647248
+          ],
+          "seed": 700034,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 16217.585980161717,
+          "speed_rms": 45.34528032047724,
+          "smooth": 0.24664583279490732,
+          "points": 0.0,
+          "steps": 112,
+          "safety": null,
+          "final_ball": [
+            0.344456079797954,
+            -0.2261749319352604,
+            0.01977197111475804
+          ],
+          "seed": 700035,
+          "kick": false
+        }
+      ],
+      "held_kicked": "1/9"
+    },
+    "run|smoother|clean|hard|none": {
+      "n": 24,
+      "held": 2,
+      "ever_held": 3,
+      "touched": 19,
+      "jerk_median": 13639.728380970333,
+      "smooth_mean": 0.28869239213107495,
+      "points": 0.6371655142285508,
+      "episodes": [
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 12220.523414833273,
+          "speed_rms": 52.04788515933158,
+          "smooth": 0.3273182223230144,
+          "points": 0.0,
+          "steps": 96,
+          "safety": null,
+          "final_ball": [
+            0.23286148360895828,
+            -0.026842519241001783,
+            0.019769817381585054
+          ],
+          "seed": 700001,
+          "kick": true
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 11752.808412497641,
+          "speed_rms": 45.78443573647783,
+          "smooth": 0.3403441849478717,
+          "points": 0.0,
+          "steps": 112,
+          "safety": null,
+          "final_ball": [
+            0.39096283478046395,
+            0.03325251663430252,
+            0.019769817381585054
+          ],
+          "seed": 700002,
+          "kick": true
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 15754.840394926463,
+          "speed_rms": 56.77943137638683,
+          "smooth": 0.2538902267323585,
+          "points": 0.0,
+          "steps": 84,
+          "safety": null,
+          "final_ball": [
+            0.25250954356396277,
+            0.43475301892795987,
+            -0.034178421439944734
+          ],
+          "seed": 700004,
+          "kick": true
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 11349.877100497526,
+          "speed_rms": 48.46702129687764,
+          "smooth": 0.3524267236184133,
+          "points": 0.0,
+          "steps": 105,
+          "safety": null,
+          "final_ball": [
+            0.39867088491339964,
+            -0.08495749263206323,
+            0.019769817381585057
+          ],
+          "seed": 700005,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 12516.32488981047,
+          "speed_rms": 55.49078983731405,
+          "smooth": 0.31958262790512865,
+          "points": 0.0,
+          "steps": 92,
+          "safety": null,
+          "final_ball": [
+            0.2548713507847282,
+            0.06763376608819756,
+            0.019769817381585047
+          ],
+          "seed": 700006,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": false,
+          "jerk": 11927.995189405683,
+          "speed_rms": 51.30337930775307,
+          "smooth": 0.335345541013695,
+          "points": 0.0,
+          "steps": 97,
+          "safety": null,
+          "final_ball": [
+            0.10051328495598207,
+            -0.4312410620136903,
+            -0.02385526480401274
+          ],
+          "seed": 700007,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 12303.589787118692,
+          "speed_rms": 51.51295937840128,
+          "smooth": 0.32510836830628254,
+          "points": 0.0,
+          "steps": 107,
+          "safety": null,
+          "final_ball": [
+            0.5926965897360852,
+            0.31592611256209735,
+            0.019769817381585054
+          ],
+          "seed": 700009,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 13529.072265952876,
+          "speed_rms": 54.171463571723955,
+          "smooth": 0.2956595930133627,
+          "points": 0.0,
+          "steps": 92,
+          "safety": null,
+          "final_ball": [
+            0.15854352187847498,
+            0.05931581841942874,
+            0.019769817381585047
+          ],
+          "seed": 700010,
+          "kick": true
+        },
+        {
+          "held": false,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 13750.38449598779,
+          "speed_rms": 50.19112655995814,
+          "smooth": 0.2909009563454139,
+          "points": 0.0,
+          "steps": 101,
+          "safety": null,
+          "final_ball": [
+            0.3483969953175946,
+            0.1431610824901052,
+            0.020000839401562748
+          ],
+          "seed": 700012,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": false,
+          "jerk": 16437.21161177884,
+          "speed_rms": 66.72637123140082,
+          "smooth": 0.2433502770709368,
+          "points": 0.0,
+          "steps": 57,
+          "safety": null,
+          "final_ball": [
+            0.047432632251531354,
+            0.4430874305959244,
+            -0.02141728452346942
+          ],
+          "seed": 700013,
+          "kick": true
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": false,
+          "jerk": 16101.082918026628,
+          "speed_rms": 64.66713349753442,
+          "smooth": 0.24843049503966194,
+          "points": 0.0,
+          "steps": 65,
+          "safety": null,
+          "final_ball": [
+            0.009455828873595543,
+            0.43333825983054663,
+            -0.02002382925587803
+          ],
+          "seed": 700014,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 14013.162768710908,
+          "speed_rms": 49.92930016128188,
+          "smooth": 0.28544591010755566,
+          "points": 0.28544591010755566,
+          "steps": 104,
+          "safety": null,
+          "final_ball": [
+            0.2450912068561483,
+            0.0382077157980881,
+            0.07484186514263112
+          ],
+          "seed": 700016,
+          "kick": true
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 14178.94620471087,
+          "speed_rms": 54.90014131146713,
+          "smooth": 0.2821084121661329,
+          "points": 0.0,
+          "steps": 90,
+          "safety": null,
+          "final_ball": [
+            0.17726920552156222,
+            0.02365579282391755,
+            0.019769817381585047
+          ],
+          "seed": 700017,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 18865.699790069968,
+          "speed_rms": 58.699161755677366,
+          "smooth": 0.21202500010656455,
+          "points": 0.0,
+          "steps": 89,
+          "safety": null,
+          "final_ball": [
+            0.22802266797196188,
+            0.24943114221806909,
+            0.019769817381585047
+          ],
+          "seed": 700021,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 15253.717488017995,
+          "speed_rms": 53.72895422634675,
+          "smooth": 0.2622311579549087,
+          "points": 0.0,
+          "steps": 99,
+          "safety": null,
+          "final_ball": [
+            0.4230946657058924,
+            -0.28613676907256796,
+            0.01977363388300319
+          ],
+          "seed": 700023,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 12744.316970496055,
+          "speed_rms": 56.4208548435066,
+          "smooth": 0.3138653887266197,
+          "points": 0.0,
+          "steps": 91,
+          "safety": null,
+          "final_ball": [
+            0.20998326266926282,
+            0.12314397582990132,
+            0.019769817381585047
+          ],
+          "seed": 700024,
+          "kick": true
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": false,
+          "jerk": 18602.128846675507,
+          "speed_rms": 71.55093866041754,
+          "smooth": 0.2150291524679372,
+          "points": 0.0,
+          "steps": 53,
+          "safety": null,
+          "final_ball": [
+            0.09341027044797626,
+            0.43994653250706867,
+            -0.03614005952747044
+          ],
+          "seed": 700025,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 15075.393466739277,
+          "speed_rms": 51.58002508154403,
+          "smooth": 0.2653330414775023,
+          "points": 0.0,
+          "steps": 107,
+          "safety": null,
+          "final_ball": [
+            0.4616304465978085,
+            0.26130146844066837,
+            0.019770188821946685
+          ],
+          "seed": 700026,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": false,
+          "jerk": 15554.690049474872,
+          "speed_rms": 64.56618541003886,
+          "smooth": 0.2571571652843729,
+          "points": 0.0,
+          "steps": 64,
+          "safety": null,
+          "final_ball": [
+            -0.024306163977261895,
+            0.4443893065773405,
+            -0.04427547682458438
+          ],
+          "seed": 700027,
+          "kick": true
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 11372.695616431885,
+          "speed_rms": 45.642044729994964,
+          "smooth": 0.3517196041209952,
+          "points": 0.3517196041209952,
+          "steps": 115,
+          "safety": null,
+          "final_ball": [
+            0.285602396117408,
+            0.004046833140396685,
+            0.07815030208190098
+          ],
+          "seed": 700028,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 13098.68046192303,
+          "speed_rms": 48.88247401924791,
+          "smooth": 0.3053742712197406,
+          "points": 0.0,
+          "steps": 107,
+          "safety": null,
+          "final_ball": [
+            0.36235901932347997,
+            0.4206620856043358,
+            0.005848240326791316
+          ],
+          "seed": 700031,
+          "kick": true
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 16064.0866796268,
+          "speed_rms": 58.37029739077513,
+          "smooth": 0.24900264047211476,
+          "points": 0.0,
+          "steps": 89,
+          "safety": null,
+          "final_ball": [
+            0.26307006076558664,
+            0.3589707739921721,
+            0.01976981738158505
+          ],
+          "seed": 700032,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 13434.710094157575,
+          "speed_rms": 52.43034166199741,
+          "smooth": 0.29773623486966805,
+          "points": 0.0,
+          "steps": 99,
+          "safety": null,
+          "final_ball": [
+            0.28828384969614107,
+            0.21106154461246168,
+            0.019803033895339443
+          ],
+          "seed": 700034,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 13367.544629389049,
+          "speed_rms": 47.74382457164043,
+          "smooth": 0.2992322158555469,
+          "points": 0.0,
+          "steps": 111,
+          "safety": null,
+          "final_ball": [
+            0.4554947544541078,
+            -0.4417897003491853,
+            -0.02577264790220028
+          ],
+          "seed": 700035,
+          "kick": false
+        }
+      ],
+      "held_kicked": "1/9"
+    },
+    "run|smoother|clean|indist|oracle": {
+      "n": 24,
+      "held": 19,
+      "ever_held": 20,
+      "touched": 24,
+      "jerk_median": 9944.028990701481,
+      "smooth_mean": 0.3787603760169819,
+      "points": 7.482590843571355,
+      "episodes": [
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 9313.307770118856,
+          "speed_rms": 36.373332636071375,
+          "smooth": 0.429492946945632,
+          "points": 0.429492946945632,
+          "steps": 133,
+          "safety": null,
+          "final_ball": [
+            0.24102738526635153,
+            0.07073232402983537,
+            0.06958407345310681
+          ],
+          "seed": 500000,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 9465.912239397116,
+          "speed_rms": 42.21101886808534,
+          "smooth": 0.42256888705897827,
+          "points": 0.0,
+          "steps": 123,
+          "safety": null,
+          "final_ball": [
+            0.4221956189149642,
+            0.2546020774444487,
+            0.019769817481874886
+          ],
+          "seed": 500001,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 9900.906949204185,
+          "speed_rms": 52.8209243103646,
+          "smooth": 0.4040033928731662,
+          "points": 0.4040033928731662,
+          "steps": 108,
+          "safety": null,
+          "final_ball": [
+            0.25520437193650847,
+            0.01855502333680377,
+            0.0698280300146826
+          ],
+          "seed": 500002,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 12782.993087669818,
+          "speed_rms": 64.660266092074,
+          "smooth": 0.3129157602266333,
+          "points": 0.3129157602266333,
+          "steps": 94,
+          "safety": null,
+          "final_ball": [
+            0.27332253035221465,
+            -0.0384388880120573,
+            0.07088522052007702
+          ],
+          "seed": 500003,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 11252.876434018648,
+          "speed_rms": 36.505188243504335,
+          "smooth": 0.35546466927403314,
+          "points": 0.35546466927403314,
+          "steps": 130,
+          "safety": null,
+          "final_ball": [
+            0.2528004630545147,
+            0.12895193581027223,
+            0.0725981093012151
+          ],
+          "seed": 500004,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 11218.57489303794,
+          "speed_rms": 50.05412210608801,
+          "smooth": 0.3565515262087641,
+          "points": 0.3565515262087641,
+          "steps": 106,
+          "safety": null,
+          "final_ball": [
+            0.24373281643464526,
+            0.0741862026936503,
+            0.0703898974154133
+          ],
+          "seed": 500005,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 17364.73841975955,
+          "speed_rms": 59.73259332270657,
+          "smooth": 0.23035187189738204,
+          "points": 0.23035187189738204,
+          "steps": 96,
+          "safety": null,
+          "final_ball": [
+            0.24379608981975434,
+            0.04585398293739905,
+            0.0678302410955121
+          ],
+          "seed": 500006,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 8993.423235983108,
+          "speed_rms": 43.19027687605946,
+          "smooth": 0.44476946042034504,
+          "points": 0.44476946042034504,
+          "steps": 120,
+          "safety": null,
+          "final_ball": [
+            0.2571794872101645,
+            0.015500838246344713,
+            0.07033367870086507
+          ],
+          "seed": 500007,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 9873.982847843301,
+          "speed_rms": 56.85880299679093,
+          "smooth": 0.405105018070159,
+          "points": 0.405105018070159,
+          "steps": 100,
+          "safety": null,
+          "final_ball": [
+            0.2917476203640113,
+            -0.05411770266048025,
+            0.07206183592371151
+          ],
+          "seed": 500008,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 9490.692195763238,
+          "speed_rms": 51.35224994684903,
+          "smooth": 0.4214655704233722,
+          "points": 0.4214655704233722,
+          "steps": 108,
+          "safety": null,
+          "final_ball": [
+            0.25426476056164315,
+            0.016641010397130538,
+            0.06985696064601267
+          ],
+          "seed": 500009,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 9086.129978371278,
+          "speed_rms": 36.030752880081515,
+          "smooth": 0.44023143071050524,
+          "points": 0.44023143071050524,
+          "steps": 136,
+          "safety": null,
+          "final_ball": [
+            0.24688223496582962,
+            0.05850535232793203,
+            0.07177246063205582
+          ],
+          "seed": 500010,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 14597.793439410027,
+          "speed_rms": 64.02967655512995,
+          "smooth": 0.2740140156526054,
+          "points": 0.0,
+          "steps": 72,
+          "safety": null,
+          "final_ball": [
+            0.36840261448401906,
+            0.43282308597671965,
+            -0.022687245152208727
+          ],
+          "seed": 500011,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 14862.924640130703,
+          "speed_rms": 58.41911664416033,
+          "smooth": 0.2691260365540563,
+          "points": 0.2691260365540563,
+          "steps": 99,
+          "safety": null,
+          "final_ball": [
+            0.24131967852775837,
+            0.06989937134852733,
+            0.06851286555183701
+          ],
+          "seed": 500012,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 11748.944074554756,
+          "speed_rms": 53.62494186001601,
+          "smooth": 0.34045612734364694,
+          "points": 0.34045612734364694,
+          "steps": 103,
+          "safety": null,
+          "final_ball": [
+            0.24070798376343347,
+            0.08957849224963224,
+            0.07030073072530706
+          ],
+          "seed": 500013,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 9524.156604633912,
+          "speed_rms": 37.11660880369537,
+          "smooth": 0.41998469429343777,
+          "points": 0.41998469429343777,
+          "steps": 128,
+          "safety": null,
+          "final_ball": [
+            0.2460380390561421,
+            0.06332843724989594,
+            0.07226225308303072
+          ],
+          "seed": 500014,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 8852.346215710239,
+          "speed_rms": 32.30176741544846,
+          "smooth": 0.45185760955679855,
+          "points": 0.45185760955679855,
+          "steps": 141,
+          "safety": null,
+          "final_ball": [
+            0.25124440152812627,
+            0.019794058448502478,
+            0.06997949770834819
+          ],
+          "seed": 500015,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 15258.402912302488,
+          "speed_rms": 60.662936463207494,
+          "smooth": 0.262150634177768,
+          "points": 0.0,
+          "steps": 96,
+          "safety": null,
+          "final_ball": [
+            0.4902793397253117,
+            0.2188388114409028,
+            0.019769817381585054
+          ],
+          "seed": 500016,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 11785.01560007952,
+          "speed_rms": 52.559659373548925,
+          "smooth": 0.3394140606799884,
+          "points": 0.0,
+          "steps": 79,
+          "safety": null,
+          "final_ball": [
+            0.29899798676661404,
+            0.4620552319466707,
+            -0.05366507987894013
+          ],
+          "seed": 500017,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 8470.697900126206,
+          "speed_rms": 41.69491502281866,
+          "smooth": 0.47221610865621866,
+          "points": 0.47221610865621866,
+          "steps": 124,
+          "safety": null,
+          "final_ball": [
+            0.26195829133213727,
+            -0.004901367422568742,
+            0.0716178742212072
+          ],
+          "seed": 500018,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 8737.261396027738,
+          "speed_rms": 38.76692875635198,
+          "smooth": 0.45780935452137655,
+          "points": 0.45780935452137655,
+          "steps": 131,
+          "safety": null,
+          "final_ball": [
+            0.24552297098328532,
+            0.05251625968911752,
+            0.06965030666650289
+          ],
+          "seed": 500019,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 8386.79400464164,
+          "speed_rms": 54.63042990053769,
+          "smooth": 0.47694029420374634,
+          "points": 0.47694029420374634,
+          "steps": 105,
+          "safety": null,
+          "final_ball": [
+            0.28044762160552095,
+            -0.05038395968689424,
+            0.0703551957827386
+          ],
+          "seed": 500020,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 9987.151032198779,
+          "speed_rms": 55.03734782897724,
+          "smooth": 0.40051461994555987,
+          "points": 0.40051461994555987,
+          "steps": 102,
+          "safety": null,
+          "final_ball": [
+            0.25461254179871406,
+            0.017589105135889127,
+            0.07023200840396696
+          ],
+          "seed": 500021,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 10169.465202542455,
+          "speed_rms": 48.62247574177286,
+          "smooth": 0.393334351446521,
+          "points": 0.393334351446521,
+          "steps": 109,
+          "safety": null,
+          "final_ball": [
+            0.24261898257565903,
+            0.07788777136475017,
+            0.07093123414021262
+          ],
+          "seed": 500022,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 12923.629162467318,
+          "speed_rms": 53.59436643162248,
+          "smooth": 0.30951058326687075,
+          "points": 0.0,
+          "steps": 102,
+          "safety": null,
+          "final_ball": [
+            0.45065211984701786,
+            0.36795778205058466,
+            0.019769817381585057
+          ],
+          "seed": 500023,
+          "kick": false
+        }
+      ],
+      "held_kicked": "0/0"
+    },
+    "run|smoother|clean|indist|tabpfn": {
+      "n": 24,
+      "held": 17,
+      "ever_held": 17,
+      "touched": 24,
+      "jerk_median": 14373.793801874723,
+      "smooth_mean": 0.2758071149953946,
+      "points": 4.928050196071821,
+      "episodes": [
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 14633.48283480669,
+          "speed_rms": 37.957094312785095,
+          "smooth": 0.2733457267251334,
+          "points": 0.2733457267251334,
+          "steps": 133,
+          "safety": null,
+          "final_ball": [
+            0.24341897671210191,
+            0.08092011854337759,
+            0.07182276751586504
+          ],
+          "seed": 500000,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 14611.459440348652,
+          "speed_rms": 39.176790608349066,
+          "smooth": 0.27375773216426585,
+          "points": 0.27375773216426585,
+          "steps": 123,
+          "safety": null,
+          "final_ball": [
+            0.24759987974776287,
+            0.12660671210418944,
+            0.07062596461991252
+          ],
+          "seed": 500001,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 11753.450785517925,
+          "speed_rms": 45.27962706191705,
+          "smooth": 0.3403255837790737,
+          "points": 0.0,
+          "steps": 108,
+          "safety": null,
+          "final_ball": [
+            0.2426962182918677,
+            -0.04465573589827159,
+            0.019769817381585047
+          ],
+          "seed": 500002,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 13007.566033175359,
+          "speed_rms": 56.30200939897454,
+          "smooth": 0.3075133341470752,
+          "points": 0.0,
+          "steps": 94,
+          "safety": null,
+          "final_ball": [
+            0.2178422109840275,
+            -0.17819424835052475,
+            0.019769817381585054
+          ],
+          "seed": 500003,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 14901.535065544413,
+          "speed_rms": 42.83675018931496,
+          "smooth": 0.2684287210952427,
+          "points": 0.2684287210952427,
+          "steps": 130,
+          "safety": null,
+          "final_ball": [
+            0.2509400724545298,
+            0.13972465719042193,
+            0.0738437908544548
+          ],
+          "seed": 500004,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 13460.144237811995,
+          "speed_rms": 48.22368098110222,
+          "smooth": 0.2971736356853645,
+          "points": 0.2971736356853645,
+          "steps": 106,
+          "safety": null,
+          "final_ball": [
+            0.2470484677117189,
+            0.0957821633161414,
+            0.072043449576262
+          ],
+          "seed": 500005,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 14820.605594717581,
+          "speed_rms": 52.64594237192198,
+          "smooth": 0.2698945042721936,
+          "points": 0.2698945042721936,
+          "steps": 96,
+          "safety": null,
+          "final_ball": [
+            0.2440281149277954,
+            0.037116769221474555,
+            0.06712559538864528
+          ],
+          "seed": 500006,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 13121.557655261782,
+          "speed_rms": 39.80888967984479,
+          "smooth": 0.30484185681994763,
+          "points": 0.30484185681994763,
+          "steps": 120,
+          "safety": null,
+          "final_ball": [
+            0.2580418871898119,
+            0.0522713672417845,
+            0.07344341825318758
+          ],
+          "seed": 500007,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 14572.02849044274,
+          "speed_rms": 52.39800245019461,
+          "smooth": 0.27449850256767294,
+          "points": 0.0,
+          "steps": 100,
+          "safety": null,
+          "final_ball": [
+            0.34929189922563925,
+            -0.2452232448159195,
+            0.019769817381614832
+          ],
+          "seed": 500008,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 12343.346281184926,
+          "speed_rms": 43.33790023296884,
+          "smooth": 0.3240612317664,
+          "points": 0.3240612317664,
+          "steps": 108,
+          "safety": null,
+          "final_ball": [
+            0.2514400756599781,
+            0.030087439419240674,
+            0.06796188694695195
+          ],
+          "seed": 500009,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 14505.502320689693,
+          "speed_rms": 34.570548824614896,
+          "smooth": 0.2757574271864176,
+          "points": 0.2757574271864176,
+          "steps": 136,
+          "safety": null,
+          "final_ball": [
+            0.25228042585925975,
+            0.08477968223220635,
+            0.07515033696986846
+          ],
+          "seed": 500010,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 20364.271085268392,
+          "speed_rms": 52.65076068726292,
+          "smooth": 0.1964224490653937,
+          "points": 0.0,
+          "steps": 96,
+          "safety": null,
+          "final_ball": [
+            0.5390321008269193,
+            0.43365966485036495,
+            -0.03328185360351268
+          ],
+          "seed": 500011,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 15023.741847369087,
+          "speed_rms": 52.91386003375213,
+          "smooth": 0.2662452563840125,
+          "points": 0.2662452563840125,
+          "steps": 99,
+          "safety": null,
+          "final_ball": [
+            0.2432247949365741,
+            0.07745831304119931,
+            0.07121791986949308
+          ],
+          "seed": 500012,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 16062.413217521964,
+          "speed_rms": 52.74516432691074,
+          "smooth": 0.24902858280575985,
+          "points": 0.0,
+          "steps": 85,
+          "safety": null,
+          "final_ball": [
+            0.4592155799347744,
+            0.43744575394721275,
+            -0.038120820905114546
+          ],
+          "seed": 500013,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 15523.605715207128,
+          "speed_rms": 39.27471216541863,
+          "smooth": 0.2576720945753954,
+          "points": 0.2576720945753954,
+          "steps": 128,
+          "safety": null,
+          "final_ball": [
+            0.2519944892742172,
+            0.09906621532716404,
+            0.07593670770226459
+          ],
+          "seed": 500014,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 13755.766910760265,
+          "speed_rms": 34.138416448613846,
+          "smooth": 0.29078713138640444,
+          "points": 0.29078713138640444,
+          "steps": 141,
+          "safety": null,
+          "final_ball": [
+            0.24890461775384062,
+            0.051477677984927736,
+            0.07068535384747617
+          ],
+          "seed": 500015,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 20359.057402384333,
+          "speed_rms": 66.98299333617129,
+          "smooth": 0.19647275023309987,
+          "points": 0.0,
+          "steps": 68,
+          "safety": null,
+          "final_ball": [
+            0.2165707675689066,
+            0.43945377161350935,
+            -0.03679526867744151
+          ],
+          "seed": 500016,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 14242.085283059752,
+          "speed_rms": 42.443969013259284,
+          "smooth": 0.2808577480404362,
+          "points": 0.2808577480404362,
+          "steps": 121,
+          "safety": null,
+          "final_ball": [
+            0.24284499942195825,
+            0.11414891974574116,
+            0.07353366671883738
+          ],
+          "seed": 500017,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 12957.006046282668,
+          "speed_rms": 37.574454976535044,
+          "smooth": 0.30871329269369213,
+          "points": 0.30871329269369213,
+          "steps": 124,
+          "safety": null,
+          "final_ball": [
+            0.2582363417369752,
+            0.0397612851337146,
+            0.07345214229296802
+          ],
+          "seed": 500018,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 12781.319524211394,
+          "speed_rms": 35.406342991943255,
+          "smooth": 0.31295673286493475,
+          "points": 0.31295673286493475,
+          "steps": 131,
+          "safety": null,
+          "final_ball": [
+            0.2511630811046732,
+            0.08900277453263687,
+            0.07341678108144192
+          ],
+          "seed": 500019,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 13018.733552251906,
+          "speed_rms": 49.16096262601931,
+          "smooth": 0.3072495480413379,
+          "points": 0.3072495480413379,
+          "steps": 105,
+          "safety": null,
+          "final_ball": [
+            0.2711355706852678,
+            0.012053096157042456,
+            0.061301277498744755
+          ],
+          "seed": 500020,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 12453.927676753074,
+          "speed_rms": 47.729233366673526,
+          "smooth": 0.32118381476283475,
+          "points": 0.32118381476283475,
+          "steps": 102,
+          "safety": null,
+          "final_ball": [
+            0.2516629269269883,
+            0.029108758304222385,
+            0.06870624113624645
+          ],
+          "seed": 500021,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 13553.636783704242,
+          "speed_rms": 45.94003651937235,
+          "smooth": 0.2951237416078071,
+          "points": 0.2951237416078071,
+          "steps": 109,
+          "safety": null,
+          "final_ball": [
+            0.2454023192527383,
+            0.09736363684211836,
+            0.06970665070346803
+          ],
+          "seed": 500022,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 31481.34825805934,
+          "speed_rms": 54.04810746330634,
+          "smooth": 0.127059361219575,
+          "points": 0.0,
+          "steps": 102,
+          "safety": null,
+          "final_ball": [
+            0.5327077070264836,
+            0.15696563000994007,
+            0.019769817381585054
+          ],
+          "seed": 500023,
+          "kick": false
+        }
+      ],
+      "held_kicked": "0/0"
+    },
+    "run|smoother|clean|indist|none": {
+      "n": 24,
+      "held": 9,
+      "ever_held": 13,
+      "touched": 24,
+      "jerk_median": 14536.478662732394,
+      "smooth_mean": 0.2837137152014308,
+      "points": 2.7527765224828173,
+      "episodes": [
+        {
+          "held": false,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 14433.343569788238,
+          "speed_rms": 49.17003588924565,
+          "smooth": 0.2771360621091823,
+          "points": 0.0,
+          "steps": 104,
+          "safety": null,
+          "final_ball": [
+            0.6303457114078795,
+            0.31597246210238644,
+            -0.02101550732425939
+          ],
+          "seed": 500000,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 15187.236534067555,
+          "speed_rms": 49.47838684220674,
+          "smooth": 0.2633790545783178,
+          "points": 0.0,
+          "steps": 94,
+          "safety": null,
+          "final_ball": [
+            0.6342676103192045,
+            0.198124707484661,
+            -0.020678613085098718
+          ],
+          "seed": 500001,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 11700.623842025961,
+          "speed_rms": 48.85334571543353,
+          "smooth": 0.3418621138501108,
+          "points": 0.3418621138501108,
+          "steps": 108,
+          "safety": null,
+          "final_ball": [
+            0.2533115724689663,
+            0.0327750162792155,
+            0.07122369024486341
+          ],
+          "seed": 500002,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 13275.791548460695,
+          "speed_rms": 55.51452094313446,
+          "smooth": 0.3013003017860576,
+          "points": 0.0,
+          "steps": 94,
+          "safety": null,
+          "final_ball": [
+            0.2902480117343756,
+            -0.10327822996588527,
+            0.019984404367488932
+          ],
+          "seed": 500003,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 14639.61375567655,
+          "speed_rms": 52.458176041882865,
+          "smooth": 0.2732312523237841,
+          "points": 0.0,
+          "steps": 101,
+          "safety": null,
+          "final_ball": [
+            0.6320139029108103,
+            0.3715603752860563,
+            -0.028203834916542964
+          ],
+          "seed": 500004,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 13703.218659275695,
+          "speed_rms": 49.521805261331835,
+          "smooth": 0.2919022238101998,
+          "points": 0.2919022238101998,
+          "steps": 106,
+          "safety": null,
+          "final_ball": [
+            0.24572044579364768,
+            0.05980752364876214,
+            0.0727462273566636
+          ],
+          "seed": 500005,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 15251.37882482756,
+          "speed_rms": 53.07843382594703,
+          "smooth": 0.2622713687688645,
+          "points": 0.2622713687688645,
+          "steps": 96,
+          "safety": null,
+          "final_ball": [
+            0.24381250294560589,
+            0.03456854547906059,
+            0.0672597077351594
+          ],
+          "seed": 500006,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 16373.208213825154,
+          "speed_rms": 58.326458347398116,
+          "smooth": 0.24430154113733762,
+          "points": 0.0,
+          "steps": 70,
+          "safety": null,
+          "final_ball": [
+            0.5187154191813256,
+            0.4694763617314675,
+            -0.04478416377392405
+          ],
+          "seed": 500007,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 12386.729422731183,
+          "speed_rms": 51.87136577819422,
+          "smooth": 0.3229262433600515,
+          "points": 0.0,
+          "steps": 100,
+          "safety": null,
+          "final_ball": [
+            0.32890600826596506,
+            0.024831110504827437,
+            0.019986217742213045
+          ],
+          "seed": 500008,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 12003.498621422885,
+          "speed_rms": 46.32696604191949,
+          "smooth": 0.3332361777308092,
+          "points": 0.3332361777308092,
+          "steps": 108,
+          "safety": null,
+          "final_ball": [
+            0.253273892781178,
+            0.026374384124503453,
+            0.07055216968092096
+          ],
+          "seed": 500009,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 15652.127737163992,
+          "speed_rms": 51.047914834104375,
+          "smooth": 0.25555630947877506,
+          "points": 0.0,
+          "steps": 86,
+          "safety": null,
+          "final_ball": [
+            0.5533545461458758,
+            0.43975319861049256,
+            -0.04320579097489579
+          ],
+          "seed": 500010,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 15166.972046764444,
+          "speed_rms": 52.11401161299789,
+          "smooth": 0.263730953526305,
+          "points": 0.0,
+          "steps": 102,
+          "safety": null,
+          "final_ball": [
+            0.506911036621885,
+            0.12725102992521592,
+            0.019769817381585057
+          ],
+          "seed": 500011,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 14895.81359382811,
+          "speed_rms": 53.996345196428656,
+          "smooth": 0.26853182438167383,
+          "points": 0.26853182438167383,
+          "steps": 99,
+          "safety": null,
+          "final_ball": [
+            0.24208597144027877,
+            0.04685897614604774,
+            0.07365379429780337
+          ],
+          "seed": 500012,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 13623.6797392296,
+          "speed_rms": 49.968922697038956,
+          "smooth": 0.29360643207737314,
+          "points": 0.29360643207737314,
+          "steps": 103,
+          "safety": null,
+          "final_ball": [
+            0.24138725175989373,
+            0.058319754644691794,
+            0.07473628766531992
+          ],
+          "seed": 500013,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 16007.395750140407,
+          "speed_rms": 53.15403726965744,
+          "smooth": 0.24988449479453362,
+          "points": 0.0,
+          "steps": 88,
+          "safety": null,
+          "final_ball": [
+            0.419347807879187,
+            0.4357861034872336,
+            -0.03816588060318676
+          ],
+          "seed": 500014,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 12589.635194355838,
+          "speed_rms": 45.08473761519406,
+          "smooth": 0.31772167646233884,
+          "points": 0.0,
+          "steps": 116,
+          "safety": null,
+          "final_ball": [
+            0.5832203704859579,
+            0.4317372288432858,
+            -0.028387442347596423
+          ],
+          "seed": 500015,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 16627.65697655011,
+          "speed_rms": 56.091578596164084,
+          "smooth": 0.2405630574194053,
+          "points": 0.0,
+          "steps": 96,
+          "safety": null,
+          "final_ball": [
+            0.351757412068084,
+            0.1664846989823176,
+            0.019974093667103014
+          ],
+          "seed": 500016,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 13254.25954208645,
+          "speed_rms": 46.566090107678804,
+          "smooth": 0.3017897746229233,
+          "points": 0.0,
+          "steps": 117,
+          "safety": null,
+          "final_ball": [
+            0.6438161088435849,
+            -0.049270147290732265,
+            -0.049666470702848985
+          ],
+          "seed": 500017,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 14804.754825355216,
+          "speed_rms": 51.56941125906155,
+          "smooth": 0.2701834678916425,
+          "points": 0.0,
+          "steps": 85,
+          "safety": null,
+          "final_ball": [
+            0.6427686185706281,
+            0.39373115341266457,
+            -0.052217739246759855
+          ],
+          "seed": 500018,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 14834.993726586326,
+          "speed_rms": 55.59980297792703,
+          "smooth": 0.26963273956978195,
+          "points": 0.0,
+          "steps": 80,
+          "safety": null,
+          "final_ball": [
+            0.3945054357760104,
+            0.44636682535324196,
+            -0.052872486976478665
+          ],
+          "seed": 500019,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 11510.193329351858,
+          "speed_rms": 48.971515895699106,
+          "smooth": 0.34751805513115924,
+          "points": 0.34751805513115924,
+          "steps": 105,
+          "safety": null,
+          "final_ball": [
+            0.27452430255930815,
+            0.00041002725140062843,
+            0.07058533493455411
+          ],
+          "seed": 500020,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 12417.488427019478,
+          "speed_rms": 49.53466768045058,
+          "smooth": 0.32212633202832824,
+          "points": 0.32212633202832824,
+          "steps": 102,
+          "safety": null,
+          "final_ball": [
+            0.25212433467345496,
+            0.023805846626200396,
+            0.06951796325416675
+          ],
+          "seed": 500021,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 13711.68466078318,
+          "speed_rms": 48.245797115796194,
+          "smooth": 0.2917219947042984,
+          "points": 0.2917219947042984,
+          "steps": 109,
+          "safety": null,
+          "final_ball": [
+            0.2410983823587486,
+            0.054475334130440596,
+            0.06830948283840568
+          ],
+          "seed": 500022,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 19510.699622914803,
+          "speed_rms": 61.72635225629138,
+          "smooth": 0.20501571329108595,
+          "points": 0.0,
+          "steps": 77,
+          "safety": null,
+          "final_ball": [
+            0.49268231868287676,
+            0.4418493773175717,
+            -0.05038267012668299
+          ],
+          "seed": 500023,
+          "kick": false
+        }
+      ],
+      "held_kicked": "0/0"
+    },
+    "run|smoother|real1|hard|oracle": {
+      "n": 24,
+      "held": 14,
+      "ever_held": 16,
+      "touched": 23,
+      "jerk_median": 16477.37096761178,
+      "smooth_mean": 0.2509079169719481,
+      "points": 3.525699659193036,
+      "episodes": [
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 13900.201419326737,
+          "speed_rms": 60.217648986003766,
+          "smooth": 0.2877656142765262,
+          "points": 0.2877656142765262,
+          "steps": 96,
+          "safety": null,
+          "final_ball": [
+            0.27453003009380905,
+            -0.0338246607137211,
+            0.07082864365153765
+          ],
+          "seed": 700001,
+          "kick": true
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 14380.427744189701,
+          "speed_rms": 48.774457342985414,
+          "smooth": 0.2781558428688721,
+          "points": 0.2781558428688721,
+          "steps": 112,
+          "safety": null,
+          "final_ball": [
+            0.2912536666936107,
+            -0.048303779794180796,
+            0.0666233415724058
+          ],
+          "seed": 700002,
+          "kick": true
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 20531.119155003224,
+          "speed_rms": 59.84331991281103,
+          "smooth": 0.19482620356938707,
+          "points": 0.0,
+          "steps": 77,
+          "safety": null,
+          "final_ball": [
+            0.2346718135873855,
+            0.43452508063526474,
+            -0.025687560776487917
+          ],
+          "seed": 700004,
+          "kick": true
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 11442.69693589424,
+          "speed_rms": 52.22749213138772,
+          "smooth": 0.3495679403561344,
+          "points": 0.3495679403561344,
+          "steps": 105,
+          "safety": null,
+          "final_ball": [
+            0.27997299915165563,
+            -0.06616573960743981,
+            0.06846508251969202
+          ],
+          "seed": 700005,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 23800.544052987778,
+          "speed_rms": 60.2476318469642,
+          "smooth": 0.16806338506778226,
+          "points": 0.16806338506778226,
+          "steps": 92,
+          "safety": null,
+          "final_ball": [
+            0.2641008518669532,
+            -0.016347540965611734,
+            0.06607894742750059
+          ],
+          "seed": 700006,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": false,
+          "jerk": 10956.91343532038,
+          "speed_rms": 51.162492967072815,
+          "smooth": 0.36506631394072336,
+          "points": 0.0,
+          "steps": 97,
+          "safety": null,
+          "final_ball": [
+            0.10051328495610676,
+            -0.43124106201532997,
+            -0.023855264809450594
+          ],
+          "seed": 700007,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 15528.27946429196,
+          "speed_rms": 48.3653946764416,
+          "smooth": 0.2575945396396424,
+          "points": 0.2575945396396424,
+          "steps": 107,
+          "safety": null,
+          "final_ball": [
+            0.25220495175734164,
+            0.039803125153819466,
+            0.07410531687464694
+          ],
+          "seed": 700009,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 27888.10857692529,
+          "speed_rms": 56.39400251325551,
+          "smooth": 0.14343030790225814,
+          "points": 0.0,
+          "steps": 92,
+          "safety": null,
+          "final_ball": [
+            0.19507042383130313,
+            0.06108864757002396,
+            0.019769817381585047
+          ],
+          "seed": 700010,
+          "kick": true
+        },
+        {
+          "held": false,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 18762.059913588837,
+          "speed_rms": 56.71809936379814,
+          "smooth": 0.2131962065158374,
+          "points": 0.0,
+          "steps": 88,
+          "safety": null,
+          "final_ball": [
+            0.23299830785159353,
+            0.43143362178567457,
+            -0.03209811156491293
+          ],
+          "seed": 700012,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 20202.36098962144,
+          "speed_rms": 62.339045090409854,
+          "smooth": 0.19799665999706273,
+          "points": 0.19799665999706273,
+          "steps": 95,
+          "safety": null,
+          "final_ball": [
+            0.24365686000185524,
+            0.08454297239783694,
+            0.07399151940140085
+          ],
+          "seed": 700013,
+          "kick": true
+        },
+        {
+          "held": false,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 19218.624640768543,
+          "speed_rms": 58.358356304340276,
+          "smooth": 0.20813143889156274,
+          "points": 0.0,
+          "steps": 96,
+          "safety": null,
+          "final_ball": [
+            0.2333157073383953,
+            0.12827729516487904,
+            0.01976981738158425
+          ],
+          "seed": 700014,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 20666.616988464848,
+          "speed_rms": 51.733536302315336,
+          "smooth": 0.19354885234640073,
+          "points": 0.19354885234640073,
+          "steps": 104,
+          "safety": null,
+          "final_ball": [
+            0.25504521110194917,
+            0.06417373395073685,
+            0.07705550845554748
+          ],
+          "seed": 700016,
+          "kick": true
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 17985.471430353722,
+          "speed_rms": 61.22290816278471,
+          "smooth": 0.22240173216973783,
+          "points": 0.22240173216973783,
+          "steps": 90,
+          "safety": null,
+          "final_ball": [
+            0.25373337906724386,
+            -0.010689787452807744,
+            0.06913975751593925
+          ],
+          "seed": 700017,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 23995.226967696057,
+          "speed_rms": 61.04791304467227,
+          "smooth": 0.16669981931761102,
+          "points": 0.0,
+          "steps": 89,
+          "safety": null,
+          "final_ball": [
+            0.22794289373178606,
+            0.1951486256668431,
+            0.019769817381585047
+          ],
+          "seed": 700021,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 14079.682977332042,
+          "speed_rms": 54.849216245736336,
+          "smooth": 0.28409730577314174,
+          "points": 0.28409730577314174,
+          "steps": 99,
+          "safety": null,
+          "final_ball": [
+            0.27310391560921915,
+            0.02058071948935186,
+            0.07068331563533407
+          ],
+          "seed": 700023,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 25752.756819137812,
+          "speed_rms": 61.81901943799748,
+          "smooth": 0.1553231767803381,
+          "points": 0.1553231767803381,
+          "steps": 91,
+          "safety": null,
+          "final_ball": [
+            0.24945786728437447,
+            -4.5092609481821625e-07,
+            0.06519673808391295
+          ],
+          "seed": 700024,
+          "kick": true
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 13002.815410252126,
+          "speed_rms": 53.46211965144559,
+          "smooth": 0.3076256851916995,
+          "points": 0.0,
+          "steps": 96,
+          "safety": null,
+          "final_ball": [
+            0.2188346837010859,
+            0.32951475274356473,
+            0.019774448191833462
+          ],
+          "seed": 700025,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 10624.251041412419,
+          "speed_rms": 56.34362921191219,
+          "smooth": 0.3764971276006509,
+          "points": 0.0,
+          "steps": 88,
+          "safety": null,
+          "final_ball": [
+            0.40236518322876885,
+            0.4369939928559858,
+            -0.038945055815213875
+          ],
+          "seed": 700026,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 16603.584339930534,
+          "speed_rms": 60.809131435571864,
+          "smooth": 0.24091183675203562,
+          "points": 0.24091183675203562,
+          "steps": 93,
+          "safety": null,
+          "final_ball": [
+            0.24405861308396543,
+            0.09657662161716606,
+            0.07409157658445799
+          ],
+          "seed": 700027,
+          "kick": true
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 10184.149046287554,
+          "speed_rms": 45.62988620542661,
+          "smooth": 0.3927672289378097,
+          "points": 0.3927672289378097,
+          "steps": 115,
+          "safety": null,
+          "final_ball": [
+            0.29122461494999263,
+            -0.06293124444672227,
+            0.07230816048306514
+          ],
+          "seed": 700028,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 14493.475814990055,
+          "speed_rms": 63.395635856737805,
+          "smooth": 0.27598624726464516,
+          "points": 0.0,
+          "steps": 73,
+          "safety": null,
+          "final_ball": [
+            0.33235537463455933,
+            0.4365426063672387,
+            -0.021247062265197736
+          ],
+          "seed": 700031,
+          "kick": true
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 11605.512208740509,
+          "speed_rms": 64.58886354620255,
+          "smooth": 0.34466380527241725,
+          "points": 0.34466380527241725,
+          "steps": 89,
+          "safety": null,
+          "final_ball": [
+            0.2753101714096173,
+            0.16455657272416727,
+            0.06002764342643691
+          ],
+          "seed": 700032,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 26170.86162029443,
+          "speed_rms": 56.929394604268374,
+          "smooth": 0.1528417389551349,
+          "points": 0.1528417389551349,
+          "steps": 99,
+          "safety": null,
+          "final_ball": [
+            0.24377863834333807,
+            0.092584225813762,
+            0.07406944987023288
+          ],
+          "seed": 700034,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 16351.157595293027,
+          "speed_rms": 44.70929557687975,
+          "smooth": 0.24463099793934293,
+          "points": 0.0,
+          "steps": 112,
+          "safety": null,
+          "final_ball": [
+            0.2796286205731591,
+            -0.20611813824318828,
+            0.01986182831355618
+          ],
+          "seed": 700035,
+          "kick": false
+        }
+      ],
+      "held_kicked": "6/9"
+    },
+    "run|smoother|real1|hard|tabpfn": {
+      "n": 24,
+      "held": 3,
+      "ever_held": 6,
+      "touched": 18,
+      "jerk_median": 20974.14083233056,
+      "smooth_mean": 0.19668915277124807,
+      "points": 0.7090781926480126,
+      "episodes": [
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 14558.930095917081,
+          "speed_rms": 53.399884037857774,
+          "smooth": 0.27474546368773095,
+          "points": 0.0,
+          "steps": 96,
+          "safety": null,
+          "final_ball": [
+            0.19272246765072568,
+            -0.13572466476161263,
+            0.019769817381585054
+          ],
+          "seed": 700001,
+          "kick": true
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 17441.19131316415,
+          "speed_rms": 44.325724653065805,
+          "smooth": 0.22934213197815828,
+          "points": 0.0,
+          "steps": 112,
+          "safety": null,
+          "final_ball": [
+            0.2959705626987964,
+            -0.17837937846352453,
+            0.01998844638856393
+          ],
+          "seed": 700002,
+          "kick": true
+        },
+        {
+          "held": false,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 30116.99298504373,
+          "speed_rms": 49.56128538737242,
+          "smooth": 0.13281538439068014,
+          "points": 0.0,
+          "steps": 91,
+          "safety": null,
+          "final_ball": [
+            0.579238658105811,
+            0.43816895857595145,
+            -0.047155090278864456
+          ],
+          "seed": 700004,
+          "kick": true
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 18152.22642028752,
+          "speed_rms": 46.81995676726523,
+          "smooth": 0.2203586440244856,
+          "points": 0.2203586440244856,
+          "steps": 105,
+          "safety": null,
+          "final_ball": [
+            0.27581566483676173,
+            -0.02063981143818539,
+            0.06318742887917447
+          ],
+          "seed": 700005,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 21561.062665425023,
+          "speed_rms": 54.68056249229517,
+          "smooth": 0.18551961292772162,
+          "points": 0.0,
+          "steps": 92,
+          "safety": null,
+          "final_ball": [
+            0.25891319697217385,
+            0.07987793014280471,
+            0.01976982747761905
+          ],
+          "seed": 700006,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": false,
+          "jerk": 17286.251743009652,
+          "speed_rms": 48.50660357147386,
+          "smooth": 0.23139776392632663,
+          "points": 0.0,
+          "steps": 97,
+          "safety": null,
+          "final_ball": [
+            0.10051328495673564,
+            -0.4312410620137979,
+            -0.023855264805565084
+          ],
+          "seed": 700007,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 21088.712473642714,
+          "speed_rms": 43.89288743179869,
+          "smooth": 0.18967492704921252,
+          "points": 0.18967492704921252,
+          "steps": 107,
+          "safety": null,
+          "final_ball": [
+            0.25520030191663917,
+            0.044701193079921236,
+            0.06750420094343068
+          ],
+          "seed": 700009,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 26603.482223919793,
+          "speed_rms": 47.66668066376399,
+          "smooth": 0.15035625661077967,
+          "points": 0.0,
+          "steps": 92,
+          "safety": null,
+          "final_ball": [
+            0.10784795336925593,
+            0.06474905726349629,
+            0.019769817381585047
+          ],
+          "seed": 700010,
+          "kick": true
+        },
+        {
+          "held": false,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 18780.27802676206,
+          "speed_rms": 47.47956730824748,
+          "smooth": 0.21298939207928475,
+          "points": 0.0,
+          "steps": 101,
+          "safety": null,
+          "final_ball": [
+            0.45941381186647534,
+            0.3035965015519789,
+            0.01977809679646165
+          ],
+          "seed": 700012,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 20120.18680430697,
+          "speed_rms": 51.735007229946646,
+          "smooth": 0.19880531124809198,
+          "points": 0.0,
+          "steps": 95,
+          "safety": null,
+          "final_ball": [
+            0.28613874632071495,
+            0.06520206545800891,
+            0.019430532088217104
+          ],
+          "seed": 700013,
+          "kick": true
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": false,
+          "jerk": 24850.528270018644,
+          "speed_rms": 58.862656982940116,
+          "smooth": 0.1609623729740132,
+          "points": 0.0,
+          "steps": 65,
+          "safety": null,
+          "final_ball": [
+            0.009455828869441105,
+            0.433338259830298,
+            -0.020023829255372157
+          ],
+          "seed": 700014,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 21392.644557681775,
+          "speed_rms": 42.72764459561378,
+          "smooth": 0.18698015522179376,
+          "points": 0.0,
+          "steps": 104,
+          "safety": null,
+          "final_ball": [
+            0.22130285260207547,
+            0.16771963036844661,
+            0.019769817381585047
+          ],
+          "seed": 700016,
+          "kick": true
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 19114.39395266957,
+          "speed_rms": 54.434775251621296,
+          "smooth": 0.2092663785158278,
+          "points": 0.0,
+          "steps": 90,
+          "safety": null,
+          "final_ball": [
+            0.2309783394111897,
+            0.011551022695085669,
+            0.019769817381585047
+          ],
+          "seed": 700017,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": false,
+          "jerk": 29565.98220094998,
+          "speed_rms": 57.754578345478656,
+          "smooth": 0.13529061787338412,
+          "points": 0.0,
+          "steps": 89,
+          "safety": null,
+          "final_ball": [
+            -0.18369451664897193,
+            0.35817494995510807,
+            0.019769817381585054
+          ],
+          "seed": 700021,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 20316.565243126053,
+          "speed_rms": 57.89003644382985,
+          "smooth": 0.19688367359996384,
+          "points": 0.0,
+          "steps": 99,
+          "safety": null,
+          "final_ball": [
+            0.346159858723779,
+            -0.16265397405092802,
+            0.020000558156815187
+          ],
+          "seed": 700023,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 23632.505913657347,
+          "speed_rms": 53.08584402074316,
+          "smooth": 0.1692583941209713,
+          "points": 0.0,
+          "steps": 91,
+          "safety": null,
+          "final_ball": [
+            0.17163579038100774,
+            0.10605264403314049,
+            0.019769817381585047
+          ],
+          "seed": 700024,
+          "kick": true
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": false,
+          "jerk": 24601.068802123707,
+          "speed_rms": 69.048703830745,
+          "smooth": 0.16259456173118367,
+          "points": 0.0,
+          "steps": 53,
+          "safety": null,
+          "final_ball": [
+            0.09341027044990684,
+            0.43994653250590854,
+            -0.036140059525124585
+          ],
+          "seed": 700025,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 13375.930250616373,
+          "speed_rms": 52.975050853145135,
+          "smooth": 0.29904462157431455,
+          "points": 0.29904462157431455,
+          "steps": 107,
+          "safety": null,
+          "final_ball": [
+            0.25063732976239506,
+            0.11705061119020704,
+            0.07449395459858597
+          ],
+          "seed": 700026,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": false,
+          "jerk": 16878.20469958388,
+          "speed_rms": 62.94507578586627,
+          "smooth": 0.23699203032527608,
+          "points": 0.0,
+          "steps": 64,
+          "safety": null,
+          "final_ball": [
+            -0.024306163972070097,
+            0.4443893065786825,
+            -0.044275476829029374
+          ],
+          "seed": 700027,
+          "kick": true
+        },
+        {
+          "held": false,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 24099.34555552973,
+          "speed_rms": 50.233282009838824,
+          "smooth": 0.16597961097255512,
+          "points": 0.0,
+          "steps": 94,
+          "safety": null,
+          "final_ball": [
+            0.6400185537577935,
+            -0.18144311955721873,
+            -0.043265319150020624
+          ],
+          "seed": 700028,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 20859.569191018403,
+          "speed_rms": 51.0572479918864,
+          "smooth": 0.19175851444344774,
+          "points": 0.0,
+          "steps": 87,
+          "safety": null,
+          "final_ball": [
+            0.3064715037854555,
+            0.43466745433116155,
+            -0.020576916863991608
+          ],
+          "seed": 700031,
+          "kick": true
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 15080.069804584344,
+          "speed_rms": 59.29356563472489,
+          "smooth": 0.26525076155708505,
+          "points": 0.0,
+          "steps": 87,
+          "safety": null,
+          "final_ball": [
+            0.24515866455495686,
+            0.43340802498588343,
+            -0.02001899965533452
+          ],
+          "seed": 700032,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 26744.464758878144,
+          "speed_rms": 48.53631283539528,
+          "smooth": 0.14956365872576127,
+          "points": 0.0,
+          "steps": 99,
+          "safety": null,
+          "final_ball": [
+            0.21694921429020825,
+            0.2344422160025375,
+            0.019778120167989802
+          ],
+          "seed": 700034,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": false,
+          "jerk": 24285.191649461798,
+          "speed_rms": 51.71195436258179,
+          "smooth": 0.1647094269519033,
+          "points": 0.0,
+          "steps": 77,
+          "safety": null,
+          "final_ball": [
+            0.11288288234985829,
+            -0.4413468380921679,
+            -0.02520601263876139
+          ],
+          "seed": 700035,
+          "kick": false
+        }
+      ],
+      "held_kicked": "0/9"
+    },
+    "run|smoother|real1|hard|none": {
+      "n": 24,
+      "held": 2,
+      "ever_held": 3,
+      "touched": 18,
+      "jerk_median": 19491.848774998216,
+      "smooth_mean": 0.20741593452147025,
+      "points": 0.4409918879933293,
+      "episodes": [
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 14993.77625051364,
+          "speed_rms": 52.978844434938466,
+          "smooth": 0.2667773570292522,
+          "points": 0.0,
+          "steps": 96,
+          "safety": null,
+          "final_ball": [
+            0.29388959250380986,
+            -0.06984785055999584,
+            0.019983901886484405
+          ],
+          "seed": 700001,
+          "kick": true
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 18255.328823557193,
+          "speed_rms": 44.79904831181654,
+          "smooth": 0.21911410299212397,
+          "points": 0.0,
+          "steps": 112,
+          "safety": null,
+          "final_ball": [
+            0.31355170078377914,
+            -0.035481827555247154,
+            0.019984187572017913
+          ],
+          "seed": 700002,
+          "kick": true
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 26481.75529977927,
+          "speed_rms": 48.138635481020216,
+          "smooth": 0.15104738922020552,
+          "points": 0.0,
+          "steps": 106,
+          "safety": null,
+          "final_ball": [
+            0.3095917027729299,
+            0.11946130422215821,
+            0.01998485488700056
+          ],
+          "seed": 700004,
+          "kick": true
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 16182.925692341792,
+          "speed_rms": 46.379688368990415,
+          "smooth": 0.24717409423024853,
+          "points": 0.24717409423024853,
+          "steps": 105,
+          "safety": null,
+          "final_ball": [
+            0.2771668290334608,
+            -0.017845001190527305,
+            0.06862166332626252
+          ],
+          "seed": 700005,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 22549.02915979912,
+          "speed_rms": 53.35701939071521,
+          "smooth": 0.17739122920339664,
+          "points": 0.0,
+          "steps": 92,
+          "safety": null,
+          "final_ball": [
+            0.25137743922031197,
+            0.06639444840305131,
+            0.019769817381585054
+          ],
+          "seed": 700006,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": false,
+          "jerk": 16407.580160987884,
+          "speed_rms": 47.70206652769615,
+          "smooth": 0.24378975819424942,
+          "points": 0.0,
+          "steps": 97,
+          "safety": null,
+          "final_ball": [
+            0.10051328495617338,
+            -0.43124106201387724,
+            -0.023855264804581756
+          ],
+          "seed": 700007,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 20637.94000714674,
+          "speed_rms": 45.76978040828624,
+          "smooth": 0.19381779376308075,
+          "points": 0.19381779376308075,
+          "steps": 107,
+          "safety": null,
+          "final_ball": [
+            0.27585248333848134,
+            0.028461084818575105,
+            0.0746343432919115
+          ],
+          "seed": 700009,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 24459.73067841002,
+          "speed_rms": 51.80813349006145,
+          "smooth": 0.16353409825279466,
+          "points": 0.0,
+          "steps": 92,
+          "safety": null,
+          "final_ball": [
+            0.19284993958952848,
+            0.058637155579977576,
+            0.019769817381585047
+          ],
+          "seed": 700010,
+          "kick": true
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 17400.682505036726,
+          "speed_rms": 48.665330094561625,
+          "smooth": 0.2298760407151948,
+          "points": 0.0,
+          "steps": 101,
+          "safety": null,
+          "final_ball": [
+            0.30696428117308056,
+            0.03348318189585711,
+            0.019988999254280864
+          ],
+          "seed": 700012,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 18144.21735235798,
+          "speed_rms": 55.06199953240716,
+          "smooth": 0.22045591288511374,
+          "points": 0.0,
+          "steps": 95,
+          "safety": null,
+          "final_ball": [
+            0.31307711753082557,
+            0.1930719202357708,
+            0.02000096833697099
+          ],
+          "seed": 700013,
+          "kick": true
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": false,
+          "jerk": 23798.82284098903,
+          "speed_rms": 59.11026837604649,
+          "smooth": 0.1680755399847234,
+          "points": 0.0,
+          "steps": 65,
+          "safety": null,
+          "final_ball": [
+            0.009455828870063774,
+            0.4333382598305176,
+            -0.020023829255770044
+          ],
+          "seed": 700014,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 20930.205632665828,
+          "speed_rms": 44.48719465572621,
+          "smooth": 0.19111135696427126,
+          "points": 0.0,
+          "steps": 104,
+          "safety": null,
+          "final_ball": [
+            0.2615298988310553,
+            0.16078668754121,
+            0.019769817381585047
+          ],
+          "seed": 700016,
+          "kick": true
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 18345.757542849697,
+          "speed_rms": 54.893194697562215,
+          "smooth": 0.21803405995404151,
+          "points": 0.0,
+          "steps": 90,
+          "safety": null,
+          "final_ball": [
+            0.25085308554173585,
+            0.03754971997901317,
+            0.019769817381585047
+          ],
+          "seed": 700017,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": false,
+          "jerk": 31175.770944812684,
+          "speed_rms": 56.101857661823836,
+          "smooth": 0.12830476613010774,
+          "points": 0.0,
+          "steps": 89,
+          "safety": null,
+          "final_ball": [
+            -0.18369451664936,
+            0.3581749499550788,
+            0.019769817381585054
+          ],
+          "seed": 700021,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 17969.79007892004,
+          "speed_rms": 58.77023362782216,
+          "smooth": 0.2225958112160871,
+          "points": 0.0,
+          "steps": 99,
+          "safety": null,
+          "final_ball": [
+            0.45656842806844783,
+            -0.3126348153305869,
+            0.01977584918142557
+          ],
+          "seed": 700023,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 22327.01241010354,
+          "speed_rms": 54.18972691902045,
+          "smooth": 0.17915518326087812,
+          "points": 0.0,
+          "steps": 91,
+          "safety": null,
+          "final_ball": [
+            0.16775404932809174,
+            0.11868161649719257,
+            0.019769817381585047
+          ],
+          "seed": 700024,
+          "kick": true
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": false,
+          "jerk": 22341.111032572775,
+          "speed_rms": 69.91687661763766,
+          "smooth": 0.17904212526262017,
+          "points": 0.0,
+          "steps": 53,
+          "safety": null,
+          "final_ball": [
+            0.0934102704494413,
+            0.43994653250831967,
+            -0.03614005953006129
+          ],
+          "seed": 700025,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 13135.442145821262,
+          "speed_rms": 53.31127527573854,
+          "smooth": 0.3045196313602971,
+          "points": 0.0,
+          "steps": 107,
+          "safety": null,
+          "final_ball": [
+            0.6216833607917404,
+            0.20547910347481896,
+            0.0036448724351748007
+          ],
+          "seed": 700026,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": false,
+          "jerk": 15443.548851179008,
+          "speed_rms": 63.27471818079164,
+          "smooth": 0.2590078251149267,
+          "points": 0.0,
+          "steps": 64,
+          "safety": null,
+          "final_ball": [
+            -0.024306163976624218,
+            0.44438930658060694,
+            -0.044275476835080735
+          ],
+          "seed": 700027,
+          "kick": true
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 16086.918683698615,
+          "speed_rms": 43.58545419035278,
+          "smooth": 0.24864923349512089,
+          "points": 0.0,
+          "steps": 115,
+          "safety": null,
+          "final_ball": [
+            0.6233651098636814,
+            0.26578547574447936,
+            -0.0008866460984151194
+          ],
+          "seed": 700028,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 22729.71785214939,
+          "speed_rms": 57.510180581533845,
+          "smooth": 0.17598106698987237,
+          "points": 0.0,
+          "steps": 72,
+          "safety": null,
+          "final_ball": [
+            0.24320207031937793,
+            0.44402591481839354,
+            -0.046938703788188915
+          ],
+          "seed": 700031,
+          "kick": true
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 15026.34326993586,
+          "speed_rms": 58.821158536181436,
+          "smooth": 0.2661991629063239,
+          "points": 0.0,
+          "steps": 87,
+          "safety": null,
+          "final_ball": [
+            0.237349441735947,
+            0.4389307177082797,
+            -0.031278838490505244
+          ],
+          "seed": 700032,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 25990.201608559626,
+          "speed_rms": 50.01232557093179,
+          "smooth": 0.15390415435187074,
+          "points": 0.0,
+          "steps": 99,
+          "safety": null,
+          "final_ball": [
+            0.2959572639591692,
+            0.14442284950126608,
+            0.019998396954769657
+          ],
+          "seed": 700034,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": false,
+          "jerk": 23470.771417639222,
+          "speed_rms": 54.401080201868496,
+          "smooth": 0.17042473503848451,
+          "points": 0.0,
+          "steps": 77,
+          "safety": null,
+          "final_ball": [
+            0.11288288235033955,
+            -0.44134683809157504,
+            -0.02520601263785051
+          ],
+          "seed": 700035,
+          "kick": false
+        }
+      ],
+      "held_kicked": "0/9"
+    },
+    "run|smoother|real1|indist|oracle": {
+      "n": 24,
+      "held": 17,
+      "ever_held": 18,
+      "touched": 24,
+      "jerk_median": 13837.894028732102,
+      "smooth_mean": 0.3038919125577985,
+      "points": 5.349363446333244,
+      "episodes": [
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 13566.903987054866,
+          "speed_rms": 40.07003504206995,
+          "smooth": 0.29483513731774624,
+          "points": 0.0,
+          "steps": 97,
+          "safety": null,
+          "final_ball": [
+            0.6360427975363308,
+            0.2600531316487574,
+            -0.02815393326841504
+          ],
+          "seed": 500000,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 13771.43107001142,
+          "speed_rms": 45.140395499907,
+          "smooth": 0.2904563788370821,
+          "points": 0.0,
+          "steps": 109,
+          "safety": null,
+          "final_ball": [
+            0.6306264948287783,
+            0.43245995690471833,
+            -0.04901379151844254
+          ],
+          "seed": 500001,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 15690.4565725679,
+          "speed_rms": 50.63630020039354,
+          "smooth": 0.2549320334625138,
+          "points": 0.2549320334625138,
+          "steps": 108,
+          "safety": null,
+          "final_ball": [
+            0.25715804722046304,
+            0.005731211195220411,
+            0.06908224764808671
+          ],
+          "seed": 500002,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 17540.389635999487,
+          "speed_rms": 61.5127362443953,
+          "smooth": 0.22804510521194427,
+          "points": 0.22804510521194427,
+          "steps": 94,
+          "safety": null,
+          "final_ball": [
+            0.2715765485123574,
+            -0.05135337873139918,
+            0.06924520752361836
+          ],
+          "seed": 500003,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 12442.513033748955,
+          "speed_rms": 36.3349739121623,
+          "smooth": 0.32147846573682004,
+          "points": 0.0,
+          "steps": 130,
+          "safety": null,
+          "final_ball": [
+            0.22098502606500628,
+            0.1467159921948256,
+            0.019769817381585054
+          ],
+          "seed": 500004,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 10230.954058081583,
+          "speed_rms": 48.28933613776121,
+          "smooth": 0.3909703804055635,
+          "points": 0.3909703804055635,
+          "steps": 106,
+          "safety": null,
+          "final_ball": [
+            0.24654132182445232,
+            0.06459844163252679,
+            0.07035028604912061
+          ],
+          "seed": 500005,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 22108.593876711493,
+          "speed_rms": 59.65407855685553,
+          "smooth": 0.1809251199920713,
+          "points": 0.1809251199920713,
+          "steps": 96,
+          "safety": null,
+          "final_ball": [
+            0.24621362329176588,
+            0.030916406622481928,
+            0.06880948117215138
+          ],
+          "seed": 500006,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 13409.96740906339,
+          "speed_rms": 41.45228954191073,
+          "smooth": 0.29828558698036217,
+          "points": 0.29828558698036217,
+          "steps": 120,
+          "safety": null,
+          "final_ball": [
+            0.2576004518950779,
+            0.03336175989432582,
+            0.07204809636764758
+          ],
+          "seed": 500007,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 19087.248642978575,
+          "speed_rms": 57.00207519585364,
+          "smooth": 0.20956399085163266,
+          "points": 0.20956399085163266,
+          "steps": 100,
+          "safety": null,
+          "final_ball": [
+            0.2929816217859543,
+            -0.04860279555547163,
+            0.07168738310036513
+          ],
+          "seed": 500008,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 14248.693660356592,
+          "speed_rms": 49.27285664783042,
+          "smooth": 0.28072748950516035,
+          "points": 0.28072748950516035,
+          "steps": 108,
+          "safety": null,
+          "final_ball": [
+            0.2540351241045764,
+            0.01880195552311701,
+            0.07003672067032102
+          ],
+          "seed": 500009,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 7940.142569212643,
+          "speed_rms": 35.373184607419795,
+          "smooth": 0.5037692919406416,
+          "points": 0.5037692919406416,
+          "steps": 136,
+          "safety": null,
+          "final_ball": [
+            0.25176339190052327,
+            0.06275646198836832,
+            0.07361804203225225
+          ],
+          "seed": 500010,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 13884.603581653831,
+          "speed_rms": 53.17086651993239,
+          "smooth": 0.28808888755638135,
+          "points": 0.0,
+          "steps": 102,
+          "safety": null,
+          "final_ball": [
+            0.4418085557929758,
+            0.3395755152890092,
+            0.019769817381585054
+          ],
+          "seed": 500011,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 22946.662066831228,
+          "speed_rms": 53.36136703722258,
+          "smooth": 0.1743172923517225,
+          "points": 0.0,
+          "steps": 99,
+          "safety": null,
+          "final_ball": [
+            0.5646317846940442,
+            0.10374831540638804,
+            0.019769817381585043
+          ],
+          "seed": 500012,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 11480.351630027651,
+          "speed_rms": 55.85586950481863,
+          "smooth": 0.34842138367414843,
+          "points": 0.34842138367414843,
+          "steps": 103,
+          "safety": null,
+          "final_ball": [
+            0.24276682298199925,
+            0.09590674982847772,
+            0.07181910647675198
+          ],
+          "seed": 500013,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 13860.410455757463,
+          "speed_rms": 35.62054842013635,
+          "smooth": 0.2885917421253888,
+          "points": 0.2885917421253888,
+          "steps": 128,
+          "safety": null,
+          "final_ball": [
+            0.24692599738352106,
+            0.06088834235322261,
+            0.07259901611775581
+          ],
+          "seed": 500014,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 8902.14306439819,
+          "speed_rms": 32.069394651237076,
+          "smooth": 0.4493300063887944,
+          "points": 0.4493300063887944,
+          "steps": 141,
+          "safety": null,
+          "final_ball": [
+            0.2557519239236487,
+            -0.003952366577974301,
+            0.07323975315707484
+          ],
+          "seed": 500015,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 13815.377601706741,
+          "speed_rms": 60.772834642184556,
+          "smooth": 0.28953244097402325,
+          "points": 0.0,
+          "steps": 96,
+          "safety": null,
+          "final_ball": [
+            0.6037220570784557,
+            0.23585324475969224,
+            0.01949258979496652
+          ],
+          "seed": 500016,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 14018.66609249275,
+          "speed_rms": 39.40670505843477,
+          "smooth": 0.28533385228014474,
+          "points": 0.0,
+          "steps": 121,
+          "safety": null,
+          "final_ball": [
+            0.5035739160957635,
+            0.4353598672263179,
+            -0.044508280894027974
+          ],
+          "seed": 500017,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 8736.059332755025,
+          "speed_rms": 40.61657964658839,
+          "smooth": 0.4578723481195211,
+          "points": 0.4578723481195211,
+          "steps": 124,
+          "safety": null,
+          "final_ball": [
+            0.2616873936555371,
+            0.010082526205254667,
+            0.07118764486224885
+          ],
+          "seed": 500018,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 11283.15833767771,
+          "speed_rms": 37.04524449374928,
+          "smooth": 0.3545106680496408,
+          "points": 0.3545106680496408,
+          "steps": 131,
+          "safety": null,
+          "final_ball": [
+            0.24997820494883324,
+            0.039015306718469006,
+            0.07097603360668618
+          ],
+          "seed": 500019,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 15452.672778017828,
+          "speed_rms": 52.23178134311134,
+          "smooth": 0.2588548956844665,
+          "points": 0.2588548956844665,
+          "steps": 105,
+          "safety": null,
+          "final_ball": [
+            0.28065441966849997,
+            -0.04720957703134978,
+            0.06825673790257956
+          ],
+          "seed": 500020,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 14233.70142777728,
+          "speed_rms": 54.86416600299534,
+          "smooth": 0.28102317730186055,
+          "points": 0.28102317730186055,
+          "steps": 102,
+          "safety": null,
+          "final_ball": [
+            0.2566326383269655,
+            -0.0035282754011440663,
+            0.06925387505205155
+          ],
+          "seed": 500021,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 10022.057223592074,
+          "speed_rms": 48.292665945743934,
+          "smooth": 0.3991196528576927,
+          "points": 0.3991196528576927,
+          "steps": 109,
+          "safety": null,
+          "final_ball": [
+            0.24569238752420325,
+            0.08229560787976364,
+            0.07286146898316638
+          ],
+          "seed": 500022,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 24327.855742112588,
+          "speed_rms": 52.1632486732562,
+          "smooth": 0.16442057378184072,
+          "points": 0.16442057378184072,
+          "steps": 102,
+          "safety": null,
+          "final_ball": [
+            0.25230263409196313,
+            0.08824330332287128,
+            0.07437391401580665
+          ],
+          "seed": 500023,
+          "kick": false
+        }
+      ],
+      "held_kicked": "0/0"
+    },
+    "run|smoother|real1|indist|tabpfn": {
+      "n": 24,
+      "held": 11,
+      "ever_held": 11,
+      "touched": 24,
+      "jerk_median": 20869.896325026028,
+      "smooth_mean": 0.19561784878276375,
+      "points": 2.515904059155276,
+      "episodes": [
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 21535.25408682814,
+          "speed_rms": 37.69263364960319,
+          "smooth": 0.18574194592143525,
+          "points": 0.18574194592143525,
+          "steps": 133,
+          "safety": null,
+          "final_ball": [
+            0.24809110443742985,
+            0.06499459311236315,
+            0.07496684288876317
+          ],
+          "seed": 500000,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 29542.209756251268,
+          "speed_rms": 37.36656562031872,
+          "smooth": 0.13539948544822655,
+          "points": 0.0,
+          "steps": 123,
+          "safety": null,
+          "final_ball": [
+            0.5045251326806142,
+            0.10170340634582636,
+            0.019769817381585054
+          ],
+          "seed": 500001,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 18464.549439688864,
+          "speed_rms": 43.006505585825714,
+          "smooth": 0.21663133525490463,
+          "points": 0.0,
+          "steps": 108,
+          "safety": null,
+          "final_ball": [
+            0.23767641094696715,
+            -0.03309055961675813,
+            0.019769817381585047
+          ],
+          "seed": 500002,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 18632.96804646401,
+          "speed_rms": 54.542214011700445,
+          "smooth": 0.2146732603214592,
+          "points": 0.0,
+          "steps": 94,
+          "safety": null,
+          "final_ball": [
+            0.2557015130949186,
+            -0.1991091029637309,
+            0.019769817381585047
+          ],
+          "seed": 500003,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 22250.826202773133,
+          "speed_rms": 37.37969646294955,
+          "smooth": 0.1797686056035743,
+          "points": 0.0,
+          "steps": 130,
+          "safety": null,
+          "final_ball": [
+            0.3149457582802107,
+            0.3375197867374392,
+            0.019769817381585054
+          ],
+          "seed": 500004,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 14414.706886799677,
+          "speed_rms": 46.733580584244216,
+          "smooth": 0.27749436956383866,
+          "points": 0.27749436956383866,
+          "steps": 106,
+          "safety": null,
+          "final_ball": [
+            0.24967092048402278,
+            0.09215608817225321,
+            0.07276416710867604
+          ],
+          "seed": 500005,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 18698.826633979144,
+          "speed_rms": 53.1562248675374,
+          "smooth": 0.2139171659429837,
+          "points": 0.2139171659429837,
+          "steps": 96,
+          "safety": null,
+          "final_ball": [
+            0.2534281937273373,
+            0.04634817427468447,
+            0.07162140850805025
+          ],
+          "seed": 500006,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 28659.03797339962,
+          "speed_rms": 53.03791326571625,
+          "smooth": 0.13957202623872683,
+          "points": 0.0,
+          "steps": 79,
+          "safety": null,
+          "final_ball": [
+            0.5994414537426667,
+            0.4710597977238422,
+            -0.04370667498487315
+          ],
+          "seed": 500007,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 27424.1537902783,
+          "speed_rms": 52.566063129071246,
+          "smooth": 0.14585682499410343,
+          "points": 0.0,
+          "steps": 100,
+          "safety": null,
+          "final_ball": [
+            0.4823279933733064,
+            -0.01946284033999672,
+            0.019769817381585054
+          ],
+          "seed": 500008,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 20204.538563223916,
+          "speed_rms": 41.031121441875236,
+          "smooth": 0.19797532061834647,
+          "points": 0.0,
+          "steps": 108,
+          "safety": null,
+          "final_ball": [
+            0.2579948364605681,
+            -0.03352053879205952,
+            0.019769817381585054
+          ],
+          "seed": 500009,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 26059.695479231275,
+          "speed_rms": 45.68912471795944,
+          "smooth": 0.1534937353043081,
+          "points": 0.0,
+          "steps": 136,
+          "safety": null,
+          "final_ball": [
+            0.6059836700183673,
+            0.1599188458771013,
+            0.01894126898956187
+          ],
+          "seed": 500010,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 20167.782693776855,
+          "speed_rms": 51.17630450653259,
+          "smooth": 0.19833613147935567,
+          "points": 0.0,
+          "steps": 102,
+          "safety": null,
+          "final_ball": [
+            0.431728177825154,
+            0.1210185007780895,
+            0.019769817381585054
+          ],
+          "seed": 500011,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 25469.270394468807,
+          "speed_rms": 48.540947043770075,
+          "smooth": 0.1570520057327078,
+          "points": 0.0,
+          "steps": 99,
+          "safety": null,
+          "final_ball": [
+            0.2297892416140835,
+            0.04392563318929818,
+            0.019769817381585054
+          ],
+          "seed": 500012,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 17194.297083091395,
+          "speed_rms": 52.932667630605444,
+          "smooth": 0.23263527323449226,
+          "points": 0.23263527323449226,
+          "steps": 103,
+          "safety": null,
+          "final_ball": [
+            0.25145085768003994,
+            0.13486899954534456,
+            0.0700681178932043
+          ],
+          "seed": 500013,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 28126.4326863495,
+          "speed_rms": 39.79532380806436,
+          "smooth": 0.14221497779707076,
+          "points": 0.14221497779707076,
+          "steps": 128,
+          "safety": null,
+          "final_ball": [
+            0.2527482763026192,
+            0.08256993742730698,
+            0.06810691724578201
+          ],
+          "seed": 500014,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 14272.794210850197,
+          "speed_rms": 39.6136484055519,
+          "smooth": 0.2802534627003306,
+          "points": 0.2802534627003306,
+          "steps": 141,
+          "safety": null,
+          "final_ball": [
+            0.2606912489432932,
+            0.06534155349146617,
+            0.07454732810450744
+          ],
+          "seed": 500015,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 22120.73200781297,
+          "speed_rms": 58.11580447393143,
+          "smooth": 0.1808258424082536,
+          "points": 0.0,
+          "steps": 96,
+          "safety": null,
+          "final_ball": [
+            0.4922543091339703,
+            0.15950162936486686,
+            0.019769817381585054
+          ],
+          "seed": 500016,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 29436.56642321736,
+          "speed_rms": 38.835674861599024,
+          "smooth": 0.13588541348508296,
+          "points": 0.0,
+          "steps": 121,
+          "safety": null,
+          "final_ball": [
+            0.4171936318283563,
+            0.06124045768335086,
+            0.019769817381585054
+          ],
+          "seed": 500017,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 15965.486209712817,
+          "speed_rms": 38.11733023845905,
+          "smooth": 0.25054044377092294,
+          "points": 0.25054044377092294,
+          "steps": 124,
+          "safety": null,
+          "final_ball": [
+            0.2694129633520388,
+            0.06339652836277129,
+            0.07107838079787182
+          ],
+          "seed": 500018,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 23532.708367348554,
+          "speed_rms": 35.554570935860376,
+          "smooth": 0.16997618538246828,
+          "points": 0.16997618538246828,
+          "steps": 131,
+          "safety": null,
+          "final_ball": [
+            0.2523723822850802,
+            0.042298771737036514,
+            0.07388043040088485
+          ],
+          "seed": 500019,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 19782.312735768148,
+          "speed_rms": 48.08116340513014,
+          "smooth": 0.20220082724542368,
+          "points": 0.20220082724542368,
+          "steps": 105,
+          "safety": null,
+          "final_ball": [
+            0.2753150581544221,
+            -0.014206905104116402,
+            0.0645731627662262
+          ],
+          "seed": 500020,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 15449.956385169684,
+          "speed_rms": 48.13666116770244,
+          "smooth": 0.25890040724254565,
+          "points": 0.25890040724254565,
+          "steps": 102,
+          "safety": null,
+          "final_ball": [
+            0.25283089624832833,
+            0.009696495178564532,
+            0.0675735633829138
+          ],
+          "seed": 500021,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 13243.761345151725,
+          "speed_rms": 44.106873685708464,
+          "smooth": 0.3020290003537643,
+          "points": 0.3020290003537643,
+          "steps": 109,
+          "safety": null,
+          "final_ball": [
+            0.24709222304153955,
+            0.12252506179813208,
+            0.0736836598989928
+          ],
+          "seed": 500022,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 32400.64702762939,
+          "speed_rms": 52.67550061552778,
+          "smooth": 0.12345432474200382,
+          "points": 0.0,
+          "steps": 90,
+          "safety": null,
+          "final_ball": [
+            0.4984758521194561,
+            0.431900326480891,
+            -0.023782650560106717
+          ],
+          "seed": 500023,
+          "kick": false
+        }
+      ],
+      "held_kicked": "0/0"
+    },
+    "run|smoother|real1|indist|none": {
+      "n": 24,
+      "held": 11,
+      "ever_held": 12,
+      "touched": 23,
+      "jerk_median": 19226.464438286028,
+      "smooth_mean": 0.21026348250146074,
+      "points": 2.388459604751872,
+      "episodes": [
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 25054.327537212186,
+          "speed_rms": 53.2103857271219,
+          "smooth": 0.15965305770266477,
+          "points": 0.0,
+          "steps": 83,
+          "safety": null,
+          "final_ball": [
+            0.4645904840957233,
+            0.4387789635119773,
+            -0.03561999713910761
+          ],
+          "seed": 500000,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 23558.943172872314,
+          "speed_rms": 43.073116012759016,
+          "smooth": 0.16978690303077457,
+          "points": 0.16978690303077457,
+          "steps": 123,
+          "safety": null,
+          "final_ball": [
+            0.2500091401898921,
+            0.058706149878718535,
+            0.07439932710963902
+          ],
+          "seed": 500001,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 18763.936531876836,
+          "speed_rms": 46.0213997568611,
+          "smooth": 0.2131748843428808,
+          "points": 0.2131748843428808,
+          "steps": 108,
+          "safety": null,
+          "final_ball": [
+            0.2544787697939536,
+            0.019612869123054853,
+            0.07022384918199409
+          ],
+          "seed": 500002,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 19023.960710416082,
+          "speed_rms": 53.72209572926365,
+          "smooth": 0.21026115754170488,
+          "points": 0.0,
+          "steps": 94,
+          "safety": null,
+          "final_ball": [
+            0.25281563288363756,
+            -0.12037814248436893,
+            0.019769817381585054
+          ],
+          "seed": 500003,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 25269.827163452745,
+          "speed_rms": 48.901705274874814,
+          "smooth": 0.15829154564955322,
+          "points": 0.0,
+          "steps": 92,
+          "safety": null,
+          "final_ball": [
+            0.24825991007991663,
+            0.4331443719419695,
+            -0.030903025969801372
+          ],
+          "seed": 500004,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 14320.080089918252,
+          "speed_rms": 48.69970751928314,
+          "smooth": 0.2793280466927077,
+          "points": 0.2793280466927077,
+          "steps": 106,
+          "safety": null,
+          "final_ball": [
+            0.24969349903281512,
+            0.04838868431709857,
+            0.07282620495716023
+          ],
+          "seed": 500005,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 18613.25880064125,
+          "speed_rms": 53.83715895147738,
+          "smooth": 0.21490057398558252,
+          "points": 0.21490057398558252,
+          "steps": 96,
+          "safety": null,
+          "final_ball": [
+            0.2622160534670658,
+            0.023213051824542676,
+            0.0716534032847217
+          ],
+          "seed": 500006,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 23973.53335685757,
+          "speed_rms": 46.02995152724967,
+          "smooth": 0.1668506657094754,
+          "points": 0.0,
+          "steps": 120,
+          "safety": null,
+          "final_ball": [
+            0.47702995559791883,
+            0.033553171783206256,
+            0.019769817381585054
+          ],
+          "seed": 500007,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 21829.34615361548,
+          "speed_rms": 51.08921818655312,
+          "smooth": 0.1832395698822844,
+          "points": 0.0,
+          "steps": 100,
+          "safety": null,
+          "final_ball": [
+            0.48333923969534964,
+            0.2047806135530592,
+            0.019769817381585054
+          ],
+          "seed": 500008,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 19428.968166155973,
+          "speed_rms": 45.32292335307317,
+          "smooth": 0.20587814884414427,
+          "points": 0.20587814884414427,
+          "steps": 108,
+          "safety": null,
+          "final_ball": [
+            0.25365826682041137,
+            0.02832081169281496,
+            0.06984389546146663
+          ],
+          "seed": 500009,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": false,
+          "jerk": 13096.408666401356,
+          "speed_rms": 45.791366724095084,
+          "smooth": 0.30542724359708945,
+          "points": 0.0,
+          "steps": 136,
+          "safety": null,
+          "final_ball": [
+            0.04488385181918112,
+            -0.04695283573931705,
+            0.019769817381585054
+          ],
+          "seed": 500010,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 18309.4672082801,
+          "speed_rms": 53.065954218140874,
+          "smooth": 0.2184662150185931,
+          "points": 0.0,
+          "steps": 102,
+          "safety": null,
+          "final_ball": [
+            0.3952804746479356,
+            0.029434980139205175,
+            0.019769817381585057
+          ],
+          "seed": 500011,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 25657.12220800212,
+          "speed_rms": 48.74816295950575,
+          "smooth": 0.15590212992603092,
+          "points": 0.0,
+          "steps": 99,
+          "safety": null,
+          "final_ball": [
+            0.21265852142806885,
+            0.05096967088834251,
+            0.019769817381585057
+          ],
+          "seed": 500012,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 16690.784909317885,
+          "speed_rms": 53.78416715176677,
+          "smooth": 0.23965319915943192,
+          "points": 0.23965319915943192,
+          "steps": 103,
+          "safety": null,
+          "final_ball": [
+            0.24426814520694343,
+            0.06495230544710388,
+            0.07191097663073448
+          ],
+          "seed": 500013,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 33897.100110198626,
+          "speed_rms": 57.78644537590259,
+          "smooth": 0.11800419466550531,
+          "points": 0.0,
+          "steps": 69,
+          "safety": null,
+          "final_ball": [
+            0.35761181750822035,
+            0.4710871232035274,
+            -0.04162610122737295
+          ],
+          "seed": 500014,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 11838.66864015686,
+          "speed_rms": 43.87684467552377,
+          "smooth": 0.3378758306007457,
+          "points": 0.0,
+          "steps": 134,
+          "safety": null,
+          "final_ball": [
+            0.5859621244781312,
+            0.4351218817827064,
+            -0.04538053941223237
+          ],
+          "seed": 500015,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 15347.596677060203,
+          "speed_rms": 58.626568096988244,
+          "smooth": 0.26062712515626196,
+          "points": 0.0,
+          "steps": 96,
+          "safety": null,
+          "final_ball": [
+            0.3795120876422755,
+            0.3416146210251484,
+            0.019769817381585054
+          ],
+          "seed": 500016,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 25662.277813630826,
+          "speed_rms": 45.01820857499821,
+          "smooth": 0.15587080885997392,
+          "points": 0.0,
+          "steps": 108,
+          "safety": null,
+          "final_ball": [
+            0.6508347699128431,
+            -0.03125349509119242,
+            -0.04240225031138506
+          ],
+          "seed": 500017,
+          "kick": false
+        },
+        {
+          "held": false,
+          "ever_held": false,
+          "touched": true,
+          "jerk": 17590.580309636665,
+          "speed_rms": 50.87279521625826,
+          "smooth": 0.227394430973302,
+          "points": 0.0,
+          "steps": 92,
+          "safety": null,
+          "final_ball": [
+            0.6317963096656116,
+            0.0696319947126022,
+            -0.02889867992906735
+          ],
+          "seed": 500018,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 22977.000240625148,
+          "speed_rms": 39.5082297545418,
+          "smooth": 0.17408712878575353,
+          "points": 0.17408712878575353,
+          "steps": 131,
+          "safety": null,
+          "final_ball": [
+            0.26017618363802164,
+            0.03708314826132801,
+            0.07552235231337445
+          ],
+          "seed": 500019,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 20272.170699252347,
+          "speed_rms": 46.49231750160953,
+          "smooth": 0.19731483418041282,
+          "points": 0.19731483418041282,
+          "steps": 105,
+          "safety": null,
+          "final_ball": [
+            0.279002836429485,
+            -0.006288653224710101,
+            0.06345819286103846
+          ],
+          "seed": 500020,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 15878.916704635672,
+          "speed_rms": 48.75008910901569,
+          "smooth": 0.25190635321062205,
+          "points": 0.25190635321062205,
+          "steps": 102,
+          "safety": null,
+          "final_ball": [
+            0.2530752633592065,
+            0.0009820521530623666,
+            0.06900001129844376
+          ],
+          "seed": 500021,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 13074.516270511356,
+          "speed_rms": 45.87136562457412,
+          "smooth": 0.30593866092175936,
+          "points": 0.30593866092175936,
+          "steps": 109,
+          "safety": null,
+          "final_ball": [
+            0.24364073866692312,
+            0.054580242372965625,
+            0.07231112579492087
+          ],
+          "seed": 500022,
+          "kick": false
+        },
+        {
+          "held": true,
+          "ever_held": true,
+          "touched": true,
+          "jerk": 29305.989134473384,
+          "speed_rms": 51.216618359975065,
+          "smooth": 0.13649087159780243,
+          "points": 0.13649087159780243,
+          "steps": 102,
+          "safety": null,
+          "final_ball": [
+            0.2783923555685344,
+            0.07993532957332229,
+            0.05234079393578453
+          ],
+          "seed": 500023,
+          "kick": false
+        }
+      ],
+      "held_kicked": "0/0"
+    }
+  },
+  "tabpfn_latency_ms": 162.6889705657959
+}

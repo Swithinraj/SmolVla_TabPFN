@@ -119,14 +119,26 @@ def make_rows_v2(ghost, env, launch_fn, n_launch: int, seed0: int, rows_per_laun
     return np.array(X), np.array(T), np.array(P)
 
 
+def _default_device() -> str:
+    """TABPFN_DEVICE overrides; otherwise cuda when a GPU is visible, else cpu (CPU-only recording nodes)."""
+    import os
+    d = os.environ.get("TABPFN_DEVICE")
+    if d:
+        return d
+    import torch
+    return "cuda" if torch.cuda.is_available() else "cpu"
+
+
 class TabPFNForecasterV2:
     """TabPFN forecaster that predicts the ball's path (y at +0.3/+0.6/+0.9 s), the crossing y with a 10-90%
     band, and the crossing time. The y-regressor takes the horizon tau as an extra feature so all four y outputs
     come from one batched forward pass; the time regressor is a second pass."""
 
-    def __init__(self, device: str = "cuda", n_estimators: int = 4, ctx_y: int = 1500, ctx_t: int = 1500):
+    def __init__(self, device: str | None = None, n_estimators: int = 4, ctx_y: int = 1500, ctx_t: int = 1500):
         import os
         os.environ.setdefault("TABPFN_NO_BROWSER", "1")
+        os.environ.setdefault("TABPFN_ALLOW_CPU_LARGE_DATASET", "1")
+        device = device or _default_device()
         from tabpfn import TabPFNRegressor
         from tabpfn.constants import ModelVersion
         mk = lambda: TabPFNRegressor.create_default_for_version(  # noqa: E731
@@ -237,9 +249,11 @@ class ForecastPipeline:
 class TabPFNForecaster:
     """Two TabPFN regressors (y and time) trained on residuals against the constant-velocity forecast."""
 
-    def __init__(self, device: str = "cuda", n_estimators: int = 4, max_context: int | None = None):
+    def __init__(self, device: str | None = None, n_estimators: int = 4, max_context: int | None = None):
         import os
         os.environ.setdefault("TABPFN_NO_BROWSER", "1")
+        os.environ.setdefault("TABPFN_ALLOW_CPU_LARGE_DATASET", "1")
+        device = device or _default_device()
         from tabpfn import TabPFNRegressor
         from tabpfn.constants import ModelVersion
         self.device, self.max_context = device, max_context

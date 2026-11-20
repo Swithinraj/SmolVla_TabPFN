@@ -49,6 +49,20 @@ smoothness count in the score.
 - **Spatial brain** (the second task): zone classification, confidence gate, few-shot adaptation. The LIBERO part and the
   multi-zone SO-101 demo were not done (time).
 
+## Phase E: on the cluster, one V100 (2026-11-19/20)
+- **Setup** ([scripts/cluster](../scripts/cluster)): Python 3.13 module, torch 2.9.1 from the cu126 index (Volta kernels),
+  lerobot 0.7.0 with the training extra, mujoco pinned to 3.3.7. Two surprises: the simulator meshes in a plain clone are Git LFS
+  pointer files (fetched and sha256-checked by `fix_lfs_assets.py`), and pip pulls mujoco 4.x unless pinned. Smoke tests
+  reproduced the laptop numbers (HSV detector 236/240, 0.05 cm; big run oracle in-dist 18/24 vs 19/24).
+- **Recording on CPU was not viable**: about 1,000 s per episode, almost all of it TabPFN on the CPU (building the TabPFN
+  context also rendered both cameras for every one of 1,500 launches; that is now skipped and cached). On the V100 an
+  episode takes 8–16 s; 400 episodes took 56 minutes. Training: 0.41 s/step, 12,000 steps in 82 minutes.
+- **Retrained without the marker, forecaster fed by HSV detections** (the first TODO item): exact targets are fine without the
+  dot, but HSV-fed TabPFN targets on hard launches stay at 3–4/24 (goal 9/24). The bottleneck moved from the marker to the
+  HSV-fed forecast on hard launches.
+- **Smoothing sweep** (inference only): re-querying every 3 steps instead of 5 is the one change that lowers jerk without
+  losing catches (−40% jerk, points per launch 0.29 → 0.49); stronger EMA trades catches for smoothness.
+
 ## Things deliberately not claimed
 - Anything about a real arm, real contact physics, real servos, or a real tracker.
 - That the scores are close to the expert's: the policy's smoothness is 2–4× worse and its catch rate under randomization

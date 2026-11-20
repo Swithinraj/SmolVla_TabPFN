@@ -45,7 +45,7 @@ powershell -File scripts\record_v2_shard.ps1 -Shard B -Seed0 2000000 -Episodes 2
 .\.venv\Scripts\python.exe scripts\aggregate_v2.py      # -> data/so101_catch_v2 (400 episodes, 37,636 frames)
 ```
 
-These are the seeds used (shard A used seeds 900000�900257, B 1000000�1000259 after skipping launches the expert could not catch). Targets inside the data are a mix of exact (30%), TabPFN (50%) and
+These are the seeds used (shard A used seeds 900000–900257, B 1000000–1000259 after skipping launches the expert could not catch). Targets inside the data are a mix of exact (30%), TabPFN (50%) and
 constant-velocity (20%) forecasts; the forecaster delay is clamped to 0.15–0.30 s.
 
 ## 3. Train
@@ -100,3 +100,20 @@ a servo speed limit of 7–12°/step, and tracker noise, dropouts and one-frame 
 
 `challenge/sim/safety.py` and [DEPLOYMENT_SAFETY.md](../DEPLOYMENT_SAFETY.md). Read the latter before any real-arm use:
 nothing here has been validated on hardware.
+
+## 7. On a Slurm cluster (one V100)
+
+Tested on 2026-11-19/20 ([EXPERIMENT_LOG](EXPERIMENT_LOG.md#phase-e-on-the-cluster-one-v100-2026-11-1920)). Every job uses
+exactly one GPU; `scripts/cluster/env.sh` aborts if PyTorch sees more than one. Partition names and the node exclusion list in
+the `.sbatch` files are those of the tested cluster; adapt them. Submit everything from the repo root.
+
+```bash
+mkdir -p logs && sbatch scripts/cluster/setup_env.sbatch        # venv, pinned versions, LFS meshes, model weights
+sbatch scripts/cluster/cpu_pull_drive_all.sbatch                # checkpoints/datasets from the shared Drive folder
+sbatch scripts/cluster/gpu_check.sbatch                         # one V100, sm_70, EGL rendering, HSV detector
+bash scripts/cluster/submit_night.sh                            # the 2026-11-19 chain: record (no marker, HSV) -> train x2 -> eval -> sweep
+```
+
+`scripts/cluster/disk_guard.sh` keeps the workspace under a disk budget (jobs refuse to start at 270 GB and are cancelled at
+290 GB); set the measured folder in the git-ignored `scripts/cluster/local.env` (`DISK_WS=...`).
+
