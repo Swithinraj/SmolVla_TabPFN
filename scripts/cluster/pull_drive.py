@@ -8,8 +8,24 @@ from pathlib import Path
 
 import gdown
 
-FOLDER = "18BWYkCl592-N_dSM5L2XeRnGBhfThkyl"
+
+
+def _folder_id():
+    """DRIVE_FOLDER_ID from the environment, else from the git-ignored scripts/cluster/local.env (KEY=VALUE lines)."""
+    import os
+    if os.environ.get("DRIVE_FOLDER_ID"):
+        return os.environ["DRIVE_FOLDER_ID"]
+    env = Path(__file__).resolve().parent / "local.env"
+    if env.exists():
+        for line in env.read_text().splitlines():
+            k, _, v = line.partition("=")
+            if k.strip() == "DRIVE_FOLDER_ID" and v.strip():
+                return v.strip().strip('"')
+    sys.exit("set DRIVE_FOLDER_ID (environment or scripts/cluster/local.env) to the shared Drive folder id")
+
+
 ROOT = Path(__file__).resolve().parents[2]
+FOLDER = _folder_id()
 ap = argparse.ArgumentParser()
 ap.add_argument("--list", action="store_true", help="only list the remote files")
 ap.add_argument("--only", default="", help="comma list of top-level folders to arrange (default: all)")
